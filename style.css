@@ -1,20 +1,58 @@
-/* style.css — Coach Psicológico CPVA — Tema cálido */
+/* style.css — Coach Psicológico CPVA — Tema cálido — WCAG AAA */
 
+/* ============================================================
+   VARIABLES MODO CLARO
+   Contraste: textos sobre fondo >=7:1 (WCAG AAA)
+   ============================================================ */
 :root {
-    --color-primario: #C0392B;
-    --color-primario-claro: #E74C3C;
+    --color-primario: #8B1A10;        /* sobre blanco: ~9.1:1 */
+    --color-primario-claro: #C0392B;
     --color-fondo: #FFF8F5;
     --color-superficie: #FFFFFF;
-    --color-texto: #2C2C2C;
-    --color-texto-secundario: #666666;
-    --color-borde: #F0E0DC;
-    --color-acento: #E67E22;
-    --sombra: 0 2px 8px rgba(0,0,0,0.08);
+    --color-texto: #1A1A1A;           /* sobre #FFF8F5: ~17:1 */
+    --color-texto-secundario: #4A3A36;/* sobre blanco: ~8.5:1 */
+    --color-borde: #C8B0AA;
+    --color-acento: #7A4000;          /* sobre blanco: ~7.5:1 */
+    --color-ok: #1A6B2A;
+    --color-error: #9B1010;
+    --color-warn-fondo: #FFF8E1;
+    --color-warn-borde: #B8860B;
+    --color-warn-texto: #5C4200;      /* sobre #FFF8E1: ~9:1 */
+    --sombra: 0 2px 8px rgba(0,0,0,0.12);
     --radio: 12px;
     --fuente-base: 18px;
+    --tap-min: 44px;
+    --focus-ring: 3px solid #8B1A10;
+    --focus-offset: 2px;
 }
 
-* {
+/* ============================================================
+   MODO OSCURO AUTOMÁTICO
+   ============================================================ */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-primario: #FF9E94;        /* sobre #121212: ~10:1 */
+        --color-primario-claro: #FFB8B0;
+        --color-fondo: #121212;
+        --color-superficie: #1E1E1E;
+        --color-texto: #F0F0F0;
+        --color-texto-secundario: #C8B0AA;/* sobre #1E1E1E: ~7.2:1 */
+        --color-borde: #4A3A36;
+        --color-acento: #FFB870;
+        --color-ok: #6DD98A;
+        --color-error: #FF8080;
+        --color-warn-fondo: #2C2200;
+        --color-warn-borde: #C8A020;
+        --color-warn-texto: #FFE080;
+        --sombra: 0 2px 12px rgba(0,0,0,0.5);
+        --focus-ring: 3px solid #FF9E94;
+    }
+}
+
+/* ============================================================
+   RESET Y BASE
+   ============================================================ */
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -29,30 +67,63 @@ body {
     min-height: 100vh;
 }
 
+/* ============================================================
+   FOCUS VISIBLE — WCAG AAA
+   ============================================================ */
+:focus-visible {
+    outline: var(--focus-ring);
+    outline-offset: var(--focus-offset);
+    border-radius: 4px;
+}
+
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* ============================================================
+   MOVIMIENTO REDUCIDO
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ============================================================
+   CABECERA
+   ============================================================ */
 header {
     background: linear-gradient(135deg, var(--color-primario), var(--color-acento));
-    color: white;
+    color: #FFFFFF;
     padding: 1.5rem 1rem;
     text-align: center;
 }
 
 header h1 {
     font-size: 1.6rem;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 0.3rem;
 }
 
 header .subtitulo {
-    font-size: 0.95rem;
-    opacity: 0.85;
+    font-size: 1rem;
+    opacity: 0.9;
 }
 
+/* ============================================================
+   CONTENEDOR
+   ============================================================ */
 .contenedor {
     max-width: 720px;
     margin: 0 auto;
     padding: 1rem;
 }
 
+/* ============================================================
+   TARJETA
+   ============================================================ */
 .tarjeta {
     background: var(--color-superficie);
     border-radius: var(--radio);
@@ -75,10 +146,12 @@ header .subtitulo {
     margin-bottom: 0.5rem;
 }
 
-/* Módulo temático del día */
+/* ============================================================
+   MÓDULO TEMÁTICO DEL DÍA
+   ============================================================ */
 .modulo-dia {
     background: linear-gradient(135deg, var(--color-primario), var(--color-primario-claro));
-    color: white;
+    color: #FFFFFF;
     border-radius: var(--radio);
     padding: 1.2rem;
     margin-bottom: 1rem;
@@ -86,10 +159,9 @@ header .subtitulo {
 }
 
 .modulo-dia .etiqueta {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    opacity: 0.8;
 }
 
 .modulo-dia .nombre-modulo {
@@ -99,31 +171,36 @@ header .subtitulo {
 }
 
 .modulo-dia .indice-ciclo {
-    font-size: 0.8rem;
-    opacity: 0.7;
+    font-size: 0.9rem;
+    opacity: 0.9;
     margin-top: 0.2rem;
 }
 
-/* Indicador podcast/reflexión */
+/* ============================================================
+   INDICADOR TIPO CONTENIDO
+   ============================================================ */
 .tipo-contenido {
     display: inline-block;
-    padding: 0.2rem 0.6rem;
+    padding: 0.25rem 0.7rem;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
 .tipo-podcast {
-    background: #FDE8E0;
-    color: var(--color-primario);
+    background: #F8D7D4;
+    color: #5C0A04;   /* sobre #F8D7D4: ~8.5:1 */
 }
 
 .tipo-reflexion {
-    background: #FFF0E0;
-    color: var(--color-acento);
+    background: #FFF0D8;
+    color: #5C3A00;   /* sobre #FFF0D8: ~9:1 */
 }
 
+/* ============================================================
+   REPRODUCTOR AUDIO
+   ============================================================ */
 .reproductor {
     margin: 1rem 0;
 }
@@ -134,13 +211,16 @@ header .subtitulo {
 }
 
 .reproductor .titulo-audio {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: var(--color-texto-secundario);
     margin-bottom: 0.5rem;
 }
 
+/* ============================================================
+   VISOR DE TEXTO
+   ============================================================ */
 .visor-texto {
-    background: #FFF5F0;
+    background: var(--color-fondo);
     border-left: 4px solid var(--color-acento);
     border-radius: 0 var(--radio) var(--radio) 0;
     padding: 1.2rem;
@@ -149,8 +229,12 @@ header .subtitulo {
     line-height: 1.8;
     max-height: 400px;
     overflow-y: auto;
+    color: var(--color-texto);
 }
 
+/* ============================================================
+   HISTORIAL
+   ============================================================ */
 .historial-item {
     display: flex;
     align-items: center;
@@ -164,7 +248,7 @@ header .subtitulo {
 }
 
 .historial-fecha {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: var(--color-texto-secundario);
     min-width: 80px;
 }
@@ -172,32 +256,44 @@ header .subtitulo {
 .historial-titulo {
     flex: 1;
     font-weight: 500;
+    color: var(--color-texto);
 }
 
 .historial-tipo {
-    font-size: 0.75rem;
-    padding: 0.15rem 0.4rem;
+    font-size: 0.85rem;
+    padding: 0.15rem 0.5rem;
     border-radius: 12px;
 }
 
+/* Botón play historial — área táctil >=44x44px */
 .historial-play {
     background: var(--color-primario);
-    color: white;
+    color: #FFFFFF;
     border: none;
     border-radius: 50%;
-    width: 36px;
-    height: 36px;
+    width: var(--tap-min);
+    height: var(--tap-min);
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.15s;
 }
 
 .historial-play:hover {
     background: var(--color-primario-claro);
 }
 
+.historial-play:focus-visible {
+    outline: var(--focus-ring);
+    outline-offset: var(--focus-offset);
+}
+
+/* ============================================================
+   ESTADO VACÍO / ERROR
+   ============================================================ */
 .estado-vacio {
     text-align: center;
     padding: 2rem;
@@ -209,33 +305,130 @@ header .subtitulo {
     margin-bottom: 0.5rem;
 }
 
+/* ============================================================
+   PANEL CONFIGURACIÓN API KEY
+   ============================================================ */
 .config-panel {
-    background: #FFF3CD;
-    border: 1px solid #FFEEBA;
+    background: var(--color-warn-fondo);
+    border: 2px solid var(--color-warn-borde);
     border-radius: var(--radio);
-    padding: 1.2rem;
+    padding: 1.4rem;
     margin-bottom: 1rem;
+    color: var(--color-warn-texto);
+}
+
+.config-panel p {
+    margin-bottom: 0.6rem;
+    color: var(--color-warn-texto);
+}
+
+.config-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+    color: var(--color-warn-texto);
+}
+
+.config-input-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
 }
 
 .config-panel input {
     width: 100%;
-    padding: 0.6rem;
-    border: 1px solid var(--color-borde);
+    padding: 0.75rem 3rem 0.75rem 0.75rem;
+    border: 2px solid var(--color-borde);
     border-radius: 8px;
     font-size: 1rem;
-    margin: 0.5rem 0;
+    background: var(--color-superficie);
+    color: var(--color-texto);
+    min-height: var(--tap-min);
+    font-family: monospace;
+    letter-spacing: 0.05em;
 }
 
+.config-panel input:focus-visible {
+    outline: var(--focus-ring);
+    outline-offset: var(--focus-offset);
+    border-color: var(--color-primario);
+}
+
+.api-key-icono {
+    position: absolute;
+    right: 0.75rem;
+    font-size: 1.2rem;
+    pointer-events: none;
+    line-height: 1;
+}
+
+.api-key-icono.ok    { color: var(--color-ok); }
+.api-key-icono.error { color: var(--color-error); }
+
+.api-key-estado {
+    font-size: 0.95rem;
+    min-height: 1.4rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.api-key-estado.ok    { color: var(--color-ok); }
+.api-key-estado.error { color: var(--color-error); }
+
+.api-key-ayuda {
+    font-size: 0.9rem;
+    color: var(--color-warn-texto);
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+}
+
+.api-key-ayuda code {
+    background: rgba(0,0,0,0.08);
+    padding: 0.1em 0.3em;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.config-botones {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+/* Botón guardar — área táctil >=44px */
 .config-panel button {
     background: var(--color-primario);
-    color: white;
+    color: #FFFFFF;
     border: none;
-    padding: 0.6rem 1.2rem;
+    padding: 0.75rem 1.4rem;
     border-radius: 8px;
     cursor: pointer;
     font-size: 1rem;
+    font-weight: 600;
+    min-height: var(--tap-min);
+    min-width: var(--tap-min);
+    transition: background 0.15s, opacity 0.15s;
 }
 
+.config-panel button:hover:not(:disabled) {
+    background: var(--color-primario-claro);
+}
+
+.config-panel button:focus-visible {
+    outline: var(--focus-ring);
+    outline-offset: var(--focus-offset);
+}
+
+.config-panel button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+/* ============================================================
+   CARGANDO / SPINNER
+   ============================================================ */
 .cargando {
     text-align: center;
     padding: 2rem;
@@ -243,8 +436,8 @@ header .subtitulo {
 
 .cargando .spinner {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     border: 3px solid var(--color-borde);
     border-top-color: var(--color-primario);
     border-radius: 50%;
@@ -255,17 +448,23 @@ header .subtitulo {
     to { transform: rotate(360deg); }
 }
 
-@media (max-width: 600px) {
-    :root { --fuente-base: 16px; }
-    header { padding: 1rem; }
-    header h1 { font-size: 1.3rem; }
-    .contenedor { padding: 0.5rem; }
-    .tarjeta { padding: 1rem; }
-}
-
+/* ============================================================
+   FOOTER
+   ============================================================ */
 footer {
     text-align: center;
     padding: 1.5rem;
     color: var(--color-texto-secundario);
-    font-size: 0.85rem;
+    font-size: 0.9rem;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 600px) {
+    :root { --fuente-base: 18px; } /* Mantener >=18px también en móvil */
+    header { padding: 1rem; }
+    header h1 { font-size: 1.3rem; }
+    .contenedor { padding: 0.5rem; }
+    .tarjeta { padding: 1rem; }
 }

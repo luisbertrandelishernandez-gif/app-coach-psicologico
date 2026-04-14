@@ -2,6 +2,12 @@
  * app.js — Coach Psicológico CPVA (APP-002)
  * Rotación secuencial cíclica de 11 cuadernos.
  * Podcasts: solo L/X/V. Reflexiones en texto: diarias.
+ *
+ * Tareas C1 + C3:
+ *   - Validación de formato de API key (AIzaSy + 39 chars)
+ *   - Test en vivo contra Drive API /about?fields=user
+ *   - Mensajes de ayuda accesibles (aria-live)
+ *   - Accesibilidad WCAG AAA (ver style.css)
  */
 
 // Carpeta Drive principal de podcasts coach psicológico
@@ -25,17 +31,198 @@ const CUADERNOS_CPVA = [
 // Días con podcast (L=1, X=3, V=5)
 const DIAS_PODCAST = [1, 3, 5];
 
+/* ============================================================
+   VALIDACIÓN Y GUARDADO DE API KEY
+   ============================================================ */
+
+/**
+ * Valida el formato local de la API key de Google.
+ * Debe empezar por "AIzaSy" y tener exactamente 39 caracteres.
+ * @param {string} key
+ * @returns {{ ok: boolean, mensaje: string }}
+ */
+function validarFormatoApiKey(key) {
+    if (!key) {
+        return { ok: false, mensaje: 'Introduce la API key para continuar.' };
+    }
+    if (!key.startsWith('AIzaSy')) {
+        return { ok: false, mensaje: 'La key debe empezar por "AIzaSy".' };
+    }
+    if (key.length !== 39) {
+        return {
+            ok: false,
+            mensaje: `Longitud incorrecta: tiene ${key.length} caracteres, debe tener 39.`
+        };
+    }
+    return { ok: true, mensaje: '' };
+}
+
+/**
+ * Hace una llamada mínima a Drive API para verificar que la key
+ * es válida y la API está habilitada.
+ * Endpoint: GET /drive/v3/about?fields=user&key=KEY
+ * @param {string} key
+ * @returns {Promise<{ ok: boolean, mensaje: string }>}
+ */
+async function testApiKeyEnVivo(key) {
+    const url = `https://www.googleapis.com/drive/v3/about?fields=user&key=${encodeURIComponent(key)}`;
+    try {
+        const resp = await fetch(url);
+        if (resp.ok) {
+            const data = await resp.json();
+            const email = data?.user?.emailAddress || '';
+            return {
+                ok: true,
+                mensaje: email
+                    ? `Conexión OK — cuenta: ${email}`
+                    : 'Conexión a Drive API correcta.'
+            };
+        }
+        let errMsg = `Error ${resp.status}`;
+        try {
+            const errData = await resp.json();
+            const detalle = errData?.error?.message || '';
+            if (resp.status === 400) {
+                errMsg = 'Key inválida. Revisa que hayas copiado la key completa.';
+            } else if (resp.status === 403) {
+                if (detalle.toLowerCase().includes('not been used') || detalle.toLowerCase().includes('disabled')) {
+                    errMsg = 'La API de Google Drive no está habilitada en tu proyecto de Google Cloud. Ve a console.cloud.google.com → Biblioteca → Drive API → Habilitar.';
+                } else if (detalle.toLowerCase().includes('referer') || detalle.toLowerCase().includes('ip')) {
+                    errMsg = 'La key está restringida por dominio/IP. Añade este dominio a las restricciones de la key en Google Cloud Console.';
+                } else {
+                    errMsg = `Acceso denegado: ${detalle || 'verifica los permisos de la key.'}`;
+                }
+            } else {
+                errMsg = detalle || errMsg;
+            }
+        } catch (_) { /* ignorar si el cuerpo no es JSON */ }
+        return { ok: false, mensaje: errMsg };
+    } catch (err) {
+        return {
+            ok: false,
+            mensaje: 'No se pudo conectar con Google. Verifica tu conexión a internet.'
+        };
+    }
+}
+
+/**
+ * Reacciona mientras el usuario escribe en el campo de API key:
+ * habilita/deshabilita el botón según el formato.
+ */
+function onInputApiKey() {
+    const input    = document.getElementById('input-api-key');
+    const icono    = document.getElementById('api-key-icono');
+    const estado   = document.getElementById('api-key-estado');
+    const btnGuard = document.getElementById('btn-guardar-key');
+    const key      = input.value.trim();
+
+    const { ok, mensaje } = validarFormatoApiKey(key);
+
+    icono.className  = 'api-key-icono';
+    estado.className = 'api-key-estado';
+    estado.textContent = '';
+
+    if (!key) {
+        icono.textContent = '';
+        btnGuard.disabled = true;
+        return;
+    }
+
+    if (ok) {
+        icono.textContent  = '✓';
+        icono.classList.add('ok');
+        btnGuard.disabled = false;
+    } else {
+        icono.textContent  = '✗';
+        icono.classList.add('error');
+        estado.textContent  = mensaje;
+        estado.classList.add('error');
+        btnGuard.disabled = true;
+    }
+}
+
+/**
+ * Al pulsar "Verificar y guardar": valida formato, prueba la API
+ * y, si todo es correcto, guarda en localStorage y recarga.
+ */
+async function guardarApiKey() {
+    const input    = document.getElementById('input-api-key');
+    const icono    = document.getElementById('api-key-icono');
+    const estado   = document.getElementById('api-key-estado');
+    const btnGuard = document.getElementById('btn-guardar-key');
+    const key      = input.value.trim();
+
+    // 1. Validación de formato
+    const { ok: fmtOk, mensaje: fmtMsg } = validarFormatoApiKey(key);
+    if (!fmtOk) {
+        mostrarEstadoKey(icono, estado, false, fmtMsg);
+        return;
+    }
+
+    // 2. Test en vivo
+    btnGuard.disabled  = true;
+    btnGuard.textContent = 'Verificando…';
+    estado.className  = 'api-key-estado';
+    estado.textContent = 'Contactando con Google Drive API…';
+
+    const { ok: apiOk, mensaje: apiMsg } = await testApiKeyEnVivo(key);
+
+    btnGuard.textContent = 'Verificar y guardar';
+    btnGuard.disabled  = false;
+
+    if (!apiOk) {
+        mostrarEstadoKey(icono, estado, false, apiMsg);
+        return;
+    }
+
+    // 3. Todo OK: guardar y recargar
+    mostrarEstadoKey(icono, estado, true, apiMsg + ' — guardando…');
+    localStorage.setItem('drive_api_key', key);
+    setTimeout(() => location.reload(), 900);
+}
+
+/**
+ * Actualiza el icono y el texto de estado en el panel de configuración.
+ */
+function mostrarEstadoKey(icono, estado, ok, mensaje) {
+    icono.className  = 'api-key-icono ' + (ok ? 'ok' : 'error');
+    icono.textContent = ok ? '✓' : '✗';
+    estado.className  = 'api-key-estado ' + (ok ? 'ok' : 'error');
+    estado.textContent = mensaje;
+}
+
+/**
+ * Muestra el panel de configuración y conecta el listener de input.
+ */
+function mostrarConfigApiKey() {
+    const panel = document.getElementById('config-api');
+    panel.style.display = 'block';
+
+    const input = document.getElementById('input-api-key');
+    input.removeEventListener('input', onInputApiKey);
+    input.addEventListener('input', onInputApiKey);
+
+    document.getElementById('contenido-hoy').innerHTML = `
+        <div class="estado-vacio">
+            <div class="icono">&#128273;</div>
+            <p>Configura la API key de Google Drive para acceder al contenido.</p>
+        </div>`;
+}
+
+/* ============================================================
+   LÓGICA DE CONTENIDO
+   ============================================================ */
+
 /**
  * Calcula el índice del cuaderno del día usando rotación secuencial
- * persistida en localStorage
+ * persistida en localStorage.
  */
 function obtenerCuadernoDelDia() {
-    const hoy = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+    const hoy      = new Date().toISOString().slice(0, 10);
     const ultimoDia = localStorage.getItem('cpva_ultimo_dia');
-    let indice = parseInt(localStorage.getItem('cpva_indice') || '0', 10);
+    let indice     = parseInt(localStorage.getItem('cpva_indice') || '0', 10);
 
     if (ultimoDia !== hoy) {
-        // Nuevo día: avanzar al siguiente cuaderno
         if (ultimoDia) {
             indice = (indice + 1) % CUADERNOS_CPVA.length;
         }
@@ -46,23 +233,22 @@ function obtenerCuadernoDelDia() {
     return {
         nombre: CUADERNOS_CPVA[indice],
         indice: indice,
-        total: CUADERNOS_CPVA.length
+        total:  CUADERNOS_CPVA.length
     };
 }
 
 /**
- * Verifica si hoy hay podcast (L/X/V)
+ * Verifica si hoy hay podcast (L/X/V).
  */
 function hayPodcastHoy() {
     return DIAS_PODCAST.includes(new Date().getDay());
 }
 
-/**
- * Formatea fecha para mostrar
- */
 function formatearFecha(dateStr) {
     const fecha = new Date(dateStr);
-    return fecha.toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long' });
+    return fecha.toLocaleDateString('es-ES', {
+        weekday: 'long', day: 'numeric', month: 'long'
+    });
 }
 
 function formatearFechaCorta(dateStr) {
@@ -71,10 +257,9 @@ function formatearFechaCorta(dateStr) {
 }
 
 /**
- * Filtra archivos por nombre de cuaderno
+ * Filtra archivos por nombre de cuaderno.
  */
 function filtrarPorCuaderno(archivos, cuaderno) {
-    // Extraer la clave corta del cuaderno para buscar
     const clave = cuaderno.toLowerCase()
         .replace('cpva_', '')
         .replace('sat_', '')
@@ -87,7 +272,7 @@ function filtrarPorCuaderno(archivos, cuaderno) {
 }
 
 /**
- * Clasifica archivos en podcasts y reflexiones
+ * Clasifica archivos en podcasts y reflexiones.
  */
 function clasificarArchivos(archivos) {
     const podcasts = archivos.filter(f =>
@@ -100,10 +285,10 @@ function clasificarArchivos(archivos) {
 }
 
 /**
- * Carga y renderiza el contenido del día
+ * Carga y renderiza el contenido del día.
  */
 async function cargarContenidoDelDia() {
-    const contenedorHoy = document.getElementById('contenido-hoy');
+    const contenedorHoy       = document.getElementById('contenido-hoy');
     const contenedorHistorial = document.getElementById('historial');
 
     if (!isApiKeyConfigured()) {
@@ -111,14 +296,14 @@ async function cargarContenidoDelDia() {
         return;
     }
 
-    contenedorHoy.innerHTML = '<div class="cargando"><div class="spinner"></div><p>Cargando contenido...</p></div>';
+    contenedorHoy.innerHTML = '<div class="cargando"><div class="spinner" role="status" aria-label="Cargando contenido"></div><p>Cargando contenido...</p></div>';
 
-    const cuaderno = obtenerCuadernoDelDia();
+    const cuaderno    = obtenerCuadernoDelDia();
     const tienePodcast = hayPodcastHoy();
 
     document.getElementById('modulo-nombre').textContent = cuaderno.nombre;
-    document.getElementById('modulo-fecha').textContent = formatearFecha(new Date().toISOString());
-    document.getElementById('modulo-ciclo').textContent =
+    document.getElementById('modulo-fecha').textContent  = formatearFecha(new Date().toISOString());
+    document.getElementById('modulo-ciclo').textContent  =
         `Cuaderno ${cuaderno.indice + 1} de ${cuaderno.total}`;
 
     try {
@@ -140,7 +325,7 @@ async function cargarContenidoDelDia() {
 
         // Reflexión diaria (siempre disponible)
         if (reflexiones.length > 0) {
-            const ref = reflexiones[0];
+            const ref   = reflexiones[0];
             const texto = await readTextFile(ref.id);
             htmlHoy += `
                 <div>
@@ -171,7 +356,7 @@ async function cargarContenidoDelDia() {
         } else {
             htmlHoy += `
                 <div class="estado-vacio" style="padding:0.5rem;">
-                    <p style="font-size:0.9rem;color:#999;">Próximo podcast: ${proximoDiaPodcast()}</p>
+                    <p>Próximo podcast: ${proximoDiaPodcast()}</p>
                 </div>`;
         }
 
@@ -185,7 +370,7 @@ async function cargarContenidoDelDia() {
 
         contenedorHoy.innerHTML = htmlHoy;
 
-        // Historial: últimos 7 elementos (podcasts + reflexiones mezclados)
+        // Historial: últimos 10 elementos
         const todos = archivos.slice(0, 10);
         if (todos.length > 0) {
             let htmlHist = '';
@@ -196,7 +381,7 @@ async function cargarContenidoDelDia() {
                         <span class="historial-fecha">${formatearFechaCorta(item.createdTime)}</span>
                         <span class="historial-titulo">${item.name}</span>
                         <span class="historial-tipo ${esAudio ? 'tipo-podcast' : 'tipo-reflexion'}">${esAudio ? 'Audio' : 'Texto'}</span>
-                        ${esAudio ? `<button class="historial-play" onclick="reproducir('${item.id}')" title="Reproducir">&#9654;</button>` : ''}
+                        ${esAudio ? `<button class="historial-play" onclick="reproducir('${item.id}')" aria-label="Reproducir ${item.name}">&#9654;</button>` : ''}
                     </div>`;
             });
             contenedorHistorial.innerHTML = htmlHist;
@@ -215,27 +400,28 @@ async function cargarContenidoDelDia() {
 }
 
 /**
- * Calcula el próximo día de podcast (L/X/V)
+ * Calcula el próximo día de podcast (L/X/V).
  */
 function proximoDiaPodcast() {
-    const hoy = new Date();
-    const dia = hoy.getDay();
+    const hoy    = new Date();
+    const dia    = hoy.getDay();
     const nombres = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
     for (let i = 1; i <= 7; i++) {
         const d = (dia + i) % 7;
-        if (DIAS_PODCAST.includes(d)) {
-            return nombres[d];
-        }
+        if (DIAS_PODCAST.includes(d)) return nombres[d];
     }
     return 'lunes';
 }
 
+/**
+ * Reproduce un audio en un reproductor flotante.
+ */
 function reproducir(fileId) {
     const audioUrl = getDriveAudioUrl(fileId);
     let player = document.getElementById('reproductor-flotante');
     if (!player) {
         player = document.createElement('audio');
-        player.id = 'reproductor-flotante';
+        player.id       = 'reproductor-flotante';
         player.controls = true;
         player.style.cssText = 'position:fixed;bottom:10px;left:50%;transform:translateX(-50%);width:90%;max-width:600px;z-index:100;';
         document.body.appendChild(player);
@@ -244,22 +430,5 @@ function reproducir(fileId) {
     player.play();
 }
 
-function mostrarConfigApiKey() {
-    document.getElementById('config-api').style.display = 'block';
-    document.getElementById('contenido-hoy').innerHTML = `
-        <div class="estado-vacio">
-            <div class="icono">&#128273;</div>
-            <p>Configura la API key de Google Drive para acceder al contenido.</p>
-        </div>`;
-}
-
-function guardarApiKey() {
-    const input = document.getElementById('input-api-key');
-    const key = input.value.trim();
-    if (key.length > 10) {
-        localStorage.setItem('drive_api_key', key);
-        location.reload();
-    }
-}
-
+// Iniciar al cargar la página
 document.addEventListener('DOMContentLoaded', cargarContenidoDelDia);
