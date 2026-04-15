@@ -1,0 +1,362 @@
+{
+  "modulo": "ira",
+  "titulo": "Manual de Regulación de la Ira",
+  "descripcion": "Un conjunto de herramientas basadas en neurociencia, psicología cognitiva y prácticas de atención plena para la gestión constructiva de la rabia.",
+  "ejercicios": [
+    {
+      "id": "IRA_001",
+      "nombre": "Tiempo Fuera (Time-out) Emocional",
+      "tipo": "corporal",
+      "duracion_min": 20,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Identifica las señales de advertencia fisiológicas como palpitaciones, tensión muscular o calor en la cara.",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 2,
+          "instruccion": "Retírate físicamente de la situación o de la persona que activa la respuesta de lucha o huida.",
+          "duracion_seg": 300
+        },
+        {
+          "orden": 3,
+          "instruccion": "Permanece alejado durante al menos 20 minutos, tiempo necesario para que el cerebro recupere los niveles normales de oxígeno y la amígdala se calme.",
+          "duracion_seg": 900
+        }
+      ],
+      "indicaciones": "Usar cuando sientas que vas a perder el control o la comunicación deja de ser constructiva.",
+      "contraindicaciones": "No usar como castigo de silencio o para evitar responsabilidades permanentemente."
+    },
+    {
+      "id": "IRA_002",
+      "nombre": "El Termómetro de la Rabia",
+      "tipo": "reflexion",
+      "duracion_min": 15,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Identifica un disparador reciente (ej. insultos, alguien que rompe las reglas o sentirse atrapado).",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 2,
+          "instruccion": "Clasifica la intensidad de la emoción en una escala del 1 al 5, donde 1 es tranquilidad y 5 es furia explosiva.",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 3,
+          "instruccion": "Anota las pistas corporales específicas de cada nivel (ej. arrugar el entrecejo en nivel 2, ganas de golpear en nivel 4).",
+          "duracion_seg": 300
+        }
+      ],
+      "indicaciones": "Usar en momentos de calma para mejorar la autoconciencia de los disparadores.",
+      "contraindicaciones": "Evitar durante un ataque de ira aguda donde el juicio racional está anulado."
+    },
+    {
+      "id": "IRA_003",
+      "nombre": "Respiración Abdominal Antiestrés",
+      "tipo": "respiracion",
+      "duracion_min": 5,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Coloca una mano sobre el estómago, justo debajo de las costillas.",
+          "duracion_seg": 30
+        },
+        {
+          "orden": 2,
+          "instruccion": "Inhala lenta y profundamente por la nariz sintiendo cómo el estómago sube, mientras dices mentalmente 'dentro'.",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 3,
+          "instruccion": "Exhala suavemente por la boca frunciendo los labios mientras dices mentalmente 'fuera', bajando el estómago.",
+          "duracion_seg": 120
+        }
+      ],
+      "indicaciones": "Usar para desactivar la respuesta de adrenalina y bajar la frecuencia cardíaca.",
+      "contraindicaciones": "Si sientes mareos, vuelve a tu ritmo respiratorio habitual."
+    },
+    {
+      "id": "IRA_004",
+      "nombre": "Reestructuración de Pensamientos Hostiles",
+      "tipo": "cognitivo",
+      "duracion_min": 15,
+      "nivel": "intermedio",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Identifica un pensamiento distorsionado, como 'lo hizo a propósito' o 'no es justo'.",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 2,
+          "instruccion": "Cuestiona la validez del pensamiento buscando explicaciones alternativas (ej. 'quizás tuvo un mal día').",
+          "duracion_seg": 300
+        },
+        {
+          "orden": 3,
+          "instruccion": "Sustituye el pensamiento por una afirmación realista y asertiva que reduzca la hostilidad.",
+          "duracion_seg": 180
+        }
+      ],
+      "indicaciones": "Útil para romper el ciclo de rumiación negativa y sesgo de confirmación.",
+      "contraindicaciones": "No aplicable si existe una amenaza física real e inmediata."
+    },
+    {
+      "id": "IRA_005",
+      "nombre": "Comunicación Asertiva de la Ira",
+      "tipo": "reflexion",
+      "duracion_min": 10,
+      "nivel": "avanzado",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Espera a estar calmado y utiliza un tono de voz neutral, evitando el sarcasmo o los gritos.",
+          "duracion_seg": 180
+        },
+        {
+          "orden": 2,
+          "instruccion": "Utiliza la estructura de las tres frases: 'Estoy enojado', 'Estoy haciendo lo posible por manejarlo' y 'Necesito tu ayuda'.",
+          "duracion_seg": 180
+        },
+        {
+          "orden": 3,
+          "instruccion": "Expresa tu necesidad de forma positiva (pedir en lugar de exigir) y estate dispuesto a negociar.",
+          "duracion_seg": 240
+        }
+      ],
+      "indicaciones": "Usar para resolver conflictos en relaciones íntimas o laborales sin herir a los demás.",
+      "contraindicaciones": "No intentar con personas que estén en un estado de ira explosiva activa."
+    },
+    {
+      "id": "IRA_001",
+      "nombre": "Tiempo Fuera Estratégico",
+      "tipo": "cognitivo",
+      "duracion_min": 15,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Detecta señales tempranas de tensión en mandíbula o manos durante un conflicto.",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 2,
+          "instruccion": "Retírate físicamente de la situación o interacción que genera la sensación de injusticia.",
+          "duracion_seg": 300
+        },
+        {
+          "orden": 3,
+          "instruccion": "Valida internamente tu ira reconociendo qué valor personal sientes que ha sido vulnerado.",
+          "duracion_seg": 120
+        }
+      ],
+      "indicaciones": "Usar ante conflictos interpersonales o picos de rabia.",
+      "contraindicaciones": "No usar como método de evitación permanente de problemas."
+    },
+    {
+      "id": "IRA_002",
+      "nombre": "Identificación de Disparadores de Injusticia",
+      "tipo": "reflexion",
+      "duracion_min": 10,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Describe una situación reciente de conflicto o frustración.",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 2,
+          "instruccion": "Identifica si el disparador fue una sensación de injusticia o una demanda no cumplida.",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 3,
+          "instruccion": "Registra las sensaciones corporales asociadas, como tensión en las manos.",
+          "duracion_seg": 60
+        }
+      ],
+      "indicaciones": "Cuando sientas enfado recurrente sin claridad sobre su origen.",
+      "contraindicaciones": "En estados de desbordamiento emocional agudo."
+    },
+    {
+      "id": "IRA_003",
+      "nombre": "Reestructuración de la Exigencia Racional",
+      "tipo": "cognitivo",
+      "duracion_min": 12,
+      "nivel": "intermedio",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Identifica el pensamiento de 'exigencia' (el 'debería') que alimenta tu enfado.",
+          "duracion_seg": 180
+        },
+        {
+          "orden": 2,
+          "instruccion": "Analiza si esta exigencia es racional o si es una demanda absoluta sobre los demás.",
+          "duracion_seg": 180
+        },
+        {
+          "orden": 3,
+          "instruccion": "Reformula el pensamiento hacia una preferencia asertiva en lugar de una exigencia rígida.",
+          "duracion_seg": 180
+        }
+      ],
+      "indicaciones": "Para trabajar la ira crónica derivada de expectativas no cumplidas.",
+      "contraindicaciones": "Si existe una situación de peligro real que requiere acción inmediata."
+    },
+    {
+      "id": "IRA_004",
+      "nombre": "Entrenamiento en Comunicación Asertiva",
+      "tipo": "reflexion",
+      "duracion_min": 15,
+      "nivel": "intermedio",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Identifica la necesidad o el valor vulnerado detrás de tu rabia.",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 2,
+          "instruccion": "Ensaya mentalmente cómo expresar esa injusticia sin utilizar un tono agresivo.",
+          "duracion_seg": 180
+        },
+        {
+          "orden": 3,
+          "instruccion": "Comunica tu malestar enfocándote en la resolución del conflicto y el respeto mutuo.",
+          "duracion_seg": 300
+        }
+      ],
+      "indicaciones": "Para resolver conflictos interpersonales de manera constructiva.",
+      "contraindicaciones": "En situaciones de violencia física activa."
+    },
+    {
+      "id": "IRA_005",
+      "nombre": "Regulación Fisiológica de la Rabia",
+      "tipo": "corporal",
+      "duracion_min": 8,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Enfoca tu atención en la tensión acumulada en tu mandíbula.",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 2,
+          "instruccion": "Cierra y abre las manos conscientemente para liberar la tensión motora.",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 3,
+          "instruccion": "Realiza respiraciones profundas mientras relajas los músculos faciales.",
+          "duracion_seg": 180
+        }
+      ],
+      "indicaciones": "Al notar los primeros síntomas físicos de la frustración.",
+      "contraindicaciones": "Lesiones físicas previas en mandíbula o manos."
+    }
+  ],
+  "fichas_rapidas": [
+    {
+      "id": "IRA_F01",
+      "titulo": "Amígdala vs. Corteza Prefrontal",
+      "contenido": "La amígdala es tu alarma emocional que dispara la ira. La corteza prefrontal es el freno racional que evalúa consecuencias.",
+      "etiquetas": [
+        "neurociencia"
+      ]
+    },
+    {
+      "id": "IRA_F02",
+      "titulo": "La Regla de las 24 Horas",
+      "contenido": "No mantengas la ira en secreto más de un día. Exprésala asertivamente antes de que se convierta en un 'nudo' interno.",
+      "etiquetas": [
+        "comunicacion"
+      ]
+    },
+    {
+      "id": "IRA_F03",
+      "titulo": "Concepto de Hanger",
+      "contenido": "La falta de alimento provoca una caída de glucosa que dispara la irritabilidad. Mantener niveles de energía ayuda al autocontrol.",
+      "etiquetas": [
+        "fisiologia"
+      ]
+    },
+    {
+      "id": "IRA_F04",
+      "titulo": "La Técnica del Espejo",
+      "contenido": "Mírate al espejo cuando estés enojado; ver tu cara como una 'bomba a punto de estallar' te motivará a relajarte.",
+      "etiquetas": [
+        "autoconciencia"
+      ]
+    },
+    {
+      "id": "IRA_F05",
+      "titulo": "La Ira como Emoción Secundaria",
+      "contenido": "Detrás de la rabia suele haber un sentimiento primario de vulnerabilidad: miedo, dolor, decepción o impotencia.",
+      "etiquetas": [
+        "psicologia"
+      ]
+    },
+    {
+      "id": "IRA_F01",
+      "titulo": "La Ira como Señal de Valor",
+      "contenido": "La ira no es negativa por sí misma; es una señal de que un valor importante para ti ha sido vulnerado.",
+      "etiquetas": [
+        "validación",
+        "concepto"
+      ]
+    },
+    {
+      "id": "IRA_F02",
+      "titulo": "Técnica: Tiempo Fuera",
+      "contenido": "Consiste en alejarse de la situación de conflicto para enfriar la respuesta fisiológica y evitar la agresión.",
+      "etiquetas": [
+        "regulación",
+        "técnica"
+      ]
+    },
+    {
+      "id": "IRA_F03",
+      "titulo": "Exigencia Racional",
+      "contenido": "Cuestionar las demandas absolutas sobre cómo 'deberían' actuar los demás ayuda a reducir la frustración.",
+      "etiquetas": [
+        "cognitivo"
+      ]
+    },
+    {
+      "id": "IRA_F04",
+      "titulo": "Disparadores Físicos",
+      "contenido": "La tensión en la mandíbula y en las manos son indicadores clave de que la ira está escalando.",
+      "etiquetas": [
+        "identificación"
+      ]
+    },
+    {
+      "id": "IRA_F05",
+      "titulo": "Asertividad vs Agresividad",
+      "contenido": "La asertividad permite comunicar la injusticia percibida sin vulnerar los derechos de los demás.",
+      "etiquetas": [
+        "comunicación"
+      ]
+    }
+  ],
+  "recursos_audio": [],
+  "version": "2026-04-04",
+  "generado_por": "MOT-008",
+  "meta": {
+    "fuentesUsadas": 2,
+    "totalEjercicios": 10,
+    "totalFichas": 10,
+    "totalAudios": 0,
+    "generadoCon": "nlm_query_notebook",
+    "timestamp": "2026-04-04T22:29:42.324350"
+  }
+}

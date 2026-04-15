@@ -1,0 +1,190 @@
+{
+  "modulo": "logoterapia",
+  "titulo": "Manual de Práctica Logoterapéutica: En busca de Sentido",
+  "descripcion": "Conjunto de ejercicios basados en los principios de Viktor Frankl para el descubrimiento de sentido, la gestión de la ansiedad y el fortalecimiento de la responsabilidad personal ante el sufrimiento.",
+  "ejercicios": [
+    {
+      "id": "LOG_001",
+      "nombre": "Diario de Consciencia de Sentido (Noö-Awareness)",
+      "tipo": "escritura",
+      "duracion_min": 15,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Al iniciar el día, plantéate la pregunta: '¿Qué acto significativo puedo realizar hoy?'",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 2,
+          "instruccion": "Durante el día, mantente atento a pequeños momentos de significado como actos de bondad, creatividad o belleza natural.",
+          "duracion_seg": 0
+        },
+        {
+          "orden": 3,
+          "instruccion": "Antes de dormir, registra en tu diario 3 acciones significativas que realizaste y 3 experiencias de sentido que recibiste del mundo.",
+          "duracion_seg": 600
+        }
+      ],
+      "indicaciones": "Para combatir el vacío existencial, el tedio y fomentar el pensamiento orientado a metas.",
+      "contraindicaciones": "Ninguna reportada; útil para población general y pacientes con depresión."
+    },
+    {
+      "id": "LOG_002",
+      "nombre": "Práctica de Intención Paradójica",
+      "tipo": "cognitivo",
+      "duracion_min": 10,
+      "nivel": "intermedio",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Identifica un síntoma de ansiedad anticipatoria, como el miedo al insomnio o a temblar en público.",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 2,
+          "instruccion": "En lugar de luchar contra el síntoma, intenta desear que ocurra con humor. Por ejemplo: 'Voy a intentar mantenerme despierto lo más posible' o '¡Voy a temblar más fuerte que nunca!'.",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 3,
+          "instruccion": "Observa cómo el cambio de actitud hacia el miedo reduce la presión interna y rompe el ciclo de la ansiedad.",
+          "duracion_seg": 120
+        }
+      ],
+      "indicaciones": "Efectivo para fobias, obsesiones y ansiedades específicas.",
+      "contraindicaciones": "No usar en crisis de pánico agudas sin supervisión o en casos de riesgo físico real."
+    },
+    {
+      "id": "LOG_003",
+      "nombre": "Ejercicio de Derreflexión",
+      "tipo": "cognitivo",
+      "duracion_min": 10,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Cuando notes un exceso de auto-observación o preocupación por tus propios síntomas, detente.",
+          "duracion_seg": 30
+        },
+        {
+          "orden": 2,
+          "instruccion": "Dirige tu atención conscientemente hacia afuera: hacia una tarea externa, una actividad creativa o hacia otra persona.",
+          "duracion_seg": 300
+        },
+        {
+          "orden": 3,
+          "instruccion": "Pregúntate: '¿Qué me pide esta situación o esta persona de mí en este momento?' en lugar de '¿Cómo lo estoy haciendo?'.",
+          "duracion_seg": 120
+        }
+      ],
+      "indicaciones": "Útil para el sobrepensamiento, perfeccionismo, ansiedad social y ansiedad de ejecución sexual.",
+      "contraindicaciones": "No aplica cuando se requiere introspección necesaria para la toma de decisiones críticas."
+    },
+    {
+      "id": "LOG_004",
+      "nombre": "Reflexión sobre el Sufrimiento Inevitable",
+      "tipo": "reflexion",
+      "duracion_min": 20,
+      "nivel": "avanzado",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Frente a una situación dolorosa que no puede ser cambiada, reflexiona sobre tu capacidad de elegir tu actitud.",
+          "duracion_seg": 180
+        },
+        {
+          "orden": 2,
+          "instruccion": "Responde por escrito: '¿Puedo crecer a partir de esto?', '¿Cómo puede este dolor ayudarme a entender a otros?' y '¿Qué fortalezas estoy practicando aquí?'.",
+          "duracion_seg": 600
+        },
+        {
+          "orden": 3,
+          "instruccion": "Visualiza cómo puedes transformar este sufrimiento en un logro humano a través de la dignidad y el valor.",
+          "duracion_seg": 300
+        }
+      ],
+      "indicaciones": "Para situaciones de destino ineludible como duelo, enfermedades crónicas o adversidad extrema.",
+      "contraindicaciones": "No usar en sufrimientos evitables; el sufrimiento evitable debe combatirse con remedios oportunos, no aceptarse."
+    },
+    {
+      "id": "LOG_005",
+      "nombre": "Autodistanciamiento y el Imperativo Categórico",
+      "tipo": "reflexion",
+      "duracion_min": 15,
+      "nivel": "intermedio",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Identifica una elección difícil que debas tomar actualmente.",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 2,
+          "instruccion": "Aplica la máxima de Frankl: 'Obra como si vivieras por segunda vez y la primera lo hubieras hecho tan desacertadamente como estás a punto de hacerlo ahora'.",
+          "duracion_seg": 300
+        },
+        {
+          "orden": 3,
+          "instruccion": "Imagina que el presente ya es pasado y que tienes la oportunidad de enmendarlo. Elige la acción que refleje mayor responsabilidad.",
+          "duracion_seg": 300
+        }
+      ],
+      "indicaciones": "Para fomentar la responsabilidad personal y la toma de decisiones ética y con sentido.",
+      "contraindicaciones": "Ninguna; es una técnica de clarificación existencial."
+    }
+  ],
+  "fichas_rapidas": [
+    {
+      "id": "LOG_F01",
+      "titulo": "Logos",
+      "contenido": "Raíz griega que equivale a sentido, significado o propósito. La logoterapia es la terapia centrada en el sentido.",
+      "etiquetas": [
+        "fundamentos"
+      ]
+    },
+    {
+      "id": "LOG_F02",
+      "titulo": "Voluntad de Sentido",
+      "contenido": "Fuerza primaria del ser humano para descubrir el sentido único y específico de su vida, opuesta a la voluntad de placer (Freud) o de poder (Adler).",
+      "etiquetas": [
+        "motivacion"
+      ]
+    },
+    {
+      "id": "LOG_F03",
+      "titulo": "Vacío Existencial",
+      "contenido": "Estado de tedio, aburrimiento o falta de dirección que surge cuando se pierde el sentido de la vida; a menudo se enmascara con poder, dinero o placer.",
+      "etiquetas": [
+        "patologia"
+      ]
+    },
+    {
+      "id": "LOG_F04",
+      "titulo": "Tríada Trágica",
+      "contenido": "Componentes inevitables de la existencia humana: sufrimiento, culpa y muerte. La logoterapia enseña a encontrar sentido a pesar de ellos.",
+      "etiquetas": [
+        "existencia"
+      ]
+    },
+    {
+      "id": "LOG_F05",
+      "titulo": "Autotrascendencia",
+      "contenido": "La esencia del ser humano implica dirigirse hacia algo o alguien distinto de uno mismo, ya sea para realizar un valor o encontrar a otro ser.",
+      "etiquetas": [
+        "humanismo"
+      ]
+    }
+  ],
+  "recursos_audio": [],
+  "version": "2026-04-04",
+  "generado_por": "MOT-008",
+  "meta": {
+    "fuentesUsadas": 1,
+    "totalEjercicios": 5,
+    "totalFichas": 5,
+    "totalAudios": 0,
+    "generadoCon": "nlm_query_notebook",
+    "timestamp": "2026-04-04T22:28:29.885049"
+  }
+}

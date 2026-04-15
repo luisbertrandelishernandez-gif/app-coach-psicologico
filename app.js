@@ -302,6 +302,14 @@ async function cargarContenidoDelDia() {
     const contenedorHistorial = document.getElementById('historial');
 
     if (!isApiKeyConfigured()) {
+        // Intentar fallback local antes de pedir API key
+        const cuadernoLocal = obtenerCuadernoDelDia();
+        document.getElementById('modulo-nombre').textContent = cuadernoLocal.nombre;
+        document.getElementById('modulo-fecha').textContent  = formatearFecha(new Date().toISOString());
+        document.getElementById('modulo-ciclo').textContent  =
+            `Cuaderno ${cuadernoLocal.indice + 1} de ${cuadernoLocal.total}`;
+        const localOk = await cargarContenidoLocalCPVA(cuadernoLocal.nombre, contenedorHoy, contenedorHistorial);
+        if (localOk) return;
         mostrarConfigApiKey();
         return;
     }
@@ -320,6 +328,8 @@ async function cargarContenidoDelDia() {
         const archivos = await listFolderContents(FOLDER_PODCASTS);
 
         if (archivos.length === 0) {
+            const localOk = await cargarContenidoLocalCPVA(cuaderno.nombre, contenedorHoy, contenedorHistorial);
+            if (localOk) return;
             contenedorHoy.innerHTML = `
                 <div class="estado-vacio">
                     <div class="icono">&#128247;</div>
@@ -438,6 +448,98 @@ function reproducir(fileId) {
     }
     player.src = audioUrl;
     player.play();
+}
+
+/* ============================================================
+   FALLBACK: RENDERIZADO DE JSON LOCAL (MOT-007/MOT-008)
+   ============================================================ */
+
+// Mapeo de cuadernos a archivos JSON locales
+const CUADERNO_A_JSON = {
+    'CPVA_01 TREC': 'CPVA_trec.json',
+    'CPVA_03 Focusing': 'CPVA_focusing.json',
+    'CPVA_06 Ansiedad': 'CPVA_ansiedad.json',
+    'CPVA_11 Ira': 'CPVA_ira.json',
+    'CPVA_12 Soledad': 'CPVA_crisis.json',
+    'CPVA_SAT_02 ACT': 'CPVA_act.json',
+    'CPVA_SAT_04 Logoterapia': 'CPVA_logoterapia.json',
+    'CPVA_SAT_05 Somática': 'CPVA_somatica.json',
+    'CPVA_SAT_07 Apego': 'CPVA_apego.json',
+    'CPVA_SAT_08 TOC': 'CPVA_trec.json',
+    'Resiliencia': 'CPVA_crisis.json'
+};
+
+/**
+ * Intenta cargar contenido desde JSON local generado por MOT-008.
+ * @returns {Promise<boolean>} true si se renderizo contenido
+ */
+async function cargarContenidoLocalCPVA(cuadernoNombre, contenedorHoy, contenedorHistorial) {
+    const archivo = CUADERNO_A_JSON[cuadernoNombre];
+    if (!archivo) return false;
+
+    try {
+        const resp = await fetch(`data/${archivo}`);
+        if (!resp.ok) return false;
+        const data = await resp.json();
+        renderizarJsonCPVA(data, cuadernoNombre, contenedorHoy, contenedorHistorial);
+        return true;
+    } catch (err) {
+        console.log('Sin JSON local para', cuadernoNombre, err.message);
+        return false;
+    }
+}
+
+/**
+ * Renderiza el contenido de un JSON CPVA.
+ * Campos esperados: titulo, descripcion, ejercicios[], fichas_rapidas[]
+ */
+function renderizarJsonCPVA(data, cuadernoNombre, contenedorHoy, contenedorHistorial) {
+    let html = '';
+
+    html += `<span class="tipo-contenido tipo-reflexion">Contenido local</span>`;
+    html += `<h3>${data.titulo || cuadernoNombre}</h3>`;
+    if (data.descripcion) {
+        html += `<p class="visor-texto">${data.descripcion}</p>`;
+    }
+
+    // Ejercicios
+    if (data.ejercicios && data.ejercicios.length > 0) {
+        html += `<div class="seccion-contenido"><h3>Ejercicios (${data.ejercicios.length})</h3>`;
+        for (const ej of data.ejercicios) {
+            html += `
+                <div class="ejercicio-card">
+                    <h4>${ej.titulo || ej.nombre || 'Ejercicio'}</h4>
+                    <p class="visor-texto">${ej.descripcion || ej.instrucciones || ''}</p>`;
+            if (ej.pasos && ej.pasos.length > 0) {
+                html += '<ol>';
+                for (const paso of ej.pasos) {
+                    html += `<li>${typeof paso === 'string' ? paso : paso.instruccion || paso.texto || ''}</li>`;
+                }
+                html += '</ol>';
+            }
+            if (ej.duracion_minutos) {
+                html += `<small>Duracion: ${ej.duracion_minutos} min</small>`;
+            }
+            html += `</div>`;
+        }
+        html += `</div>`;
+    }
+
+    // Fichas rapidas
+    if (data.fichas_rapidas && data.fichas_rapidas.length > 0) {
+        html += `<div class="seccion-contenido"><h3>Fichas rapidas (${data.fichas_rapidas.length})</h3>`;
+        for (const ficha of data.fichas_rapidas) {
+            html += `
+                <div class="ficha-card">
+                    <h4>${ficha.titulo || ficha.nombre || 'Ficha'}</h4>
+                    <p class="visor-texto">${ficha.contenido || ficha.descripcion || ficha.texto || ''}</p>
+                </div>`;
+        }
+        html += `</div>`;
+    }
+
+    contenedorHoy.innerHTML = html;
+    contenedorHistorial.innerHTML = '<p class="estado-vacio">Contenido cargado desde datos locales (MOT-008)</p>';
 }
 
 // Iniciar al cargar la página

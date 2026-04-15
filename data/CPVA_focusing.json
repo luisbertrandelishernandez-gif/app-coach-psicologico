@@ -1,0 +1,430 @@
+{
+  "modulo": "focusing",
+  "titulo": "Entrenamiento en Focusing Experiencial de Gendlin",
+  "descripcion": "Ejercicios basados en el método original de Eugene Gendlin y desarrollos de Ann Weiser Cornell para el contacto con la sabiduría corporal y la resolución de bloqueos a través de la sensación sentida.",
+  "ejercicios": [
+    {
+      "id": "FOC_001",
+      "nombre": "El Proceso Clásico de los Seis Pasos",
+      "tipo": "guiado",
+      "duracion_min": 15,
+      "nivel": "intermedio",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Despejar un espacio: Relaja el cuerpo, lleva la atención al pecho o estómago y haz un inventario de preocupaciones actuales sin entrar en ellas, colocándolas a una distancia cómoda.",
+          "duracion_seg": 180
+        },
+        {
+          "orden": 2,
+          "instruccion": "Formar la sensación sentida: Elige un problema y permite que se forme una sensación corporal global y borrosa sobre 'todo ese asunto'.",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 3,
+          "instruccion": "Encontrar un asidero: Busca una palabra, frase o imagen (como 'tenso', 'pesado' o 'un nudo') que capte exactamente la cualidad de la sensación.",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 4,
+          "instruccion": "Resonar: Alterna entre la palabra y la sensación corporal para comprobar si encajan; si es correcto, sentirás un pequeño alivio o señal física de 'sí'.",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 5,
+          "instruccion": "Preguntar: Interroga a la sensación amablemente: '¿Qué es lo que hace que esto se sienta tan [asidero]?' o '¿Qué necesita este lugar para estar mejor?'.",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 6,
+          "instruccion": "Recibir: Acoge con amabilidad cualquier cambio o comprensión que surja, protegiéndolo de críticas internas y agradeciendo a tu cuerpo.",
+          "duracion_seg": 60
+        }
+      ],
+      "indicaciones": "Para trabajar problemas específicos, bloqueos emocionales o falta de claridad en decisiones.",
+      "contraindicaciones": "En estados de crisis aguda donde la persona no puede mantener una distancia mínima con la emoción."
+    },
+    {
+      "id": "FOC_002",
+      "nombre": "Despejar un Espacio (Técnica del Inventario)",
+      "tipo": "respiracion",
+      "duracion_min": 8,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Cierra los ojos y siente el contacto de tu cuerpo con el asiento, permitiendo que tu atención baje al centro (garganta, pecho, vientre).",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 2,
+          "instruccion": "Pregunta internamente: '¿Cómo va mi vida? ¿Qué es lo que me impide sentirme totalmente bien ahora mismo?'.",
+          "duracion_seg": 90
+        },
+        {
+          "orden": 3,
+          "instruccion": "Identifica cada asunto que surja ('esto del trabajo', 'aquello con mi hermano') y visualiza sacarlo fuera de tu cuerpo, poniéndolo a una distancia donde puedas verlo sin que te abrume.",
+          "duracion_seg": 180
+        },
+        {
+          "orden": 4,
+          "instruccion": "Nota el espacio que queda libre en tu centro y disfruta de la sensación de alivio y libertad, aunque sea por unos instantes.",
+          "duracion_seg": 120
+        }
+      ],
+      "indicaciones": "Ideal para el inicio del día o antes de una sesión de terapia para reducir el ruido mental.",
+      "contraindicaciones": "Si el intento de distanciar los problemas genera ansiedad por evitación."
+    },
+    {
+      "id": "FOC_003",
+      "nombre": "Focusing desde la Cualidad Positiva",
+      "tipo": "corporal",
+      "duracion_min": 10,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Haz un inventario de cualidades positivas que necesites o desees (serenidad, alegría, paciencia) y deja que tu cuerpo elija una.",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 2,
+          "instruccion": "Afirma esa cualidad en tu cuerpo y pregúntate: '¿Qué me impide experimentar esto con plenitud ahora?'. Aparta los obstáculos amablemente.",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 3,
+          "instruccion": "Permite que se forme la huella corporal de esa cualidad y respírala para que se expanda por todo el organismo.",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 4,
+          "instruccion": "Pregunta a la sensación: '¿Qué es lo mejor de todo esto?' y recibe la respuesta corporal sin analizarla.",
+          "duracion_seg": 120
+        }
+      ],
+      "indicaciones": "Para fortalecer recursos internos, mejorar la autoestima y conectar con el bienestar corporal.",
+      "contraindicaciones": "No forzar si el cuerpo insiste en atender primero un dolor o preocupación negativa."
+    },
+    {
+      "id": "FOC_004",
+      "nombre": "Técnica de Lenguaje de Presencia (Yo-en-Presencia)",
+      "tipo": "cognitivo",
+      "duracion_min": 5,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Identifica una emoción incómoda que estés sintiendo (ej. 'Estoy muy frustrado').",
+          "duracion_seg": 30
+        },
+        {
+          "orden": 2,
+          "instruccion": "Cambia el lenguaje de la frase a: 'Algo en mí se siente muy frustrado'. Nota la diferencia en tu cuerpo.",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 3,
+          "instruccion": "Evoluciona la frase a: 'Estoy percibiendo que algo en mí se siente frustrado' y reconoce ese lugar con una curiosidad amable.",
+          "duracion_seg": 90
+        },
+        {
+          "orden": 4,
+          "instruccion": "Saluda a esa parte ('Hola, sé que estás ahí') y mira a ver si está bien simplemente sentarse a su lado sin intentar cambiarla.",
+          "duracion_seg": 120
+        }
+      ],
+      "indicaciones": "Para desidentificarse de emociones abrumadoras y cultivar la autocompasión.",
+      "contraindicaciones": "Ninguna conocida."
+    },
+    {
+      "id": "FOC_005",
+      "nombre": "Escucha Empática Corporal (Interpersonal)",
+      "tipo": "guiado",
+      "duracion_min": 12,
+      "nivel": "avanzado",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Disponte para atender: Respira profundo para generar un espacio neutral y distanciarte de tus propias sensaciones inmediatas.",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 2,
+          "instruccion": "Atender empáticamente: Escucha al otro permitiendo que sus palabras resuenen en tu propio pecho y vientre, no solo en tu cabeza.",
+          "duracion_seg": 300
+        },
+        {
+          "orden": 3,
+          "instruccion": "Formar el felt-sense del otro: Deja que en tu cuerpo se forme una sensación sobre lo que el otro vive, captando su significado subjetivo.",
+          "duracion_seg": 180
+        },
+        {
+          "orden": 4,
+          "instruccion": "Intervención de resonancia: Refleja al otro lo que has captado, verificando si tu 'sentir corporal' de su problema le ayuda a avanzar.",
+          "duracion_seg": 180
+        }
+      ],
+      "indicaciones": "Para terapeutas, acompañantes o para mejorar la profundidad en la comunicación de pareja.",
+      "contraindicaciones": "Cuando el oyente está emocionalmente desbordado y no puede separar su experiencia de la del otro."
+    },
+    {
+      "id": "FOC_001",
+      "nombre": "El Proceso Clásico de los 6 Pasos",
+      "tipo": "guiado",
+      "duracion_min": 20,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Despejar un espacio: Relaja el cuerpo y presta atención a la experiencia interna preguntando ¿Cómo va mi vida? Deja fluir las preocupaciones manteniendo distancia emocional.",
+          "duracion_seg": 180
+        },
+        {
+          "orden": 2,
+          "instruccion": "Identificar la sensación sentida: Selecciona un problema y nota el sentimiento global, todavía indeterminado, que surge de las sensaciones individuales.",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 3,
+          "instruccion": "Encontrar un asidero: Busca una palabra, frase o imagen que califique de forma precisa la cualidad de esa sensación global.",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 4,
+          "instruccion": "Resonar: Alterna la atención entre el asidero y la sensación para comprobar si encajan perfectamente; permite que cambien si es necesario.",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 5,
+          "instruccion": "Hacer preguntas: Pregunta ¿Qué es lo que otorga esta cualidad a mi problema? y espera a notar un cambio físico o sensación de liberación.",
+          "duracion_seg": 180
+        },
+        {
+          "orden": 6,
+          "instruccion": "Recibir: Mantén la receptividad ante las nuevas sensaciones, agradécelas y protégelas de voces críticas.",
+          "duracion_seg": 60
+        }
+      ],
+      "indicaciones": "Usar para abordar problemas vitales, reducir síntomas psicológicos y fomentar el desarrollo personal.",
+      "contraindicaciones": "No forzar el proceso si hay una resistencia emocional extrema sin acompañamiento profesional."
+    },
+    {
+      "id": "FOC_002",
+      "nombre": "Despejar un Espacio Imaginativo",
+      "tipo": "respiracion",
+      "duracion_min": 10,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Llevar la atención hacia el centro del cuerpo (pecho o abdomen) para adentrarse en las sensaciones.",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 2,
+          "instruccion": "Hacer un inventario de los asuntos o tensiones que invaden el cuerpo en el aquí y ahora.",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 3,
+          "instruccion": "Crear un espacio simbólico para cada problema, sacándolos fuera con la ayuda de la respiración para encontrar la distancia correcta.",
+          "duracion_seg": 180
+        },
+        {
+          "orden": 4,
+          "instruccion": "Conectar con el espacio liberado sintiendo 'yo no soy mis problemas' y quedarse en esa novedad.",
+          "duracion_seg": 60
+        }
+      ],
+      "indicaciones": "Útil para reducir el estrés inmediato y prepararse para una sesión de introspección profunda.",
+      "contraindicaciones": "Evitar si el usuario se siente disociado de su realidad física."
+    },
+    {
+      "id": "FOC_003",
+      "nombre": "Búsqueda del Asidero Corporal (Simbolización)",
+      "tipo": "corporal",
+      "duracion_min": 12,
+      "nivel": "intermedio",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Enfocarse en un asunto específico y permitir que se forme una sensación fisiológica y sensorial global (felt sense).",
+          "duracion_seg": 180
+        },
+        {
+          "orden": 2,
+          "instruccion": "Explorar tres formas de expresión: buscar una palabra/frase, una imagen visual o un gesto/movimiento corporal.",
+          "duracion_seg": 180
+        },
+        {
+          "orden": 3,
+          "instruccion": "Esperar el 'pequeño cambio corporal': un ligero alivio físico que indica que el asidero es acertado.",
+          "duracion_seg": 120
+        }
+      ],
+      "indicaciones": "Cuando la persona tiene dificultades para nombrar lo que siente o se siente bloqueada mentalmente.",
+      "contraindicaciones": "Si la persona tiende a la rumiación intelectual excesiva que bloquea el sentir."
+    },
+    {
+      "id": "FOC_004",
+      "nombre": "Técnica de Interrogación al Cuerpo",
+      "tipo": "reflexion",
+      "duracion_min": 15,
+      "nivel": "avanzado",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Establecer contacto con la sensación sentida y el asidero ya identificado.",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 2,
+          "instruccion": "Lanzar preguntas de bloqueo como ¿Qué me impide avanzar? o ¿Qué se interpone?, sin responder mentalmente.",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 3,
+          "instruccion": "Lanzar preguntas de avance como ¿A qué me invita esto? o ¿Qué pasos habría que dar? y esperar la respuesta del cuerpo.",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 4,
+          "instruccion": "Notar si aparece una respuesta 'nueva y diferente' que no sea un pensamiento ya sabido.",
+          "duracion_seg": 180
+        }
+      ],
+      "indicaciones": "Para profundizar en problemas recurrentes o buscar soluciones creativas a conflictos internos.",
+      "contraindicaciones": "No usar si hay fatiga cognitiva severa."
+    },
+    {
+      "id": "FOC_005",
+      "nombre": "Respiración Neurodinámica y Movimiento",
+      "tipo": "respiracion",
+      "duracion_min": 10,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Adoptar una actitud de 'compañía amable' hacia cualquier sensación que aparezca en el pecho o estómago.",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 2,
+          "instruccion": "Utilizar la respiración para aportar movimiento a la zona donde se siente la tensión o incomodidad.",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 3,
+          "instruccion": "Revisar cómo la parte del cuerpo se mueve en conjunto con la respiración, dejando que esta sea el punto focal.",
+          "duracion_seg": 120
+        }
+      ],
+      "indicaciones": "Para personas con baja cercanía interpersonal que necesitan un inicio suave con su corporalidad.",
+      "contraindicaciones": "Problemas respiratorios agudos."
+    }
+  ],
+  "fichas_rapidas": [
+    {
+      "id": "FOC_F01",
+      "titulo": "Sensación Sentida (Felt Sense)",
+      "contenido": "Es una sensación corporal global, inicialmente borrosa y vaga, que se refiere a la totalidad de un problema o situación. No es una emoción común (tristeza, rabia), sino un significado implícito sentido físicamente en el cuerpo.",
+      "etiquetas": [
+        "concepto",
+        "gendlin"
+      ]
+    },
+    {
+      "id": "FOC_F02",
+      "titulo": "Cambio Sentido (Felt Shift)",
+      "contenido": "Es un movimiento físico real en el cuerpo (un alivio, un suspiro, una relajación de la tensión) que ocurre cuando una sensación sentida es simbolizada o comprendida correctamente. Indica que el proceso vital ha avanzado.",
+      "etiquetas": [
+        "cambio",
+        "proceso"
+      ]
+    },
+    {
+      "id": "FOC_F03",
+      "titulo": "El Asidero (Handle)",
+      "contenido": "Es la palabra, frase o imagen que captura la cualidad exacta de una sensación sentida. Cuando el asidero es el correcto, se produce una resonancia o 'ajuste' que el cuerpo confirma con un pequeño alivio.",
+      "etiquetas": [
+        "tecnica",
+        "simbolizacion"
+      ]
+    },
+    {
+      "id": "FOC_F04",
+      "titulo": "Yo-en-Presencia",
+      "contenido": "Estado de conciencia desde el cual podemos observar nuestros sentimientos sin fusionarnos con ellos. Se caracteriza por la curiosidad amable, la compasión y la capacidad de estar 'con' lo que sentimos.",
+      "etiquetas": [
+        "presencia",
+        "cornell"
+      ]
+    },
+    {
+      "id": "FOC_F05",
+      "titulo": "El Implicar (The Implicit)",
+      "contenido": "Concepto filosófico de Gendlin que sugiere que nuestro cuerpo ya 'sabe' el siguiente paso de crecimiento. El síntoma o problema implica ya en sí mismo su propia resolución, la cual espera a ser 'llevada adelante' mediante el enfoque.",
+      "etiquetas": [
+        "filosofia",
+        "gendlin"
+      ]
+    },
+    {
+      "id": "FOC_F01",
+      "titulo": "La Sensación Sentida (Felt Sense)",
+      "contenido": "Es una sensación corporal global, fisiológica y sensorial, que contiene un significado implícito aún no abierto. Es pre-verbal y suele ubicarse entre el pecho y el abdomen.",
+      "etiquetas": [
+        "concepto",
+        "base"
+      ]
+    },
+    {
+      "id": "FOC_F02",
+      "titulo": "El Asidero (Handle)",
+      "contenido": "Es el símbolo (palabra, imagen o gesto) que califica de forma precisa la sensación sentida. El ajuste correcto se reconoce por un pequeño cambio o alivio corporal.",
+      "etiquetas": [
+        "tecnica",
+        "simbolizacion"
+      ]
+    },
+    {
+      "id": "FOC_F03",
+      "titulo": "Resonancia",
+      "contenido": "Consiste en el ir y venir entre el símbolo y la sensación para comprobar su ajuste. La respiración es la mejor ayuda para profundizar en este despliegue de significado.",
+      "etiquetas": [
+        "proceso",
+        "ajuste"
+      ]
+    },
+    {
+      "id": "FOC_F04",
+      "titulo": "Despejar un Espacio",
+      "contenido": "Paso introductorio para preparar el cuerpo. Implica relajar, hacer inventario de asuntos y encontrar la distancia correcta con los problemas para no identificarse con ellos.",
+      "etiquetas": [
+        "preparacion",
+        "distancia"
+      ]
+    },
+    {
+      "id": "FOC_F05",
+      "titulo": "Recibir y Proteger",
+      "contenido": "Fase final donde se agradece el proceso y se protege lo surgido de las críticas internas que intentan minimizar los pequeños logros o cambios experimentados.",
+      "etiquetas": [
+        "cierre",
+        "autocompasion"
+      ]
+    }
+  ],
+  "recursos_audio": [],
+  "version": "2026-04-04",
+  "generado_por": "MOT-008",
+  "meta": {
+    "fuentesUsadas": 2,
+    "totalEjercicios": 10,
+    "totalFichas": 10,
+    "totalAudios": 0,
+    "generadoCon": "nlm_query_notebook",
+    "timestamp": "2026-04-04T22:21:42.977308"
+  }
+}

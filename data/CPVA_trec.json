@@ -1,0 +1,409 @@
+{
+  "modulo": "trec",
+  "titulo": "Manual de Transformación Racional Emotiva",
+  "descripcion": "Ejercicios basados en la Terapia Racional Emotiva Conductual de Albert Ellis para transformar creencias irracionales en filosofías de vida eficaces.",
+  "ejercicios": [
+    {
+      "id": "TRC_001",
+      "nombre": "Auto-registro ABCDE",
+      "tipo": "escritura",
+      "duracion_min": 15,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Identifica el Acontecimiento Activador (A): Describe el hecho objetivo o la adversidad que percibes como causa de tu malestar.",
+          "duracion_seg": 180
+        },
+        {
+          "orden": 2,
+          "instruccion": "Identifica las Consecuencias (C): Anota tus respuestas emocionales (ansiedad, rabia) y conductuales (evitación, autosabotaje).",
+          "duracion_seg": 180
+        },
+        {
+          "orden": 3,
+          "instruccion": "Detecta las Creencias (B): Identifica los pensamientos irracionales, especialmente exigencias absolutistas como 'debo' o 'tengo que'.",
+          "duracion_seg": 300
+        },
+        {
+          "orden": 4,
+          "instruccion": "Inicia el Debate (D): Cuestiona la evidencia lógica y empírica de esas creencias. ¿Dónde está escrito que 'debe' ser así?",
+          "duracion_seg": 300
+        },
+        {
+          "orden": 5,
+          "instruccion": "Genera el Nuevo Efecto (E): Formula una nueva filosofía basada en preferencias racionales (ej. 'Me gustaría, pero no necesito').",
+          "duracion_seg": 180
+        }
+      ],
+      "indicaciones": "Usar cuando experimentes malestar emocional intenso o conductas que frustren tus objetivos.",
+      "contraindicaciones": "No usar durante una crisis psicótica aguda o en situaciones de peligro físico real donde se requiera acción inmediata."
+    },
+    {
+      "id": "TRC_002",
+      "nombre": "Técnica DIBS (Disputa de Creencias)",
+      "tipo": "cognitivo",
+      "duracion_min": 10,
+      "nivel": "intermedio",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Escribe una creencia irracional específica que desees discutir (ej. 'Tengo que ser aprobado por todos').",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 2,
+          "instruccion": "Pregúntate: ¿Puedo demostrar que esta creencia es cierta? ¿Qué evidencia existe de su falsedad?",
+          "duracion_seg": 240
+        },
+        {
+          "orden": 3,
+          "instruccion": "Responde: ¿Qué es lo peor que podría pasar si no consigo lo que 'debo' conseguir?",
+          "duracion_seg": 180
+        },
+        {
+          "orden": 4,
+          "instruccion": "Formular una respuesta racional basada en los hechos y la probabilidad, no en la certeza absoluta.",
+          "duracion_seg": 180
+        }
+      ],
+      "indicaciones": "Eficaz para cambiar ideas con las que saboteas tus objetivos personales.",
+      "contraindicaciones": "Cuando la persona presente una deficiencia cognitiva grave que impida el razonamiento lógico."
+    },
+    {
+      "id": "TRC_003",
+      "nombre": "Imaginación Racional Emotiva (IRE)",
+      "tipo": "guiado",
+      "duracion_min": 10,
+      "nivel": "intermedio",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Cierra los ojos e imagina vívidamente la peor adversidad que temes (A). Siente la emoción disfuncional (C1).",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 2,
+          "instruccion": "Sin cambiar la escena imaginada, esfuérzate por cambiar tu sentimiento (C1) por uno saludable como decepción o pesar (C2).",
+          "duracion_seg": 300
+        },
+        {
+          "orden": 3,
+          "instruccion": "Identifica qué cambio de pensamiento en B permitió el cambio de sentimiento. Repite el proceso durante 30 días.",
+          "duracion_seg": 180
+        }
+      ],
+      "indicaciones": "Para entrenar la resiliencia emocional ante eventos futuros temidos.",
+      "contraindicaciones": "No usar si el paciente tiene dificultades para distinguir entre fantasía y realidad."
+    },
+    {
+      "id": "TRC_004",
+      "nombre": "Ataque a la Vergüenza",
+      "tipo": "corporal",
+      "duracion_min": 20,
+      "nivel": "avanzado",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Selecciona una acción que consideres ridícula o vergonzosa pero que sea inofensiva (ej. cantar en voz alta en la calle).",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 2,
+          "instruccion": "Realiza la acción deliberadamente mientras te repites: 'Puedo actuar de forma estúpida y eso no me convierte en un estúpido'.",
+          "duracion_seg": 600
+        },
+        {
+          "orden": 3,
+          "instruccion": "Observa la reacción real de los demás y comprueba que no es 'terrible' ni el fin del mundo.",
+          "duracion_seg": 480
+        }
+      ],
+      "indicaciones": "Para personas con alta necesidad de aprobación o fobia social.",
+      "contraindicaciones": "No realizar actos ilegales, peligrosos o que infrinjan los derechos de los demás."
+    },
+    {
+      "id": "TRC_005",
+      "nombre": "Referenciación de Coste-Beneficio",
+      "tipo": "reflexion",
+      "duracion_min": 15,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Elige un hábito autoderrotista (fumar, procrastinar). Haz una lista de sus desventajas reales a largo plazo.",
+          "duracion_seg": 300
+        },
+        {
+          "orden": 2,
+          "instruccion": "Haz una lista de las ventajas reales de abandonar dicho hábito.",
+          "duracion_seg": 300
+        },
+        {
+          "orden": 3,
+          "instruccion": "Lee y piensa sobre esta lista varias veces al día, especialmente cuando sientas el impulso de recaer.",
+          "duracion_seg": 300
+        }
+      ],
+      "indicaciones": "Especialmente útil en conductas adictivas y baja tolerancia a la frustración.",
+      "contraindicaciones": "Ninguna conocida."
+    },
+    {
+      "id": "TRC_001",
+      "nombre": "Autorregistro ABCDEF Completo",
+      "tipo": "escritura",
+      "duracion_min": 15,
+      "level": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Identifica el Acontecimiento Activador (A): Describe brevemente el hecho objetivo, interno o externo, que desencadenó el malestar.",
+          "duracion_seg": 180
+        },
+        {
+          "orden": 2,
+          "instruccion": "Detecta las Creencias (B): Anota los pensamientos irracionales, exigencias absolutistas ('debo', 'tengo que') o catastrofismo.",
+          "duracion_seg": 240
+        },
+        {
+          "orden": 3,
+          "instruccion": "Registra las Consecuencias (C): Describe la emoción insana (ansiedad, depresión, ira) y la conducta disfuncional resultante.",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 4,
+          "instruccion": "Realiza el Debate (D): Cuestiona la validez de B mediante argumentos empíricos (¿evidencia?), lógicos (¿tiene sentido?) y pragmáticos (¿utilidad?).",
+          "duracion_seg": 300
+        },
+        {
+          "orden": 5,
+          "instruccion": "Genera una Nueva Filosofía Efectiva (E): Sustituye la exigencia por una preferencia flexible y realista.",
+          "duracion_seg": 180
+        },
+        {
+          "orden": 6,
+          "instruccion": "Evalúa el Efecto (F): Nota el cambio hacia una emoción negativa sana (tristeza, preocupación, molestia) y conductas constructivas.",
+          "duracion_seg": 60
+        }
+      ],
+      "indicaciones": "Usar ante situaciones que generen perturbación emocional intensa o conductas auto-saboteadoras.",
+      "contraindicaciones": "No usar si la intensidad emocional impide el razonamiento lógico mínimo; en ese caso, usar primero distracción cognitiva."
+    },
+    {
+      "id": "TRC_002",
+      "nombre": "Imaginación Racional Emotiva (IRE)",
+      "tipo": "guiado",
+      "duracion_min": 10,
+      "level": "intermedio",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Cierra los ojos e imagínate vívidamente una de las peores cosas que podrían sucederte (ej. un fracaso o rechazo importante).",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 2,
+          "instruccion": "Permítete sentir la emoción negativa perturbadora (ansiedad o pánico) con toda su intensidad.",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 3,
+          "instruccion": "Cambia activamente esa emoción por una saludable (como decepción o frustración) modificando tu pensamiento interno.",
+          "duracion_seg": 180
+        },
+        {
+          "orden": 4,
+          "instruccion": "Identifica qué pensamientos específicos te ayudaron a realizar el cambio emocional y anótalos.",
+          "duracion_seg": 120
+        }
+      ],
+      "indicaciones": "Eficaz para entrenar el cambio cualitativo de emociones insanas a sanas antes de enfrentar situaciones reales.",
+      "contraindicaciones": "Evitar en pacientes con dificultad para distinguir fantasía de realidad o tendencias disociativas."
+    },
+    {
+      "id": "TRC_003",
+      "nombre": "Disputa Socrática de Exigencias",
+      "tipo": "reflexion",
+      "duracion_min": 12,
+      "level": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Localiza un pensamiento con la estructura 'yo debo', 'él debe' o 'el mundo tiene que'.",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 2,
+          "instruccion": "Aplica el Debate Empírico: Pregúntate '¿Dónde está la evidencia de que esto DEBA ser así?' y busca pruebas en la realidad.",
+          "duracion_seg": 240
+        },
+        {
+          "orden": 3,
+          "instruccion": "Aplica el Debate Lógico: Pregúntate '¿Del hecho de que yo desee esto, se deduce lógicamente que tiene que ocurrir?'.",
+          "duracion_seg": 240
+        },
+        {
+          "orden": 4,
+          "instruccion": "Aplica el Debate Pragmático: Pregúntate '¿De qué me sirve mantener esta exigencia a largo plazo? ¿Me ayuda a ser feliz?'.",
+          "duracion_seg": 120
+        }
+      ],
+      "indicaciones": "Útil para desmontar la rigidez mental y el perfeccionismo.",
+      "contraindicaciones": "No recomendado cuando el sujeto está en medio de una crisis de pánico activa."
+    },
+    {
+      "id": "TRC_004",
+      "nombre": "Inversión de Rol Racional",
+      "tipo": "cognitivo",
+      "duracion_min": 15,
+      "level": "avanzado",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Imagina que eres el terapeuta y tienes un paciente que sostiene tus mismas creencias irracionales.",
+          "duracion_seg": 180
+        },
+        {
+          "orden": 2,
+          "instruccion": "Desarrolla una serie de argumentos lógicos y enérgicos para persuadir a ese 'paciente' de que sus ideas son falsas y dañinas.",
+          "duracion_seg": 420
+        },
+        {
+          "orden": 3,
+          "instruccion": "Formula en voz alta o por escrito la nueva creencia racional que le sugerirías adoptar para que sea más feliz.",
+          "duracion_seg": 300
+        }
+      ],
+      "indicaciones": "Usar cuando ya se tiene habilidad para debatir y se necesita fortalecer la convicción en las nuevas ideas.",
+      "contraindicaciones": "Cuando el paciente aún no comprende la diferencia entre pensamiento racional e irracional."
+    },
+    {
+      "id": "TRC_005",
+      "nombre": "Plan de 5 minutos contra la Procrastinación",
+      "tipo": "cognitivo",
+      "duracion_min": 8,
+      "level": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Identifica una tarea que estás postergando por Baja Tolerancia a la Frustración (BTF).",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 2,
+          "instruccion": "Identifica el pensamiento de 'no puedo soportarlo' o 'es demasiado difícil' y debátelo.",
+          "duracion_seg": 180
+        },
+        {
+          "orden": 3,
+          "instruccion": "Comprométete a trabajar en la tarea solo durante 5 minutos, aceptando la incomodidad sin exigirte terminarla.",
+          "duracion_seg": 300
+        }
+      ],
+      "indicaciones": "Eficaz para romper la inercia de la evitación y aumentar la tolerancia a la frustración.",
+      "contraindicaciones": "No aplicable a tareas que requieren seguridad física extrema si hay distracción."
+    }
+  ],
+  "fichas_rapidas": [
+    {
+      "id": "TRC_F01",
+      "titulo": "El Corazón de la TREC: Modelo ABC",
+      "contenido": "A (Activador): El evento. B (Creencias): Tu interpretación. C (Consecuencias): Cómo te sientes y actúas. No son los hechos los que te alteran, sino lo que te dices sobre ellos.",
+      "etiquetas": [
+        "concepto",
+        "basico"
+      ]
+    },
+    {
+      "id": "TRC_F02",
+      "titulo": "Terribilitis y Necesititis",
+      "contenido": "Terribilitis: Calificar un evento negativo como 'terrible' o 'insoportable'. Necesititis: Transformar deseos en necesidades absolutas ('necesito que me amen').",
+      "etiquetas": [
+        "distorsion",
+        "vocabulario"
+      ]
+    },
+    {
+      "id": "TRC_F03",
+      "titulo": "Autoaceptación Incondicional (USA)",
+      "contenido": "Aceptarte como un ser humano falible simplemente por estar vivo. Eres demasiado complejo para ser calificado globalmente como 'bueno' o 'malo'.",
+      "etiquetas": [
+        "filosofia",
+        "bienestar"
+      ]
+    },
+    {
+      "id": "TRC_F04",
+      "titulo": "Baja Tolerancia a la Frustración (BTF)",
+      "contenido": "La creencia irracional de que la vida DEBE ser fácil y que NO PUEDES SOPORTAR la incomodidad. Superarla es la clave para la autodisciplina.",
+      "etiquetas": [
+        "obstaculo",
+        "resiliencia"
+      ]
+    },
+    {
+      "id": "TRC_F05",
+      "titulo": "Tres Debes Absolutistas",
+      "contenido": "1. Yo debo actuar bien. 2. Tú debes tratarme bien. 3. El mundo debe ser fácil. Estas exigencias rinden el 90% de los trastornos emocionales.",
+      "etiquetas": [
+        "creencia-irracional",
+        "resumen"
+      ]
+    },
+    {
+      "id": "TRC_F01",
+      "titulo": "El Esquema ABC",
+      "contenido": "A (Activating Event): El hecho. B (Beliefs): Interpretación. C (Consequences): Emociones y conductas. No es A lo que causa C, sino B.",
+      "etiquetas": [
+        "modelo",
+        "abc"
+      ]
+    },
+    {
+      "id": "TRC_F02",
+      "titulo": "Las 4 Formas de Pensamiento Irracional",
+      "contenido": "1. Demandas/Exigencias ('debo'). 2. Catastrofismo ('es horrible'). 3. Baja Tolerancia a la Frustración ('no lo soporto'). 4. Condenación global ('soy inútil').",
+      "etiquetas": [
+        "creencias",
+        "conceptos"
+      ]
+    },
+    {
+      "id": "TRC_F03",
+      "titulo": "Emociones Sanas vs. Insanas",
+      "contenido": "Insana: Ansiedad, Depresión, Ira, Culpa. Sana: Preocupación, Tristeza, Enfado, Arrepentimiento. El objetivo es el cambio cualitativo.",
+      "etiquetas": [
+        "emociones"
+      ]
+    },
+    {
+      "id": "TRC_F04",
+      "titulo": "Insight Racional-Emotivo",
+      "contenido": "Responsabilidad emocional: Somos responsables de lo que sentimos por nuestra forma de pensar. El cambio requiere trabajo constante en el presente.",
+      "etiquetas": [
+        "insight",
+        "cambio"
+      ]
+    },
+    {
+      "id": "TRC_F05",
+      "titulo": "Autoaceptación Incondicional (AAI)",
+      "contenido": "Aceptarse como ser humano falible, complejo y en constante cambio. No evaluarse globalmente por conductas o logros específicos.",
+      "etiquetas": [
+        "autoaceptacion",
+        "filosofia"
+      ]
+    }
+  ],
+  "recursos_audio": [],
+  "version": "2026-04-04",
+  "generado_por": "MOT-008",
+  "meta": {
+    "fuentesUsadas": 2,
+    "totalEjercicios": 10,
+    "totalFichas": 10,
+    "totalAudios": 0,
+    "generadoCon": "nlm_query_notebook",
+    "timestamp": "2026-04-04T22:23:15.479820"
+  }
+}

@@ -1,0 +1,380 @@
+{
+  "modulo": "somatica",
+  "titulo": "MANUAL DE REGULACIÓN SOMÁTICA Y AUTÓNOMA",
+  "descripcion": "Ejercicios basados en la neurociencia del sistema nervioso autónomo y técnicas de anclaje para la gestión del estrés, dolor y ansiedad.",
+  "ejercicios": [
+    {
+      "id": "SOM_001",
+      "nombre": "Respiración 4-7-8 (Tranquilizante Natural)",
+      "tipo": "respiracion",
+      "duracion_min": 2,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Exhale completamente por la boca, haciendo un sonido de 'whoosh'.",
+          "duracion_seg": 5
+        },
+        {
+          "orden": 2,
+          "instruccion": "Cierre la boca e inhale silenciosamente por la nariz contando mentalmente hasta 4.",
+          "duracion_seg": 4
+        },
+        {
+          "orden": 3,
+          "instruccion": "Mantenga la respiración contando hasta 7.",
+          "duracion_seg": 7
+        },
+        {
+          "orden": 4,
+          "instruccion": "Exhale completamente por la boca, haciendo un sonido de 'whoosh' contando hasta 8.",
+          "duracion_seg": 8
+        }
+      ],
+      "indicaciones": "Usar cuando ocurra algo molesto (antes de reaccionar), cuando haya tensión interna o para ayudar a conciliar el sueño.",
+      "contraindicaciones": "No realizar más de cuatro respiraciones por vez durante el primer mes de práctica. No usar si tiene problemas respiratorios graves o mareos frecuentes."
+    },
+    {
+      "id": "SOM_002",
+      "nombre": "Respiración Diafragmática Abdominal",
+      "tipo": "respiracion",
+      "duracion_min": 5,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Ponga una mano en el pecho y la otra en el estómago; la mano del pecho no debe moverse.",
+          "duracion_seg": 30
+        },
+        {
+          "orden": 2,
+          "instruccion": "Inhale por la nariz de 3 a 5 segundos permitiendo que el estómago suba como un globo.",
+          "duracion_seg": 5
+        },
+        {
+          "orden": 3,
+          "instruccion": "Exhale por la boca de 3 a 5 segundos permitiendo que el estómago baje conforme sale el aire.",
+          "duracion_seg": 5
+        }
+      ],
+      "indicaciones": "Para estimular el nervio vago, reducir la presión arterial, el ritmo cardíaco y la tensión muscular.",
+      "contraindicaciones": "Si se siente mareado, regrese a su patrón normal de respiración."
+    },
+    {
+      "id": "SOM_003",
+      "nombre": "Técnica de Grounding (Enraizado) 5-4-3-2-1",
+      "tipo": "corporal",
+      "duracion_min": 3,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Respire inhalando en 3 tiempos por la nariz e inflando el abdomen, y exhalando en 6 tiempos por la boca.",
+          "duracion_seg": 40
+        },
+        {
+          "orden": 2,
+          "instruccion": "Identifique 5 cosas que pueda mirar a su alrededor y 4 cosas que pueda tocar o sentir físicamente.",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 3,
+          "instruccion": "Identifique 3 sonidos que pueda oír, 2 cosas que pueda oler y 1 sabor o emoción que esté sintiendo.",
+          "duracion_seg": 60
+        }
+      ],
+      "indicaciones": "Especialmente indicado para crisis de ansiedad, pánico o cuando las emociones abruman la capacidad de pensar.",
+      "contraindicaciones": "Ninguna reportada en las fuentes."
+    },
+    {
+      "id": "SOM_004",
+      "nombre": "Somatic Tracking (Rastreo para Sensaciones Abdominales)",
+      "tipo": "guiado",
+      "duracion_min": 5,
+      "nivel": "intermedio",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Siéntese o acuéstese cómodamente y note el peso de su cuerpo apoyado en la silla o cama.",
+          "duracion_seg": 30
+        },
+        {
+          "orden": 2,
+          "instruccion": "Lleve su atención a la zona del estómago o abdomen. Observe la sensación (tensión, hinchazón o vacío) con curiosidad.",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 3,
+          "instruccion": "Describa la sensación sin juzgar: ¿es pesada, vibra, está apretada? Repítase: 'Esta sensación es incómoda, pero no es peligrosa'.",
+          "duracion_seg": 90
+        },
+        {
+          "orden": 4,
+          "instruccion": "Permanezca con la sensación sin intentar cambiarla, enseñando a su cerebro que es seguro estar presente con ella.",
+          "duracion_seg": 120
+        }
+      ],
+      "indicaciones": "Para gestionar el hambre emocional, molestias gastrointestinales crónicas y ansiedad por la salud.",
+      "contraindicaciones": "No intentar forzar la desaparición de la sensación; el objetivo es la aceptación de la presencia sensorial."
+    },
+    {
+      "id": "SOM_005",
+      "nombre": "Activación del Sistema Adrenal (Regulación Autónoma)",
+      "tipo": "corporal",
+      "duracion_min": 2,
+      "nivel": "avanzado",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Colóquese tumbado boca abajo (decúbito prono) para facilitar la activación del sistema adrenal.",
+          "duracion_seg": 30
+        },
+        {
+          "orden": 2,
+          "instruccion": "Realice ciclos respiratorios cortos, con inspiraciones y espiraciones rápidas y controladas.",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 3,
+          "instruccion": "Mantenga el enfoque en la demanda cardiovascular para elevar la energía si se siente en un estado de agotamiento o 'vago alto'.",
+          "duracion_seg": 30
+        }
+      ],
+      "indicaciones": "Para pacientes en estados de agotamiento neurovegetativo o cuando el sistema parasimpático está excesivamente alto sin adaptación.",
+      "contraindicaciones": "No usar en crisis de ansiedad aguda con sistema simpático ya elevado."
+    },
+    {
+      "id": "SOM_001",
+      "nombre": "Surfear la Ola del Impulso",
+      "tipo": "respiracion",
+      "duracion_min": 5,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Detectar la aparición del impulso oral-compensatorio (comer por ansiedad) sin juzgarlo [1].",
+          "duracion_seg": 30
+        },
+        {
+          "orden": 2,
+          "instruccion": "Utilizar la respiración para observar cómo el impulso crece y decrece como una ola en el mar [1, 2].",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 3,
+          "instruccion": "Mantener la atención en la respiración hasta que la intensidad de la urgencia disminuya por sí sola [2].",
+          "duracion_seg": 60
+        }
+      ],
+      "indicaciones": "Usar cuando surja un impulso repentino de comer por ansiedad [1].",
+      "contraindicaciones": "No aplicar si existe una necesidad fisiológica real de alimento."
+    },
+    {
+      "id": "SOM_002",
+      "nombre": "Identificación Somática de la Emoción",
+      "tipo": "corporal",
+      "duracion_min": 8,
+      "nivel": "intermedio",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Hacer una pausa ante la sensación de hambre e identificar dónde se siente la tensión en el cuerpo [1].",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 2,
+          "instruccion": "Preguntarse qué emoción subyace al hambre en este momento (ansiedad, tristeza, aburrimiento) [1, 2].",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 3,
+          "instruccion": "Nombrar la emoción identificada para permitir que el sistema nervioso comience a regularse [1].",
+          "duracion_seg": 60
+        }
+      ],
+      "indicaciones": "Ideal para identificar la emoción bajo el hambre antes de actuar el impulso [1].",
+      "contraindicaciones": "En estados de disociación severa."
+    },
+    {
+      "id": "SOM_003",
+      "nombre": "Defusión del Impulso Oral",
+      "tipo": "cognitivo",
+      "duracion_min": 5,
+      "nivel": "avanzado",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Observar el pensamiento 'debo comer algo ahora' como un evento mental externo [1].",
+          "duracion_seg": 45
+        },
+        {
+          "orden": 2,
+          "instruccion": "Practicar la defusión reconociendo que el impulso es una respuesta aprendida del ciclo emocional [1].",
+          "duracion_seg": 90
+        },
+        {
+          "orden": 3,
+          "instruccion": "Tomar distancia del impulso sin intentar reprimirlo, simplemente observando su naturaleza transitoria [1, 2].",
+          "duracion_seg": 60
+        }
+      ],
+      "indicaciones": "Para romper el automatismo de los impulsos oral-compensatorios [1].",
+      "contraindicaciones": "No sustituye el tratamiento médico para trastornos de la conducta alimentaria."
+    },
+    {
+      "id": "SOM_004",
+      "nombre": "Grounding: Hambre Física vs. Emocional",
+      "tipo": "reflexion",
+      "duracion_min": 6,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Evaluar si el hambre apareció de forma repentina (emocional) o gradual (física) [2].",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 2,
+          "instruccion": "Analizar si se busca un alimento específico o cualquier tipo de nutrición [2].",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 3,
+          "instruccion": "Conectar con la sensación física del estómago para verificar si hay señales biológicas de hambre [2].",
+          "duracion_seg": 60
+        }
+      ],
+      "indicaciones": "Usar ante la duda sobre la necesidad real de alimento [2].",
+      "contraindicaciones": "Personas con desequilibrios hormonales que afecten la saciedad."
+    },
+    {
+      "id": "SOM_005",
+      "nombre": "Interrupción del Ciclo de Culpa",
+      "tipo": "escritura",
+      "duracion_min": 10,
+      "nivel": "intermedio",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Reconocer el ciclo de culpa que sigue al impulso de comer por ansiedad [2].",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 2,
+          "instruccion": "Escribir la emoción que precedió a la ingesta para hacer visible el ciclo emocional [1, 2].",
+          "duracion_seg": 180
+        },
+        {
+          "orden": 3,
+          "instruccion": "Validar la emoción identificada en lugar de centrarse en la nutrición o el peso [1].",
+          "duracion_seg": 120
+        }
+      ],
+      "indicaciones": "Para prevenir la repetición de patrones de hambre compulsiva tras un episodio [1, 2].",
+      "contraindicaciones": "Si la reflexión genera niveles de angustia incapacitantes."
+    }
+  ],
+  "fichas_rapidas": [
+    {
+      "id": "SOM_F01",
+      "titulo": "Nervio Vago y Relajación",
+      "contenido": "Estimular el nervio vago reduce el estrés y la inflamación al activar la respuesta de relajación del sistema parasimpático.",
+      "etiquetas": [
+        "vago",
+        "parasimpatico"
+      ]
+    },
+    {
+      "id": "SOM_F02",
+      "titulo": "VFC (Variabilidad de la Frecuencia Cardíaca)",
+      "contenido": "Es un marcador de resiliencia. Una VFC alta indica un sistema autónomo flexible y capaz de adaptarse a desafíos psicológicos y físicos.",
+      "etiquetas": [
+        "VFC",
+        "HRV"
+      ]
+    },
+    {
+      "id": "SOM_F03",
+      "titulo": "Jerarquía de Sistemas",
+      "contenido": "No se puede modular un sistema bajo (como el visceral) si el sistema alto (emocional/cognitivo) está descontrolado o 'prendido a fuego'.",
+      "etiquetas": [
+        "SNA",
+        "emociones"
+      ]
+    },
+    {
+      "id": "SOM_F04",
+      "titulo": "Presiones Internas",
+      "contenido": "El cambio de presiones entre tórax, abdomen y pelvis es el principal mecanismo regulador de las funciones viscerales.",
+      "etiquetas": [
+        "visceral",
+        "presion"
+      ]
+    },
+    {
+      "id": "SOM_F05",
+      "titulo": "El Sueño como Prioridad",
+      "contenido": "El sueño es la prioridad número uno para la recuperación del SNA. La melatonina depende de una correcta liberación de noradrenalina simpática nocturna.",
+      "etiquetas": [
+        "sueño",
+        "ritmo circadiano"
+      ]
+    },
+    {
+      "id": "SOM_F01",
+      "titulo": "Urge Surfing",
+      "contenido": "Técnica para surfear el impulso de comer por ansiedad sin actuar sobre él, tratándolo como una ola transitoria [1, 2].",
+      "etiquetas": [
+        "impulso",
+        "ansiedad"
+      ]
+    },
+    {
+      "id": "SOM_F02",
+      "titulo": "Hambre Emocional",
+      "contenido": "Impulso que surge de estados emocionales y busca compensación oral en lugar de nutrición biológica [1, 2].",
+      "etiquetas": [
+        "emocion",
+        "hambre"
+      ]
+    },
+    {
+      "id": "SOM_F03",
+      "titulo": "Ciclo de Culpa",
+      "contenido": "Patrón donde la ingesta compulsiva genera malestar, reforzando la emoción negativa que inició el ciclo [2].",
+      "etiquetas": [
+        "culpa",
+        "ciclo"
+      ]
+    },
+    {
+      "id": "SOM_F04",
+      "titulo": "Defusión Cognitiva",
+      "contenido": "Capacidad de observar los impulsos y pensamientos como eventos mentales pasajeros sin identificarse con ellos [1].",
+      "etiquetas": [
+        "cognicion",
+        "impulso"
+      ]
+    },
+    {
+      "id": "SOM_F05",
+      "titulo": "Identificación Emocional",
+      "contenido": "Proceso de descubrir la emoción oculta tras el hambre para desactivar la necesidad de compensación oral [1].",
+      "etiquetas": [
+        "conciencia",
+        "emocion"
+      ]
+    }
+  ],
+  "recursos_audio": [],
+  "version": "2026-04-04",
+  "generado_por": "MOT-008",
+  "meta": {
+    "fuentesUsadas": 2,
+    "totalEjercicios": 10,
+    "totalFichas": 10,
+    "totalAudios": 0,
+    "generadoCon": "nlm_query_notebook",
+    "timestamp": "2026-04-04T22:26:13.255218"
+  }
+}
