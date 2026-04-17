@@ -1,121 +1,121 @@
-{
+Ôªø{
   "modulo": "ansiedad",
-  "titulo": "Protocolos de IntervenciÛn para la Ansiedad Generalizada",
-  "descripcion": "Conjunto de herramientas basadas en terapia cognitivo-conductual y metacognitiva para el manejo de la preocupaciÛn crÛnica, la intolerancia a la incertidumbre y la exposiciÛn gradual.",
+  "titulo": "Protocolos de Intervenci√≥n para la Ansiedad Generalizada",
+  "descripcion": "Conjunto de herramientas basadas en terapia cognitivo-conductual y metacognitiva para el manejo de la preocupaci√≥n cr√≥nica, la intolerancia a la incertidumbre y la exposici√≥n gradual.",
   "ejercicios": [
     {
       "id": "ANS_001",
-      "nombre": "PlanificaciÛn de JerarquÌa de ExposiciÛn",
+      "nombre": "Planificaci√≥n de Jerarqu√≠a de Exposici√≥n",
       "tipo": "escritura",
       "duracion_min": 20,
       "nivel": "basico",
       "pasos": [
         {
           "orden": 1,
-          "instrucciÛn": "Elaborar una lista de entre 10 y 20 situaciones, objetos o sensaciones que provocan ansiedad y que se suelen evitar.",
+          "instrucci√≥n": "Elaborar una lista de entre 10 y 20 situaciones, objetos o sensaciones que provocan ansiedad y que se suelen evitar.",
           "duracion_seg": 300
         },
         {
           "orden": 2,
-          "instrucciÛn": "Asignar a cada situaciÛn un valor de 0 a 100 (SUDS) seg˙n el grado de ansiedad que se espera sentir.",
+          "instrucci√≥n": "Asignar a cada situaci√≥n un valor de 0 a 100 (SUDS) seg√∫n el grado de ansiedad que se espera sentir.",
           "duracion_seg": 300
         },
         {
           "orden": 3,
-          "instrucciÛn": "Ordenar la lista de menor a mayor grado de dificultad para crear una escalera de exposiciÛn gradual.",
+          "instrucci√≥n": "Ordenar la lista de menor a mayor grado de dificultad para crear una escalera de exposici√≥n gradual.",
           "duracion_seg": 300
         },
         {
           "orden": 4,
-          "instrucciÛn": "Seleccionar una tarea de dificultad moderada (nivel medio) para iniciar la pr·ctica real, asegur·ndose de permanecer en ella hasta que la ansiedad baje al menos un 50%.",
+          "instrucci√≥n": "Seleccionar una tarea de dificultad moderada (nivel medio) para iniciar la pr√°ctica real, asegur√°ndose de permanecer en ella hasta que la ansiedad baje al menos un 50%.",
           "duracion_seg": 300
         }
       ],
-      "indicaciones": "Usar para romper patrones de evitaciÛn y habituarse a los estÌmulos temidos.",
-      "contraindicaciones": "No usar si la persona no est· dispuesta a tolerar niveles moderados de malestar temporal."
+      "indicaciones": "Usar para romper patrones de evitaci√≥n y habituarse a los est√≠mulos temidos.",
+      "contraindicaciones": "No usar si la persona no est√° dispuesta a tolerar niveles moderados de malestar temporal."
     },
     {
       "id": "ANS_002",
-      "nombre": "Momento para Preocuparte (TÈcnica ParadÛjica)",
+      "nombre": "Momento para Preocuparte (T√©cnica Parad√≥jica)",
       "tipo": "cognitivo",
       "duracion_min": 15,
       "nivel": "intermedio",
       "pasos": [
         {
           "orden": 1,
-          "instrucciÛn": "Reservar dos momentos fijos al dÌa de 10 minutos exclusivamente para dedicarse a las preocupaciones.",
+          "instrucci√≥n": "Reservar dos momentos fijos al d√≠a de 10 minutos exclusivamente para dedicarse a las preocupaciones.",
           "duracion_seg": 60
         },
         {
           "orden": 2,
-          "instrucciÛn": "Durante ese tiempo, enfocarse intensamente en los temas negativos sin buscar alternativas positivas o soluciones.",
+          "instrucci√≥n": "Durante ese tiempo, enfocarse intensamente en los temas negativos sin buscar alternativas positivas o soluciones.",
           "duracion_seg": 600
         },
         {
           "orden": 3,
-          "instrucciÛn": "Tratar de experimentar tanta ansiedad como sea posible mientras se piensa en estas preocupaciones.",
+          "instrucci√≥n": "Tratar de experimentar tanta ansiedad como sea posible mientras se piensa en estas preocupaciones.",
           "duracion_seg": 240
         }
       ],
-      "indicaciones": "⁄til para personas con rumiaciÛn incontrolable que sienten que deben preocuparse para estar preparadas.",
+      "indicaciones": "√ötil para personas con rumiaci√≥n incontrolable que sienten que deben preocuparse para estar preparadas.",
       "contraindicaciones": "No forzar si genera perturbaciones extremas que no se disipan al terminar el tiempo fijado."
     },
     {
       "id": "ANS_003",
-      "nombre": "ResoluciÛn Constructiva de Problemas",
+      "nombre": "Resoluci√≥n Constructiva de Problemas",
       "tipo": "reflexion",
       "duracion_min": 15,
       "nivel": "basico",
       "pasos": [
         {
           "orden": 1,
-          "instrucciÛn": "Definir la preocupaciÛn actual por escrito con la mayor claridad posible.",
+          "instrucci√≥n": "Definir la preocupaci√≥n actual por escrito con la mayor claridad posible.",
           "duracion_seg": 180
         },
         {
           "orden": 2,
-          "instrucciÛn": "Distinguir entre la parte del problema que es real y modificable de la que es una anticipaciÛn futura o no modificable.",
+          "instrucci√≥n": "Distinguir entre la parte del problema que es real y modificable de la que es una anticipaci√≥n futura o no modificable.",
           "duracion_seg": 300
         },
         {
           "orden": 3,
-          "instrucciÛn": "Generar al menos tres soluciones alternativas para la parte del problema que est· bajo control personal.",
+          "instrucci√≥n": "Generar al menos tres soluciones alternativas para la parte del problema que est√° bajo control personal.",
           "duracion_seg": 300
         },
         {
           "orden": 4,
-          "instrucciÛn": "Seleccionar una acciÛn inmediata y aplicarla, evaluando objetivamente los resultados despuÈs.",
+          "instrucci√≥n": "Seleccionar una acci√≥n inmediata y aplicarla, evaluando objetivamente los resultados despu√©s.",
           "duracion_seg": 120
         }
       ],
-      "indicaciones": "Usar cuando la preocupaciÛn se refiere a situaciones reales de la vida diaria.",
-      "contraindicaciones": "No aplicar a preocupaciones puramente hipotÈticas o existenciales."
+      "indicaciones": "Usar cuando la preocupaci√≥n se refiere a situaciones reales de la vida diaria.",
+      "contraindicaciones": "No aplicar a preocupaciones puramente hipot√©ticas o existenciales."
     },
     {
       "id": "ANS_004",
-      "nombre": "InoculaciÛn de Incertidumbre",
+      "nombre": "Inoculaci√≥n de Incertidumbre",
       "tipo": "conductual",
       "duracion_min": 10,
       "nivel": "avanzado",
       "pasos": [
         {
           "orden": 1,
-          "instrucciÛn": "Identificar una conducta de comprobaciÛn (como revisar repetidamente el correo o preguntar si todo est· bien) que se use para obtener certeza.",
+          "instrucci√≥n": "Identificar una conducta de comprobaci√≥n (como revisar repetidamente el correo o preguntar si todo est√° bien) que se use para obtener certeza.",
           "duracion_seg": 120
         },
         {
           "orden": 2,
-          "instrucciÛn": "Comprometerse a retrasar o reducir deliberadamente esa conducta de comprobaciÛn.",
+          "instrucci√≥n": "Comprometerse a retrasar o reducir deliberadamente esa conducta de comprobaci√≥n.",
           "duracion_seg": 60
         },
         {
           "orden": 3,
-          "instrucciÛn": "Tolerar la duda y la inquietud resultante sin actuar, observando cÛmo el sentimiento de urgencia disminuye con el tiempo.",
+          "instrucci√≥n": "Tolerar la duda y la inquietud resultante sin actuar, observando c√≥mo el sentimiento de urgencia disminuye con el tiempo.",
           "duracion_seg": 420
         }
       ],
       "indicaciones": "Especialmente indicado para el tratamiento de la intolerancia a la incertidumbre en el TAG.",
-      "contraindicaciones": "Evitar en situaciones donde la falta de comprobaciÛn suponga un riesgo fÌsico real inmediato."
+      "contraindicaciones": "Evitar en situaciones donde la falta de comprobaci√≥n suponga un riesgo f√≠sico real inmediato."
     },
     {
       "id": "ANS_005",
@@ -126,22 +126,22 @@
       "pasos": [
         {
           "orden": 1,
-          "instrucciÛn": "Valorar el nivel de ansiedad inicial del 1 (calma) al 10 (p·nico) antes de enfrentar una situaciÛn temida.",
+          "instrucci√≥n": "Valorar el nivel de ansiedad inicial del 1 (calma) al 10 (p√°nico) antes de enfrentar una situaci√≥n temida.",
           "duracion_seg": 60
         },
         {
           "orden": 2,
-          "instrucciÛn": "Describir brevemente las sensaciones fÌsicas presentes (tensiÛn muscular, ritmo cardÌaco, respiraciÛn).",
+          "instrucci√≥n": "Describir brevemente las sensaciones f√≠sicas presentes (tensi√≥n muscular, ritmo card√≠aco, respiraci√≥n).",
           "duracion_seg": 120
         },
         {
           "orden": 3,
-          "instrucciÛn": "Volver a valorar el nivel de ansiedad (SUDS) despuÈs de realizar el ejercicio o 15 minutos despuÈs para observar el descenso natural.",
+          "instrucci√≥n": "Volver a valorar el nivel de ansiedad (SUDS) despu√©s de realizar el ejercicio o 15 minutos despu√©s para observar el descenso natural.",
           "duracion_seg": 120
         }
       ],
       "indicaciones": "Usar diariamente para familiarizarse con los patrones de intensidad de la ansiedad.",
-      "contraindicaciones": "No usar como distracciÛn, sino como herramienta de observaciÛn consciente."
+      "contraindicaciones": "No usar como distracci√≥n, sino como herramienta de observaci√≥n consciente."
     },
     {
       "id": "ANS_001",
@@ -166,7 +166,7 @@
           "duracion_seg": 1200
         }
       ],
-      "indicaciones": "Utilizar cuando las preocupaciones hipoteticas del tipo 'øque pasaria si...?' interfieran con las tareas diarias.",
+      "indicaciones": "Utilizar cuando las preocupaciones hipoteticas del tipo '¬øque pasaria si...?' interfieran con las tareas diarias.",
       "contraindicaciones": "No programar demasiado cerca de la hora de acostarse."
     },
     {
@@ -230,7 +230,7 @@
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Identifica una situacion desencadenante y anota los pensamientos tipo 'øy si...?' que surgieron.",
+          "instruccion": "Identifica una situacion desencadenante y anota los pensamientos tipo '¬øy si...?' que surgieron.",
           "duracion_seg": 300
         },
         {
@@ -278,7 +278,7 @@
     {
       "id": "ANS_F01",
       "titulo": "El Ciclo de la Ansiedad",
-      "contenido": "Se trata de un cÌrculo vicioso donde una situaciÛn se valora como amenaza, disparando sÌntomas fÌsicos (palpitaciones, tensiÛn). Estos sÌntomas se interpretan como peligrosos, lo que aumenta el miedo y genera una espiral de p·nico.",
+      "contenido": "Se trata de un c√≠rculo vicioso donde una situaci√≥n se valora como amenaza, disparando s√≠ntomas f√≠sicos (palpitaciones, tensi√≥n). Estos s√≠ntomas se interpretan como peligrosos, lo que aumenta el miedo y genera una espiral de p√°nico.",
       "etiquetas": [
         "psicoeducacion",
         "ciclo"
@@ -287,7 +287,7 @@
     {
       "id": "ANS_F02",
       "titulo": "Escala de Unidades Subjetivas de Malestar (SUDS)",
-      "contenido": "Sistema para medir la intensidad de la ansiedad. 0 representa relajaciÛn completa y 10 (o 100) representa el nivel m·ximo de p·nico o malestar insoportable experimentado.",
+      "contenido": "Sistema para medir la intensidad de la ansiedad. 0 representa relajaci√≥n completa y 10 (o 100) representa el nivel m√°ximo de p√°nico o malestar insoportable experimentado.",
       "etiquetas": [
         "evaluacion",
         "suds"
@@ -295,8 +295,8 @@
     },
     {
       "id": "ANS_F03",
-      "titulo": "La Trampa de la EvitaciÛn",
-      "contenido": "La evitaciÛn proporciona alivio a corto plazo, pero mantiene la ansiedad a largo plazo porque impide aprender que la situaciÛn no es realmente peligrosa y que se es capaz de afrontarla.",
+      "titulo": "La Trampa de la Evitaci√≥n",
+      "contenido": "La evitaci√≥n proporciona alivio a corto plazo, pero mantiene la ansiedad a largo plazo porque impide aprender que la situaci√≥n no es realmente peligrosa y que se es capaz de afrontarla.",
       "etiquetas": [
         "conducta",
         "evitacion"
@@ -304,8 +304,8 @@
     },
     {
       "id": "ANS_F04",
-      "titulo": "Pensamiento CatastrÛfico",
-      "contenido": "Tendencia autom·tica a suponer que ocurrir· el peor resultado posible ('øy si...?') y a sobrestimar la probabilidad de que suceda una cat·strofe ante situaciones cotidianas.",
+      "titulo": "Pensamiento Catastr√≥fico",
+      "contenido": "Tendencia autom√°tica a suponer que ocurrir√° el peor resultado posible ('¬øy si...?') y a sobrestimar la probabilidad de que suceda una cat√°strofe ante situaciones cotidianas.",
       "etiquetas": [
         "cognitivo",
         "distorsion"
@@ -314,7 +314,7 @@
     {
       "id": "ANS_F05",
       "titulo": "Mindfulness Desapegado",
-      "contenido": "TÈcnica que consiste en ver los pensamientos como eventos mentales pasajeros (como olas en el mar o nubes) sin intentar controlarlos, juzgarlos o luchar contra ellos.",
+      "contenido": "T√©cnica que consiste en ver los pensamientos como eventos mentales pasajeros (como olas en el mar o nubes) sin intentar controlarlos, juzgarlos o luchar contra ellos.",
       "etiquetas": [
         "metacognicion",
         "mindfulness"

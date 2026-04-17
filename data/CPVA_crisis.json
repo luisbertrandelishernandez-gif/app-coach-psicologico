@@ -1,7 +1,7 @@
-{
+Ôªø{
   "modulo": "crisis",
-  "titulo": "Protocolos de IntervenciÛn en Crisis y EstabilizaciÛn",
-  "descripcion": "Herramientas pr·cticas para la contenciÛn emocional inmediata, reducciÛn de la activaciÛn y activaciÛn de redes de seguridad basadas en guÌas profesionales.",
+  "titulo": "Protocolos de Intervenci√≥n en Crisis y Estabilizaci√≥n",
+  "descripcion": "Herramientas pr√°cticas para la contenci√≥n emocional inmediata, reducci√≥n de la activaci√≥n y activaci√≥n de redes de seguridad basadas en gu√≠as profesionales.",
   "ejercicios": [
     {
       "id": "CRS_001",
@@ -12,7 +12,7 @@
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "SiÈntese en una posiciÛn cÛmoda sin cruzar sus piernas o brazos y respire hacia adentro y hacia afuera lenta y profundamente.",
+          "instruccion": "Si√©ntese en una posici√≥n c√≥moda sin cruzar sus piernas o brazos y respire hacia adentro y hacia afuera lenta y profundamente.",
           "duracion_seg": 30
         },
         {
@@ -22,99 +22,99 @@
         },
         {
           "orden": 3,
-          "instruccion": "Mencione cinco sonidos que puede escuchar que no le causen angustia (ej. respiraciÛn, puerta, teclado).",
+          "instruccion": "Mencione cinco sonidos que puede escuchar que no le causen angustia (ej. respiraci√≥n, puerta, teclado).",
           "duracion_seg": 30
         },
         {
           "orden": 4,
-          "instruccion": "Mencione cinco cosas que puede sentir fÌsicamente (ej. presiÛn de la espalda en la silla, los pies en los zapatos).",
+          "instruccion": "Mencione cinco cosas que puede sentir f√≠sicamente (ej. presi√≥n de la espalda en la silla, los pies en los zapatos).",
           "duracion_seg": 30
         }
       ],
       "indicaciones": "Usar cuando la persona parece demasiado agitada, habla precipitadamente o pierde contacto con su entorno.",
-      "contraindicaciones": "No requiere, es una tÈcnica de reorientaciÛn externa."
+      "contraindicaciones": "No requiere, es una t√©cnica de reorientaci√≥n externa."
     },
     {
       "id": "CRS_002",
-      "nombre": "TÈcnica TIPP: RegulaciÛn TÈrmica (Hielo)",
+      "nombre": "T√©cnica TIPP: Regulaci√≥n T√©rmica (Hielo)",
       "tipo": "corporal",
       "duracion_min": 2,
       "nivel": "basico",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Localice un trozo de hielo o agua muy frÌa.",
+          "instruccion": "Localice un trozo de hielo o agua muy fr√≠a.",
           "duracion_seg": 20
         },
         {
           "orden": 2,
-          "instruccion": "Apriete el hielo con las manos o aplique frÌo intenso en la cara/cuello.",
+          "instruccion": "Apriete el hielo con las manos o aplique fr√≠o intenso en la cara/cuello.",
           "duracion_seg": 40
         },
         {
           "orden": 3,
-          "instruccion": "ConcÈntrese exclusivamente en la sensaciÛn fÌsica de frÌo para desplazar el impulso de autolesiÛn.",
+          "instruccion": "Conc√©ntrese exclusivamente en la sensaci√≥n f√≠sica de fr√≠o para desplazar el impulso de autolesi√≥n.",
           "duracion_seg": 60
         }
       ],
       "indicaciones": "Estrategia interna de afrontamiento para distraer de pensamientos e impulsos suicidas o autolesivos.",
-      "contraindicaciones": "Hipersensibilidad al frÌo o problemas circulatorios graves."
+      "contraindicaciones": "Hipersensibilidad al fr√≠o o problemas circulatorios graves."
     },
     {
       "id": "CRS_003",
-      "nombre": "RespiraciÛn de Control (Reentrenamiento de VentilaciÛn)",
+      "nombre": "Respiraci√≥n de Control (Reentrenamiento de Ventilaci√≥n)",
       "tipo": "respiracion",
       "duracion_min": 2,
       "nivel": "basico",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Inhale lentamente por la nariz contando 1-2-3 hasta llenar cÛmodamente el estÛmago.",
+          "instruccion": "Inhale lentamente por la nariz contando 1-2-3 hasta llenar c√≥modamente el est√≥mago.",
           "duracion_seg": 30
         },
         {
           "orden": 2,
-          "instruccion": "DÌgase mentalmente: 'mi cuerpo se est· llenando de calma'.",
+          "instruccion": "D√≠gase mentalmente: 'mi cuerpo se est√° llenando de calma'.",
           "duracion_seg": 15
         },
         {
           "orden": 3,
-          "instruccion": "Exhale lentamente por la boca vaciando los pulmones y dÌgase: 'mi cuerpo se est· liberando de tensiÛn'.",
+          "instruccion": "Exhale lentamente por la boca vaciando los pulmones y d√≠gase: 'mi cuerpo se est√° liberando de tensi√≥n'.",
           "duracion_seg": 30
         },
         {
           "orden": 4,
-          "instruccion": "Repita el ciclo cinco veces de manera suave y cÛmoda.",
+          "instruccion": "Repita el ciclo cinco veces de manera suave y c√≥moda.",
           "duracion_seg": 45
         }
       ],
-      "indicaciones": "Reducir la sensaciÛn exagerada de estado de alerta o tensiÛn fÌsica.",
-      "contraindicaciones": "En casos de hiperventilaciÛn extrema, seguir instrucciones de un profesional sanitario."
+      "indicaciones": "Reducir la sensaci√≥n exagerada de estado de alerta o tensi√≥n f√≠sica.",
+      "contraindicaciones": "En casos de hiperventilaci√≥n extrema, seguir instrucciones de un profesional sanitario."
     },
     {
       "id": "CRS_004",
-      "nombre": "ActivaciÛn del Plan de Seguridad",
+      "nombre": "Activaci√≥n del Plan de Seguridad",
       "tipo": "reflexion",
       "duracion_min": 5,
       "nivel": "intermedio",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Identifique sus seÒales de alarma actuales (cambios de humor, pensamientos de 'no puedo m·s').",
+          "instruccion": "Identifique sus se√±ales de alarma actuales (cambios de humor, pensamientos de 'no puedo m√°s').",
           "duracion_seg": 60
         },
         {
           "orden": 2,
-          "instruccion": "Deseche o dist·nciese de cualquier objeto que pueda resultar peligroso en este momento.",
+          "instruccion": "Deseche o dist√°nciese de cualquier objeto que pueda resultar peligroso en este momento.",
           "duracion_seg": 120
         },
         {
           "orden": 3,
-          "instruccion": "Contacte con al menos una persona de su lista de apoyos y dÌgale sinceramente cÛmo se siente.",
+          "instruccion": "Contacte con al menos una persona de su lista de apoyos y d√≠gale sinceramente c√≥mo se siente.",
           "duracion_seg": 120
         }
       ],
-      "indicaciones": "Usar ante el regreso de ideaciÛn suicida o cuando las seÒales de riesgo son detectadas.",
+      "indicaciones": "Usar ante el regreso de ideaci√≥n suicida o cuando las se√±ales de riesgo son detectadas.",
       "contraindicaciones": "Si existe riesgo inminente y el plan falla, llamar directamente al 112."
     },
     {
@@ -136,37 +136,37 @@
         },
         {
           "orden": 3,
-          "instruccion": "Realice una actividad fÌsica o busque compaÒÌa que pueda distraerle de los impulsos.",
+          "instruccion": "Realice una actividad f√≠sica o busque compa√±√≠a que pueda distraerle de los impulsos.",
           "duracion_seg": 120
         }
       ],
-      "indicaciones": "Para recuperar la sensaciÛn de control sobre la situaciÛn mediante metas progresivas.",
-      "contraindicaciones": "No sustituye la atenciÛn mÈdica en crisis agudas de alta letalidad."
+      "indicaciones": "Para recuperar la sensaci√≥n de control sobre la situaci√≥n mediante metas progresivas.",
+      "contraindicaciones": "No sustituye la atenci√≥n m√©dica en crisis agudas de alta letalidad."
     }
   ],
   "fichas_rapidas": [
     {
       "id": "CRS_F01",
-      "titulo": "SeÒales de Alarma para Ayuda Profesional",
-      "contenido": "Busque ayuda si el problema interfiere o dificulta su trabajo y vida cotidiana, si deja de sentir ilusiÛn por lo que antes le gustaba, si tiene pesadillas persistentes o si los sentimientos negativos no se alivian con el tiempo.",
+      "titulo": "Se√±ales de Alarma para Ayuda Profesional",
+      "contenido": "Busque ayuda si el problema interfiere o dificulta su trabajo y vida cotidiana, si deja de sentir ilusi√≥n por lo que antes le gustaba, si tiene pesadillas persistentes o si los sentimientos negativos no se alivian con el tiempo.",
       "etiquetas": [
-        "diagnÛstico",
+        "diagn√≥stico",
         "ayuda"
       ]
     },
     {
       "id": "CRS_F02",
-      "titulo": "Kit de ProtecciÛn Inmediata",
-      "contenido": "1. Dist·nciate de medios letales. 2. Comunica tus pensamientos a alguien de confianza. 3. No consumas alcohol ni drogas. 4. Afronta los problemas de uno en uno. 5. Mantente acompaÒado.",
+      "titulo": "Kit de Protecci√≥n Inmediata",
+      "contenido": "1. Dist√°nciate de medios letales. 2. Comunica tus pensamientos a alguien de confianza. 3. No consumas alcohol ni drogas. 4. Afronta los problemas de uno en uno. 5. Mantente acompa√±ado.",
       "etiquetas": [
         "seguridad",
-        "protecciÛn"
+        "protecci√≥n"
       ]
     },
     {
       "id": "CRS_F03",
       "titulo": "Recursos de Emergencia 24h",
-      "contenido": "Emergencias: 112. LÌnea de atenciÛn a la conducta suicida: 024. TelÈfono de la Esperanza: 717 003 717. Estos servicios est·n disponibles 24/7, 365 dÌas al aÒo.",
+      "contenido": "Emergencias: 112. L√≠nea de atenci√≥n a la conducta suicida: 024. Tel√©fono de la Esperanza: 717 003 717. Estos servicios est√°n disponibles 24/7, 365 d√≠as al a√±o.",
       "etiquetas": [
         "contacto",
         "urgencias"
@@ -174,20 +174,20 @@
     },
     {
       "id": "CRS_F04",
-      "titulo": "ValidaciÛn de la Crisis",
-      "contenido": "Tener ideas de suicidio no te convierte en loco, cobarde o dÈbil. Es una respuesta al sufrimiento extremo. El impulso suicida es transitorio; la muerte no lo es.",
+      "titulo": "Validaci√≥n de la Crisis",
+      "contenido": "Tener ideas de suicidio no te convierte en loco, cobarde o d√©bil. Es una respuesta al sufrimiento extremo. El impulso suicida es transitorio; la muerte no lo es.",
       "etiquetas": [
-        "psicoeducaciÛn",
-        "validaciÛn"
+        "psicoeducaci√≥n",
+        "validaci√≥n"
       ]
     },
     {
       "id": "CRS_F05",
-      "titulo": "Pautas para el AcompaÒante",
-      "contenido": "Escuche activamente sin juzgar ni dar consejos apresurados. No haga falsas promesas. No deje sola a la persona en riesgo. Valide su sufrimiento y ay˙dele a buscar servicios profesionales.",
+      "titulo": "Pautas para el Acompa√±ante",
+      "contenido": "Escuche activamente sin juzgar ni dar consejos apresurados. No haga falsas promesas. No deje sola a la persona en riesgo. Valide su sufrimiento y ay√∫dele a buscar servicios profesionales.",
       "etiquetas": [
         "apoyo",
-        "guÌa"
+        "gu√≠a"
       ]
     }
   ],

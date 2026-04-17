@@ -1,11 +1,11 @@
-{
+ï»¿{
   "modulo": "act",
   "titulo": "Herramientas ACT para el Manejo del TOC",
-  "descripcion": "Conjunto de ejercicios y fichas de Terapia de Aceptación y Compromiso centrados en la defusión de pensamientos intrusivos y la flexibilidad ante la rumiación.",
+  "descripcion": "Conjunto de ejercicios y fichas de Terapia de AceptaciÃ³n y Compromiso centrados en la defusiÃ³n de pensamientos intrusivos y la flexibilidad ante la rumiaciÃ³n.",
   "ejercicios": [
     {
       "id": "ACT_001",
-      "nombre": "Pérdida de sentido",
+      "nombre": "PÃ©rdida de sentido",
       "tipo": "cognitivo",
       "duracion_min": 5,
       "nivel": "basico",
@@ -22,38 +22,38 @@
         },
         {
           "orden": 3,
-          "instruccion": "Observa cómo la palabra pierde su valor de verdad y su sentido original, convirtiéndose en un mero sonido [1]",
+          "instruccion": "Observa cÃ³mo la palabra pierde su valor de verdad y su sentido original, convirtiÃ©ndose en un mero sonido [1]",
           "duracion_seg": 60
         }
       ],
       "indicaciones": "Para desintegrar el valor de verdad de pensamientos intrusivos que generan malestar inmediato [1]",
-      "contraindicaciones": "Si el paciente intenta usar la repetición como un ritual supersticioso para aliviar la ansiedad (compulsión) [2, 3]"
+      "contraindicaciones": "Si el paciente intenta usar la repeticiÃ³n como un ritual supersticioso para aliviar la ansiedad (compulsiÃ³n) [2, 3]"
     },
     {
       "id": "ACT_002",
-      "nombre": "Focalización Atencional",
+      "nombre": "FocalizaciÃ³n Atencional",
       "tipo": "guiado",
       "duracion_min": 10,
       "nivel": "intermedio",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Detecta el inicio de una rumiación o pensamiento intruso sin juzgar su contenido [4]",
+          "instruccion": "Detecta el inicio de una rumiaciÃ³n o pensamiento intruso sin juzgar su contenido [4]",
           "duracion_seg": 45
         },
         {
           "orden": 2,
-          "instruccion": "Reconoce la presencia de la emoción o pensamiento negativo sin intentar bloquearlo ni valorarlo [5]",
+          "instruccion": "Reconoce la presencia de la emociÃ³n o pensamiento negativo sin intentar bloquearlo ni valorarlo [5]",
           "duracion_seg": 60
         },
         {
           "orden": 3,
-          "instruccion": "Reorienta tu atención hacia la actividad que estabas realizando en tu entorno actual [4, 5]",
+          "instruccion": "Reorienta tu atenciÃ³n hacia la actividad que estabas realizando en tu entorno actual [4, 5]",
           "duracion_seg": 120
         }
       ],
-      "indicaciones": "Útil para demostrar que la rumiación es ineficaz y retomar el contacto con el presente [6, 7]",
-      "contraindicaciones": "Cuando el malestar es tan extremo que impide cualquier nivel de atención al entorno sin guía previa [8, 9]"
+      "indicaciones": "Ãštil para demostrar que la rumiaciÃ³n es ineficaz y retomar el contacto con el presente [6, 7]",
+      "contraindicaciones": "Cuando el malestar es tan extremo que impide cualquier nivel de atenciÃ³n al entorno sin guÃ­a previa [8, 9]"
     },
     {
       "id": "ACT_003",
@@ -69,75 +69,75 @@
         },
         {
           "orden": 2,
-          "instruccion": "Observa el pensamiento espeluznante como una simple salida de datos o una simulación de supervivencia [11, 12]",
+          "instruccion": "Observa el pensamiento espeluznante como una simple salida de datos o una simulaciÃ³n de supervivencia [11, 12]",
           "duracion_seg": 120
         },
         {
           "orden": 3,
-          "instruccion": "Reconoce que esos datos no son sinónimo de tu realidad presente ni de tu personalidad [13, 14]",
+          "instruccion": "Reconoce que esos datos no son sinÃ³nimo de tu realidad presente ni de tu personalidad [13, 14]",
           "duracion_seg": 60
         }
       ],
-      "indicaciones": "Para entender el funcionamiento neuronal y reducir el miedo a los pensamientos egodistónicos [12, 15]",
-      "contraindicaciones": "No utilizar para debatir la lógica del pensamiento o buscar certezas matemáticas [16, 17]"
+      "indicaciones": "Para entender el funcionamiento neuronal y reducir el miedo a los pensamientos egodistÃ³nicos [12, 15]",
+      "contraindicaciones": "No utilizar para debatir la lÃ³gica del pensamiento o buscar certezas matemÃ¡ticas [16, 17]"
     },
     {
       "id": "ACT_004",
-      "nombre": "Escaneo Corporal y Aceptación",
+      "nombre": "Escaneo Corporal y AceptaciÃ³n",
       "tipo": "corporal",
       "duracion_min": 15,
       "nivel": "basico",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Siéntate cómodamente y cierra los ojos, llevando la atención a las sensaciones físicas de tu cuerpo [18]",
+          "instruccion": "SiÃ©ntate cÃ³modamente y cierra los ojos, llevando la atenciÃ³n a las sensaciones fÃ­sicas de tu cuerpo [18]",
           "duracion_seg": 120
         },
         {
           "orden": 2,
-          "instruccion": "Localiza el malestar o la ansiedad provocada por la obsesión y obsérvala sin juzgarla ni reaccionar [18, 19]",
+          "instruccion": "Localiza el malestar o la ansiedad provocada por la obsesiÃ³n y obsÃ©rvala sin juzgarla ni reaccionar [18, 19]",
           "duracion_seg": 180
         },
         {
           "orden": 3,
-          "instruccion": "Mantente presente tolerando el malestar sin recurrir a ninguna compulsión o ritual [18, 20]",
+          "instruccion": "Mantente presente tolerando el malestar sin recurrir a ninguna compulsiÃ³n o ritual [18, 20]",
           "duracion_seg": 300
         }
       ],
       "indicaciones": "Para reducir la reactividad a las obsesiones y mejorar la tolerancia al malestar [18, 19]",
-      "contraindicaciones": "En pacientes con crisis de angustia activas o síntomas disociativos severos [21, 22]"
+      "contraindicaciones": "En pacientes con crisis de angustia activas o sÃ­ntomas disociativos severos [21, 22]"
     },
     {
       "id": "ACT_005",
-      "nombre": "Acción Comprometida con Valores",
+      "nombre": "AcciÃ³n Comprometida con Valores",
       "tipo": "escritura",
       "duracion_min": 20,
       "nivel": "avanzado",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Identifica áreas de tu vida (familiar, social, laboral) que son realmente importantes para ti, más allá del TOC [23]",
+          "instruccion": "Identifica Ã¡reas de tu vida (familiar, social, laboral) que son realmente importantes para ti, mÃ¡s allÃ¡ del TOC [23]",
           "duracion_seg": 300
         },
         {
           "orden": 2,
-          "instruccion": "Define una acción específica y pequeña que puedas realizar hoy mismo en línea con esos valores [23]",
+          "instruccion": "Define una acciÃ³n especÃ­fica y pequeÃ±a que puedas realizar hoy mismo en lÃ­nea con esos valores [23]",
           "duracion_seg": 300
         },
         {
           "orden": 3,
-          "instruccion": "Realiza la acción elegida permitiendo que los pensamientos obsesivos te acompañen como 'pasajeros' sin darles el control [23, 24]",
+          "instruccion": "Realiza la acciÃ³n elegida permitiendo que los pensamientos obsesivos te acompaÃ±en como 'pasajeros' sin darles el control [23, 24]",
           "duracion_seg": 300
         }
       ],
-      "indicaciones": "Para orientar la vida hacia lo significativo a pesar de la presencia de síntomas [23-25]",
-      "contraindicaciones": "Cuando el paciente aún no ha comprendido el concepto de yo-contexto y se fusiona totalmente con el síntoma [23]"
+      "indicaciones": "Para orientar la vida hacia lo significativo a pesar de la presencia de sÃ­ntomas [23-25]",
+      "contraindicaciones": "Cuando el paciente aÃºn no ha comprendido el concepto de yo-contexto y se fusiona totalmente con el sÃ­ntoma [23]"
     }
   ],
   "fichas_rapidas": [
     {
       "id": "ACT_F01",
-      "titulo": "Defusión Cognitiva",
+      "titulo": "DefusiÃ³n Cognitiva",
       "contenido": "Consiste en ver los pensamientos como lo que son: procesos mentales pasajeros, y no hechos irrefutables que definen la realidad [13, 26].",
       "etiquetas": [
         "defusion",
@@ -146,7 +146,7 @@
     },
     {
       "id": "ACT_F02",
-      "titulo": "Aceptación Experiencial",
+      "titulo": "AceptaciÃ³n Experiencial",
       "contenido": "Tomar contacto con los eventos internos (obsesiones, ansiedad) de forma directa sin actuar para reducirlos ni manipularlos [27-29].",
       "etiquetas": [
         "aceptacion",
@@ -156,7 +156,7 @@
     {
       "id": "ACT_F03",
       "titulo": "Yo-Contexto",
-      "contenido": "Comprensión de que nuestros pensamientos obsesivos o compulsiones no nos definen; somos el espacio donde estos eventos ocurren [23, 30].",
+      "contenido": "ComprensiÃ³n de que nuestros pensamientos obsesivos o compulsiones no nos definen; somos el espacio donde estos eventos ocurren [23, 30].",
       "etiquetas": [
         "identidad",
         "yo"
@@ -164,7 +164,7 @@
     },
     {
       "id": "ACT_F04",
-      "titulo": "Fusión Pensamiento-Acción",
+      "titulo": "FusiÃ³n Pensamiento-AcciÃ³n",
       "contenido": "Creencia distorsionada de que tener un pensamiento inmoral es tan grave como actuarlo, o que pensar algo aumenta la probabilidad de que ocurra [31].",
       "etiquetas": [
         "sesgo",
@@ -174,7 +174,7 @@
     {
       "id": "ACT_F05",
       "titulo": "Tolerancia a la Incertidumbre",
-      "contenido": "Aprender a aceptar la ambigüedad y la falta de certeza absoluta sobre el futuro en lugar de buscarla mediante compulsiones [17, 32].",
+      "contenido": "Aprender a aceptar la ambigÃ¼edad y la falta de certeza absoluta sobre el futuro en lugar de buscarla mediante compulsiones [17, 32].",
       "etiquetas": [
         "incertidumbre",
         "control"

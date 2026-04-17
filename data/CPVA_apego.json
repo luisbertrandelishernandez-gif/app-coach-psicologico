@@ -1,28 +1,28 @@
-{
+Ôªø{
   "modulo": "apego",
-  "titulo": "Sanando el VÌnculo y la Soledad",
-  "descripcion": "Ejercicios basados en la teorÌa del apego y tÈcnicas de regulaciÛn emocional para transitar de la inseguridad a una base segura interna.",
+  "titulo": "Sanando el V√≠nculo y la Soledad",
+  "descripcion": "Ejercicios basados en la teor√≠a del apego y t√©cnicas de regulaci√≥n emocional para transitar de la inseguridad a una base segura interna.",
   "ejercicios": [
     {
       "id": "APG_001",
-      "nombre": "IdentificaciÛn del PatrÛn de Apego",
+      "nombre": "Identificaci√≥n del Patr√≥n de Apego",
       "tipo": "reflexion",
       "duracion_min": 15,
       "nivel": "basico",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Lee las tres afirmaciones fundamentales: A (incomodidad con la intimidad y dificultad para confiar), B (comodidad con la cercanÌa y dependencia mutua) y C (preocupaciÛn por no ser amado o alejar a otros por buscar demasiada intimidad).",
+          "instruccion": "Lee las tres afirmaciones fundamentales: A (incomodidad con la intimidad y dificultad para confiar), B (comodidad con la cercan√≠a y dependencia mutua) y C (preocupaci√≥n por no ser amado o alejar a otros por buscar demasiada intimidad).",
           "duracion_seg": 300
         },
         {
           "orden": 2,
-          "instruccion": "Identifica con cu·l te sientes m·s reflejado histÛricamente en tus relaciones de pareja: A corresponde al apego evasivo, B al seguro y C al ansioso.",
+          "instruccion": "Identifica con cu√°l te sientes m√°s reflejado hist√≥ricamente en tus relaciones de pareja: A corresponde al apego evasivo, B al seguro y C al ansioso.",
           "duracion_seg": 300
         },
         {
           "orden": 3,
-          "instruccion": "Reflexiona sobre cÛmo este estilo fue una estrategia de adaptaciÛn necesaria en tu niÒez seg˙n la disponibilidad de tus cuidadores.",
+          "instruccion": "Reflexiona sobre c√≥mo este estilo fue una estrategia de adaptaci√≥n necesaria en tu ni√±ez seg√∫n la disponibilidad de tus cuidadores.",
           "duracion_seg": 300
         }
       ],
@@ -38,33 +38,33 @@
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Identifica una situaciÛn de malestar moderado (nivel 5-6) en tu relaciÛn, como un mensaje no respondido.",
+          "instruccion": "Identifica una situaci√≥n de malestar moderado (nivel 5-6) en tu relaci√≥n, como un mensaje no respondido.",
           "duracion_seg": 60
         },
         {
           "orden": 2,
-          "instruccion": "Nota la sensaciÛn en tu cuerpo (opresiÛn en el pecho, nudo en el estÛmago) y nÛmbrala: 'esto es miedo' o 'esto es ansiedad'.",
+          "instruccion": "Nota la sensaci√≥n en tu cuerpo (opresi√≥n en el pecho, nudo en el est√≥mago) y n√≥mbrala: 'esto es miedo' o 'esto es ansiedad'.",
           "duracion_seg": 120
         },
         {
           "orden": 3,
-          "instruccion": "Respira profundo y tolera la sensaciÛn sin intentar cambiarla ni actuar impulsivamente (sin llamar o reclamar), aceptando su naturaleza temporal.",
+          "instruccion": "Respira profundo y tolera la sensaci√≥n sin intentar cambiarla ni actuar impulsivamente (sin llamar o reclamar), aceptando su naturaleza temporal.",
           "duracion_seg": 180
         }
       ],
-      "indicaciones": "Usar cuando se activa la alarma de abandono o la urgencia de reaseguraciÛn.",
-      "contraindicaciones": "En crisis de angustia severa o p·nico nivel 10."
+      "indicaciones": "Usar cuando se activa la alarma de abandono o la urgencia de reaseguraci√≥n.",
+      "contraindicaciones": "En crisis de angustia severa o p√°nico nivel 10."
     },
     {
       "id": "APG_003",
-      "nombre": "Las Hojas en el RÌo para la Soledad",
+      "nombre": "Las Hojas en el R√≠o para la Soledad",
       "tipo": "guiado",
       "duracion_min": 10,
       "nivel": "basico",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Cierra los ojos e imagina un rÌo que arrastra diferentes hojas mientras escuchas el sonido del agua.",
+          "instruccion": "Cierra los ojos e imagina un r√≠o que arrastra diferentes hojas mientras escuchas el sonido del agua.",
           "duracion_seg": 120
         },
         {
@@ -74,12 +74,12 @@
         },
         {
           "orden": 3,
-          "instruccion": "Deposita esa representaciÛn de la soledad sobre una hoja y observa cÛmo la corriente la aleja hasta que desaparece de tu vista.",
+          "instruccion": "Deposita esa representaci√≥n de la soledad sobre una hoja y observa c√≥mo la corriente la aleja hasta que desaparece de tu vista.",
           "duracion_seg": 300
         }
       ],
-      "indicaciones": "TÈcnica de defusiÛn cognitiva para pensamientos intrusivos sobre la soledad.",
-      "contraindicaciones": "Si la visualizaciÛn genera desconexiÛn de la realidad."
+      "indicaciones": "T√©cnica de defusi√≥n cognitiva para pensamientos intrusivos sobre la soledad.",
+      "contraindicaciones": "Si la visualizaci√≥n genera desconexi√≥n de la realidad."
     },
     {
       "id": "APG_004",
@@ -95,17 +95,17 @@
         },
         {
           "orden": 2,
-          "instruccion": "Adopta la posiciÛn de una 'madre amorosa' o cuidador primario compasivo y escrÌbete una carta de aceptaciÛn total.",
+          "instruccion": "Adopta la posici√≥n de una 'madre amorosa' o cuidador primario compasivo y escr√≠bete una carta de aceptaci√≥n total.",
           "duracion_seg": 600
         },
         {
           "orden": 3,
-          "instruccion": "Firma la carta y gu·rdala para leerla cuando sientas que tu valÌa personal depende solo de la aprobaciÛn externa.",
+          "instruccion": "Firma la carta y gu√°rdala para leerla cuando sientas que tu val√≠a personal depende solo de la aprobaci√≥n externa.",
           "duracion_seg": 300
         }
       ],
-      "indicaciones": "Para fortalecer la base segura interna y reducir la autocrÌtica.",
-      "contraindicaciones": "Evitar si hay trauma activo reciente sin apoyo terapÈutico."
+      "indicaciones": "Para fortalecer la base segura interna y reducir la autocr√≠tica.",
+      "contraindicaciones": "Evitar si hay trauma activo reciente sin apoyo terap√©utico."
     },
     {
       "id": "APG_005",
@@ -116,48 +116,48 @@
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Registra una situaciÛn (A) donde sentiste inseguridad relacional (ej: tu pareja saliÛ sola).",
+          "instruccion": "Registra una situaci√≥n (A) donde sentiste inseguridad relacional (ej: tu pareja sali√≥ sola).",
           "duracion_seg": 180
         },
         {
           "orden": 2,
-          "instruccion": "Anota los pensamientos autom·ticos (B) y su nivel de credibilidad: 'me va a engaÒar', 'no le importo'.",
+          "instruccion": "Anota los pensamientos autom√°ticos (B) y su nivel de credibilidad: 'me va a enga√±ar', 'no le importo'.",
           "duracion_seg": 300
         },
         {
           "orden": 3,
-          "instruccion": "Escribe un pensamiento alternativo (E) basado en evidencias reales y nota cÛmo cambia tu emociÛn y conducta (C).",
+          "instruccion": "Escribe un pensamiento alternativo (E) basado en evidencias reales y nota c√≥mo cambia tu emoci√≥n y conducta (C).",
           "duracion_seg": 420
         }
       ],
-      "indicaciones": "Para identificar sesgos de hipervigilancia y rumiaciÛn.",
+      "indicaciones": "Para identificar sesgos de hipervigilancia y rumiaci√≥n.",
       "contraindicaciones": "No usar para justificar conductas de control o maltrato real."
     },
     {
       "id": "APG_001",
-      "nombre": "TransiciÛn de Soledad a Solitud",
+      "nombre": "Transici√≥n de Soledad a Solitud",
       "tipo": "reflexion",
       "duracion_min": 15,
       "nivel": "basico",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Identificar el sentimiento actual de soledad como una experiencia de dolor o vacÌo [1].",
+          "instruccion": "Identificar el sentimiento actual de soledad como una experiencia de dolor o vac√≠o [1].",
           "duracion_seg": 300
         },
         {
           "orden": 2,
-          "instruccion": "Reencuadrar la situaciÛn hacia el concepto de 'solitud', visualiz·ndola como una oportunidad de fortaleza [1].",
+          "instruccion": "Reencuadrar la situaci√≥n hacia el concepto de 'solitud', visualiz√°ndola como una oportunidad de fortaleza [1].",
           "duracion_seg": 300
         },
         {
           "orden": 3,
-          "instruccion": "Escribir una acciÛn pequeÒa que represente autonomÌa en lugar de dependencia [2].",
+          "instruccion": "Escribir una acci√≥n peque√±a que represente autonom√≠a en lugar de dependencia [2].",
           "duracion_seg": 300
         }
       ],
-      "indicaciones": "Usar cuando el usuario experimenta miedo a estar solo o vacÌo [1].",
-      "contraindicaciones": "No usar en estados de desregulaciÛn emocional severa."
+      "indicaciones": "Usar cuando el usuario experimenta miedo a estar solo o vac√≠o [1].",
+      "contraindicaciones": "No usar en estados de desregulaci√≥n emocional severa."
     },
     {
       "id": "APG_002",
@@ -173,33 +173,33 @@
         },
         {
           "orden": 2,
-          "instruccion": "Clasificar las actividades en categorÌas de 'dominio' (logro) o 'placer' (disfrute) [2].",
+          "instruccion": "Clasificar las actividades en categor√≠as de 'dominio' (logro) o 'placer' (disfrute) [2].",
           "duracion_seg": 400
         },
         {
           "orden": 3,
-          "instruccion": "Elegir una actividad valiosa individual para realizar de forma autÛnoma esta semana [1, 2].",
+          "instruccion": "Elegir una actividad valiosa individual para realizar de forma aut√≥noma esta semana [1, 2].",
           "duracion_seg": 400
         }
       ],
-      "indicaciones": "Orientado al rescate del self y la autonomÌa [1, 2].",
-      "contraindicaciones": "Cuando el usuario no tiene capacidad de autocuidado b·sico."
+      "indicaciones": "Orientado al rescate del self y la autonom√≠a [1, 2].",
+      "contraindicaciones": "Cuando el usuario no tiene capacidad de autocuidado b√°sico."
     },
     {
       "id": "APG_003",
-      "nombre": "ProgramaciÛn de Dominio y Placer",
+      "nombre": "Programaci√≥n de Dominio y Placer",
       "tipo": "cognitivo",
       "duracion_min": 10,
       "nivel": "intermedio",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Seleccionar una tarea que genere sensaciÛn de eficacia o control (dominio) [2].",
+          "instruccion": "Seleccionar una tarea que genere sensaci√≥n de eficacia o control (dominio) [2].",
           "duracion_seg": 200
         },
         {
           "orden": 2,
-          "instruccion": "Seleccionar una tarea que genere gratificaciÛn sensorial o emocional (placer) [2].",
+          "instruccion": "Seleccionar una tarea que genere gratificaci√≥n sensorial o emocional (placer) [2].",
           "duracion_seg": 200
         },
         {
@@ -208,24 +208,24 @@
           "duracion_seg": 200
         }
       ],
-      "indicaciones": "Para combatir el vacÌo tras una ruptura o en soledad no deseada [1].",
-      "contraindicaciones": "Evitar si hay apatÌa clÌnica extrema sin supervisiÛn."
+      "indicaciones": "Para combatir el vac√≠o tras una ruptura o en soledad no deseada [1].",
+      "contraindicaciones": "Evitar si hay apat√≠a cl√≠nica extrema sin supervisi√≥n."
     },
     {
       "id": "APG_004",
-      "nombre": "IdentificaciÛn de Necesidades del Self",
+      "nombre": "Identificaci√≥n de Necesidades del Self",
       "tipo": "reflexion",
       "duracion_min": 12,
       "nivel": "intermedio",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Cerrar los ojos y observar el sentimiento de 'vacÌo' tras una pÈrdida o ruptura [1].",
+          "instruccion": "Cerrar los ojos y observar el sentimiento de 'vac√≠o' tras una p√©rdida o ruptura [1].",
           "duracion_seg": 240
         },
         {
           "orden": 2,
-          "instruccion": "Preguntar al 'Self': øQuÈ actividad individual me devolverÌa una sensaciÛn de autonomÌa hoy? [1, 2].",
+          "instruccion": "Preguntar al 'Self': ¬øQu√© actividad individual me devolver√≠a una sensaci√≥n de autonom√≠a hoy? [1, 2].",
           "duracion_seg": 240
         },
         {
@@ -234,12 +234,12 @@
           "duracion_seg": 240
         }
       ],
-      "indicaciones": "Cuando el usuario busca rescatar su identidad fuera de un vÌnculo [2].",
-      "contraindicaciones": "En casos de duelo agudo traum·tico reciente."
+      "indicaciones": "Cuando el usuario busca rescatar su identidad fuera de un v√≠nculo [2].",
+      "contraindicaciones": "En casos de duelo agudo traum√°tico reciente."
     },
     {
       "id": "APG_005",
-      "nombre": "Fortalecimiento de la AutonomÌa Post-Ruptura",
+      "nombre": "Fortalecimiento de la Autonom√≠a Post-Ruptura",
       "tipo": "escritura",
       "duracion_min": 15,
       "nivel": "avanzado",
@@ -251,24 +251,24 @@
         },
         {
           "orden": 2,
-          "instruccion": "Describir cÛmo la solitud (fortaleza) permite explorar estos aspectos con mayor profundidad [1].",
+          "instruccion": "Describir c√≥mo la solitud (fortaleza) permite explorar estos aspectos con mayor profundidad [1].",
           "duracion_seg": 300
         },
         {
           "orden": 3,
-          "instruccion": "DiseÒar un plan de 'solitud activa' para los prÛximos tres dÌas [1].",
+          "instruccion": "Dise√±ar un plan de 'solitud activa' para los pr√≥ximos tres d√≠as [1].",
           "duracion_seg": 300
         }
       ],
       "indicaciones": "Para usuarios que experimentan miedo intenso a la soledad [1].",
-      "contraindicaciones": "No aplicar si hay ideaciÛn autolÌtica o riesgos de seguridad."
+      "contraindicaciones": "No aplicar si hay ideaci√≥n autol√≠tica o riesgos de seguridad."
     }
   ],
   "fichas_rapidas": [
     {
       "id": "APG_F01",
       "titulo": "Apego Seguro",
-      "contenido": "Balance sano entre independencia y dependencia. VisiÛn positiva de sÌ mismo y de los dem·s. Comodidad con la intimidad sin miedo al rechazo.",
+      "contenido": "Balance sano entre independencia y dependencia. Visi√≥n positiva de s√≠ mismo y de los dem√°s. Comodidad con la intimidad sin miedo al rechazo.",
       "etiquetas": [
         "concepto",
         "seguridad"
@@ -276,8 +276,8 @@
     },
     {
       "id": "APG_F02",
-      "titulo": "Estrategias de ActivaciÛn",
-      "contenido": "Pensamientos y sentimientos del apego ansioso para mantener la cercanÌa: idealizar a la pareja, dificultad para concentrarse en otra cosa y ansiedad que solo calma el contacto.",
+      "titulo": "Estrategias de Activaci√≥n",
+      "contenido": "Pensamientos y sentimientos del apego ansioso para mantener la cercan√≠a: idealizar a la pareja, dificultad para concentrarse en otra cosa y ansiedad que solo calma el contacto.",
       "etiquetas": [
         "ansioso",
         "sintomas"
@@ -286,7 +286,7 @@
     {
       "id": "APG_F03",
       "titulo": "Conductas de Protesta",
-      "contenido": "Acciones para restablecer la conexiÛn de forma desadaptativa: llamadas excesivas, 'ley del hielo', provocar celos o amenazar con romper para ser retenido.",
+      "contenido": "Acciones para restablecer la conexi√≥n de forma desadaptativa: llamadas excesivas, 'ley del hielo', provocar celos o amenazar con romper para ser retenido.",
       "etiquetas": [
         "conducta",
         "ansioso"
@@ -295,7 +295,7 @@
     {
       "id": "APG_F04",
       "titulo": "La Paradoja de la Dependencia",
-      "contenido": "Estar apegado de forma segura a alguien nos permite ser m·s independientes. Una base segura es la plataforma necesaria para explorar el mundo.",
+      "contenido": "Estar apegado de forma segura a alguien nos permite ser m√°s independientes. Una base segura es la plataforma necesaria para explorar el mundo.",
       "etiquetas": [
         "teoria",
         "autonomia"
@@ -304,7 +304,7 @@
     {
       "id": "APG_F05",
       "titulo": "Apego Evasivo",
-      "contenido": "Prioriza la autonomÌa sobre la conexiÛn. Incomodidad con la intimidad, dificultad para confiar y tendencia a distanciarse ante el conflicto.",
+      "contenido": "Prioriza la autonom√≠a sobre la conexi√≥n. Incomodidad con la intimidad, dificultad para confiar y tendencia a distanciarse ante el conflicto.",
       "etiquetas": [
         "evitativo",
         "concepto"
@@ -313,7 +313,7 @@
     {
       "id": "APG_F01",
       "titulo": "Soledad vs. Solitud",
-      "contenido": "La soledad se experimenta como dolor y vacÌo; la solitud se cultiva como una fortaleza y espacio de autonomÌa [1].",
+      "contenido": "La soledad se experimenta como dolor y vac√≠o; la solitud se cultiva como una fortaleza y espacio de autonom√≠a [1].",
       "etiquetas": [
         "concepto",
         "soledad"
@@ -322,7 +322,7 @@
     {
       "id": "APG_F02",
       "titulo": "Rescate del Self",
-      "contenido": "Consiste en recuperar la identidad individual a travÈs de actividades valiosas que no dependen de otros [1, 2].",
+      "contenido": "Consiste en recuperar la identidad individual a trav√©s de actividades valiosas que no dependen de otros [1, 2].",
       "etiquetas": [
         "autonomia",
         "self"
@@ -331,7 +331,7 @@
     {
       "id": "APG_F03",
       "titulo": "Actividades de Dominio",
-      "contenido": "Acciones que proporcionan una sensaciÛn de logro, competencia y control sobre la propia vida [2].",
+      "contenido": "Acciones que proporcionan una sensaci√≥n de logro, competencia y control sobre la propia vida [2].",
       "etiquetas": [
         "tecnica",
         "autonomia"
@@ -340,7 +340,7 @@
     {
       "id": "APG_F04",
       "titulo": "Actividades de Placer",
-      "contenido": "Actividades enfocadas en el disfrute individual y la gratificaciÛn, fundamentales para la solitud positiva [2].",
+      "contenido": "Actividades enfocadas en el disfrute individual y la gratificaci√≥n, fundamentales para la solitud positiva [2].",
       "etiquetas": [
         "tecnica",
         "bienestar"
@@ -349,7 +349,7 @@
     {
       "id": "APG_F05",
       "titulo": "Independencia Emocional",
-      "contenido": "Capacidad de gestionar el vacÌo y la soledad orient·ndose hacia el desarrollo de la autonomÌa personal [1, 2].",
+      "contenido": "Capacidad de gestionar el vac√≠o y la soledad orient√°ndose hacia el desarrollo de la autonom√≠a personal [1, 2].",
       "etiquetas": [
         "objetivo",
         "apego"

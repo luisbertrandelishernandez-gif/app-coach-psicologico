@@ -1,7 +1,7 @@
-{
+Ôªø{
   "modulo": "ira",
-  "titulo": "Manual de RegulaciÛn de la Ira",
-  "descripcion": "Un conjunto de herramientas basadas en neurociencia, psicologÌa cognitiva y pr·cticas de atenciÛn plena para la gestiÛn constructiva de la rabia.",
+  "titulo": "Manual de Regulaci√≥n de la Ira",
+  "descripcion": "Un conjunto de herramientas basadas en neurociencia, psicolog√≠a cognitiva y pr√°cticas de atenci√≥n plena para la gesti√≥n constructiva de la rabia.",
   "ejercicios": [
     {
       "id": "IRA_001",
@@ -12,26 +12,26 @@
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Identifica las seÒales de advertencia fisiolÛgicas como palpitaciones, tensiÛn muscular o calor en la cara.",
+          "instruccion": "Identifica las se√±ales de advertencia fisiol√≥gicas como palpitaciones, tensi√≥n muscular o calor en la cara.",
           "duracion_seg": 60
         },
         {
           "orden": 2,
-          "instruccion": "RetÌrate fÌsicamente de la situaciÛn o de la persona que activa la respuesta de lucha o huida.",
+          "instruccion": "Ret√≠rate f√≠sicamente de la situaci√≥n o de la persona que activa la respuesta de lucha o huida.",
           "duracion_seg": 300
         },
         {
           "orden": 3,
-          "instruccion": "Permanece alejado durante al menos 20 minutos, tiempo necesario para que el cerebro recupere los niveles normales de oxÌgeno y la amÌgdala se calme.",
+          "instruccion": "Permanece alejado durante al menos 20 minutos, tiempo necesario para que el cerebro recupere los niveles normales de ox√≠geno y la am√≠gdala se calme.",
           "duracion_seg": 900
         }
       ],
-      "indicaciones": "Usar cuando sientas que vas a perder el control o la comunicaciÛn deja de ser constructiva.",
+      "indicaciones": "Usar cuando sientas que vas a perder el control o la comunicaci√≥n deja de ser constructiva.",
       "contraindicaciones": "No usar como castigo de silencio o para evitar responsabilidades permanentemente."
     },
     {
       "id": "IRA_002",
-      "nombre": "El TermÛmetro de la Rabia",
+      "nombre": "El Term√≥metro de la Rabia",
       "tipo": "reflexion",
       "duracion_min": 15,
       "nivel": "basico",
@@ -43,73 +43,73 @@
         },
         {
           "orden": 2,
-          "instruccion": "Clasifica la intensidad de la emociÛn en una escala del 1 al 5, donde 1 es tranquilidad y 5 es furia explosiva.",
+          "instruccion": "Clasifica la intensidad de la emoci√≥n en una escala del 1 al 5, donde 1 es tranquilidad y 5 es furia explosiva.",
           "duracion_seg": 60
         },
         {
           "orden": 3,
-          "instruccion": "Anota las pistas corporales especÌficas de cada nivel (ej. arrugar el entrecejo en nivel 2, ganas de golpear en nivel 4).",
+          "instruccion": "Anota las pistas corporales espec√≠ficas de cada nivel (ej. arrugar el entrecejo en nivel 2, ganas de golpear en nivel 4).",
           "duracion_seg": 300
         }
       ],
       "indicaciones": "Usar en momentos de calma para mejorar la autoconciencia de los disparadores.",
-      "contraindicaciones": "Evitar durante un ataque de ira aguda donde el juicio racional est· anulado."
+      "contraindicaciones": "Evitar durante un ataque de ira aguda donde el juicio racional est√° anulado."
     },
     {
       "id": "IRA_003",
-      "nombre": "RespiraciÛn Abdominal AntiestrÈs",
+      "nombre": "Respiraci√≥n Abdominal Antiestr√©s",
       "tipo": "respiracion",
       "duracion_min": 5,
       "nivel": "basico",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Coloca una mano sobre el estÛmago, justo debajo de las costillas.",
+          "instruccion": "Coloca una mano sobre el est√≥mago, justo debajo de las costillas.",
           "duracion_seg": 30
         },
         {
           "orden": 2,
-          "instruccion": "Inhala lenta y profundamente por la nariz sintiendo cÛmo el estÛmago sube, mientras dices mentalmente 'dentro'.",
+          "instruccion": "Inhala lenta y profundamente por la nariz sintiendo c√≥mo el est√≥mago sube, mientras dices mentalmente 'dentro'.",
           "duracion_seg": 120
         },
         {
           "orden": 3,
-          "instruccion": "Exhala suavemente por la boca frunciendo los labios mientras dices mentalmente 'fuera', bajando el estÛmago.",
+          "instruccion": "Exhala suavemente por la boca frunciendo los labios mientras dices mentalmente 'fuera', bajando el est√≥mago.",
           "duracion_seg": 120
         }
       ],
-      "indicaciones": "Usar para desactivar la respuesta de adrenalina y bajar la frecuencia cardÌaca.",
+      "indicaciones": "Usar para desactivar la respuesta de adrenalina y bajar la frecuencia card√≠aca.",
       "contraindicaciones": "Si sientes mareos, vuelve a tu ritmo respiratorio habitual."
     },
     {
       "id": "IRA_004",
-      "nombre": "ReestructuraciÛn de Pensamientos Hostiles",
+      "nombre": "Reestructuraci√≥n de Pensamientos Hostiles",
       "tipo": "cognitivo",
       "duracion_min": 15,
       "nivel": "intermedio",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Identifica un pensamiento distorsionado, como 'lo hizo a propÛsito' o 'no es justo'.",
+          "instruccion": "Identifica un pensamiento distorsionado, como 'lo hizo a prop√≥sito' o 'no es justo'.",
           "duracion_seg": 120
         },
         {
           "orden": 2,
-          "instruccion": "Cuestiona la validez del pensamiento buscando explicaciones alternativas (ej. 'quiz·s tuvo un mal dÌa').",
+          "instruccion": "Cuestiona la validez del pensamiento buscando explicaciones alternativas (ej. 'quiz√°s tuvo un mal d√≠a').",
           "duracion_seg": 300
         },
         {
           "orden": 3,
-          "instruccion": "Sustituye el pensamiento por una afirmaciÛn realista y asertiva que reduzca la hostilidad.",
+          "instruccion": "Sustituye el pensamiento por una afirmaci√≥n realista y asertiva que reduzca la hostilidad.",
           "duracion_seg": 180
         }
       ],
-      "indicaciones": "⁄til para romper el ciclo de rumiaciÛn negativa y sesgo de confirmaciÛn.",
-      "contraindicaciones": "No aplicable si existe una amenaza fÌsica real e inmediata."
+      "indicaciones": "√ötil para romper el ciclo de rumiaci√≥n negativa y sesgo de confirmaci√≥n.",
+      "contraindicaciones": "No aplicable si existe una amenaza f√≠sica real e inmediata."
     },
     {
       "id": "IRA_005",
-      "nombre": "ComunicaciÛn Asertiva de la Ira",
+      "nombre": "Comunicaci√≥n Asertiva de la Ira",
       "tipo": "reflexion",
       "duracion_min": 10,
       "nivel": "avanzado",
@@ -130,55 +130,55 @@
           "duracion_seg": 240
         }
       ],
-      "indicaciones": "Usar para resolver conflictos en relaciones Ìntimas o laborales sin herir a los dem·s.",
-      "contraindicaciones": "No intentar con personas que estÈn en un estado de ira explosiva activa."
+      "indicaciones": "Usar para resolver conflictos en relaciones √≠ntimas o laborales sin herir a los dem√°s.",
+      "contraindicaciones": "No intentar con personas que est√©n en un estado de ira explosiva activa."
     },
     {
       "id": "IRA_001",
-      "nombre": "Tiempo Fuera EstratÈgico",
+      "nombre": "Tiempo Fuera Estrat√©gico",
       "tipo": "cognitivo",
       "duracion_min": 15,
       "nivel": "basico",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Detecta seÒales tempranas de tensiÛn en mandÌbula o manos durante un conflicto.",
+          "instruccion": "Detecta se√±ales tempranas de tensi√≥n en mand√≠bula o manos durante un conflicto.",
           "duracion_seg": 60
         },
         {
           "orden": 2,
-          "instruccion": "RetÌrate fÌsicamente de la situaciÛn o interacciÛn que genera la sensaciÛn de injusticia.",
+          "instruccion": "Ret√≠rate f√≠sicamente de la situaci√≥n o interacci√≥n que genera la sensaci√≥n de injusticia.",
           "duracion_seg": 300
         },
         {
           "orden": 3,
-          "instruccion": "Valida internamente tu ira reconociendo quÈ valor personal sientes que ha sido vulnerado.",
+          "instruccion": "Valida internamente tu ira reconociendo qu√© valor personal sientes que ha sido vulnerado.",
           "duracion_seg": 120
         }
       ],
       "indicaciones": "Usar ante conflictos interpersonales o picos de rabia.",
-      "contraindicaciones": "No usar como mÈtodo de evitaciÛn permanente de problemas."
+      "contraindicaciones": "No usar como m√©todo de evitaci√≥n permanente de problemas."
     },
     {
       "id": "IRA_002",
-      "nombre": "IdentificaciÛn de Disparadores de Injusticia",
+      "nombre": "Identificaci√≥n de Disparadores de Injusticia",
       "tipo": "reflexion",
       "duracion_min": 10,
       "nivel": "basico",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Describe una situaciÛn reciente de conflicto o frustraciÛn.",
+          "instruccion": "Describe una situaci√≥n reciente de conflicto o frustraci√≥n.",
           "duracion_seg": 120
         },
         {
           "orden": 2,
-          "instruccion": "Identifica si el disparador fue una sensaciÛn de injusticia o una demanda no cumplida.",
+          "instruccion": "Identifica si el disparador fue una sensaci√≥n de injusticia o una demanda no cumplida.",
           "duracion_seg": 120
         },
         {
           "orden": 3,
-          "instruccion": "Registra las sensaciones corporales asociadas, como tensiÛn en las manos.",
+          "instruccion": "Registra las sensaciones corporales asociadas, como tensi√≥n en las manos.",
           "duracion_seg": 60
         }
       ],
@@ -187,88 +187,88 @@
     },
     {
       "id": "IRA_003",
-      "nombre": "ReestructuraciÛn de la Exigencia Racional",
+      "nombre": "Reestructuraci√≥n de la Exigencia Racional",
       "tipo": "cognitivo",
       "duracion_min": 12,
       "nivel": "intermedio",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Identifica el pensamiento de 'exigencia' (el 'deberÌa') que alimenta tu enfado.",
+          "instruccion": "Identifica el pensamiento de 'exigencia' (el 'deber√≠a') que alimenta tu enfado.",
           "duracion_seg": 180
         },
         {
           "orden": 2,
-          "instruccion": "Analiza si esta exigencia es racional o si es una demanda absoluta sobre los dem·s.",
+          "instruccion": "Analiza si esta exigencia es racional o si es una demanda absoluta sobre los dem√°s.",
           "duracion_seg": 180
         },
         {
           "orden": 3,
-          "instruccion": "Reformula el pensamiento hacia una preferencia asertiva en lugar de una exigencia rÌgida.",
+          "instruccion": "Reformula el pensamiento hacia una preferencia asertiva en lugar de una exigencia r√≠gida.",
           "duracion_seg": 180
         }
       ],
-      "indicaciones": "Para trabajar la ira crÛnica derivada de expectativas no cumplidas.",
-      "contraindicaciones": "Si existe una situaciÛn de peligro real que requiere acciÛn inmediata."
+      "indicaciones": "Para trabajar la ira cr√≥nica derivada de expectativas no cumplidas.",
+      "contraindicaciones": "Si existe una situaci√≥n de peligro real que requiere acci√≥n inmediata."
     },
     {
       "id": "IRA_004",
-      "nombre": "Entrenamiento en ComunicaciÛn Asertiva",
+      "nombre": "Entrenamiento en Comunicaci√≥n Asertiva",
       "tipo": "reflexion",
       "duracion_min": 15,
       "nivel": "intermedio",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Identifica la necesidad o el valor vulnerado detr·s de tu rabia.",
+          "instruccion": "Identifica la necesidad o el valor vulnerado detr√°s de tu rabia.",
           "duracion_seg": 120
         },
         {
           "orden": 2,
-          "instruccion": "Ensaya mentalmente cÛmo expresar esa injusticia sin utilizar un tono agresivo.",
+          "instruccion": "Ensaya mentalmente c√≥mo expresar esa injusticia sin utilizar un tono agresivo.",
           "duracion_seg": 180
         },
         {
           "orden": 3,
-          "instruccion": "Comunica tu malestar enfoc·ndote en la resoluciÛn del conflicto y el respeto mutuo.",
+          "instruccion": "Comunica tu malestar enfoc√°ndote en la resoluci√≥n del conflicto y el respeto mutuo.",
           "duracion_seg": 300
         }
       ],
       "indicaciones": "Para resolver conflictos interpersonales de manera constructiva.",
-      "contraindicaciones": "En situaciones de violencia fÌsica activa."
+      "contraindicaciones": "En situaciones de violencia f√≠sica activa."
     },
     {
       "id": "IRA_005",
-      "nombre": "RegulaciÛn FisiolÛgica de la Rabia",
+      "nombre": "Regulaci√≥n Fisiol√≥gica de la Rabia",
       "tipo": "corporal",
       "duracion_min": 8,
       "nivel": "basico",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Enfoca tu atenciÛn en la tensiÛn acumulada en tu mandÌbula.",
+          "instruccion": "Enfoca tu atenci√≥n en la tensi√≥n acumulada en tu mand√≠bula.",
           "duracion_seg": 60
         },
         {
           "orden": 2,
-          "instruccion": "Cierra y abre las manos conscientemente para liberar la tensiÛn motora.",
+          "instruccion": "Cierra y abre las manos conscientemente para liberar la tensi√≥n motora.",
           "duracion_seg": 60
         },
         {
           "orden": 3,
-          "instruccion": "Realiza respiraciones profundas mientras relajas los m˙sculos faciales.",
+          "instruccion": "Realiza respiraciones profundas mientras relajas los m√∫sculos faciales.",
           "duracion_seg": 180
         }
       ],
-      "indicaciones": "Al notar los primeros sÌntomas fÌsicos de la frustraciÛn.",
-      "contraindicaciones": "Lesiones fÌsicas previas en mandÌbula o manos."
+      "indicaciones": "Al notar los primeros s√≠ntomas f√≠sicos de la frustraci√≥n.",
+      "contraindicaciones": "Lesiones f√≠sicas previas en mand√≠bula o manos."
     }
   ],
   "fichas_rapidas": [
     {
       "id": "IRA_F01",
-      "titulo": "AmÌgdala vs. Corteza Prefrontal",
-      "contenido": "La amÌgdala es tu alarma emocional que dispara la ira. La corteza prefrontal es el freno racional que eval˙a consecuencias.",
+      "titulo": "Am√≠gdala vs. Corteza Prefrontal",
+      "contenido": "La am√≠gdala es tu alarma emocional que dispara la ira. La corteza prefrontal es el freno racional que eval√∫a consecuencias.",
       "etiquetas": [
         "neurociencia"
       ]
@@ -276,7 +276,7 @@
     {
       "id": "IRA_F02",
       "titulo": "La Regla de las 24 Horas",
-      "contenido": "No mantengas la ira en secreto m·s de un dÌa. ExprÈsala asertivamente antes de que se convierta en un 'nudo' interno.",
+      "contenido": "No mantengas la ira en secreto m√°s de un d√≠a. Expr√©sala asertivamente antes de que se convierta en un 'nudo' interno.",
       "etiquetas": [
         "comunicacion"
       ]
@@ -284,67 +284,67 @@
     {
       "id": "IRA_F03",
       "titulo": "Concepto de Hanger",
-      "contenido": "La falta de alimento provoca una caÌda de glucosa que dispara la irritabilidad. Mantener niveles de energÌa ayuda al autocontrol.",
+      "contenido": "La falta de alimento provoca una ca√≠da de glucosa que dispara la irritabilidad. Mantener niveles de energ√≠a ayuda al autocontrol.",
       "etiquetas": [
         "fisiologia"
       ]
     },
     {
       "id": "IRA_F04",
-      "titulo": "La TÈcnica del Espejo",
-      "contenido": "MÌrate al espejo cuando estÈs enojado; ver tu cara como una 'bomba a punto de estallar' te motivar· a relajarte.",
+      "titulo": "La T√©cnica del Espejo",
+      "contenido": "M√≠rate al espejo cuando est√©s enojado; ver tu cara como una 'bomba a punto de estallar' te motivar√° a relajarte.",
       "etiquetas": [
         "autoconciencia"
       ]
     },
     {
       "id": "IRA_F05",
-      "titulo": "La Ira como EmociÛn Secundaria",
-      "contenido": "Detr·s de la rabia suele haber un sentimiento primario de vulnerabilidad: miedo, dolor, decepciÛn o impotencia.",
+      "titulo": "La Ira como Emoci√≥n Secundaria",
+      "contenido": "Detr√°s de la rabia suele haber un sentimiento primario de vulnerabilidad: miedo, dolor, decepci√≥n o impotencia.",
       "etiquetas": [
         "psicologia"
       ]
     },
     {
       "id": "IRA_F01",
-      "titulo": "La Ira como SeÒal de Valor",
-      "contenido": "La ira no es negativa por sÌ misma; es una seÒal de que un valor importante para ti ha sido vulnerado.",
+      "titulo": "La Ira como Se√±al de Valor",
+      "contenido": "La ira no es negativa por s√≠ misma; es una se√±al de que un valor importante para ti ha sido vulnerado.",
       "etiquetas": [
-        "validaciÛn",
+        "validaci√≥n",
         "concepto"
       ]
     },
     {
       "id": "IRA_F02",
-      "titulo": "TÈcnica: Tiempo Fuera",
-      "contenido": "Consiste en alejarse de la situaciÛn de conflicto para enfriar la respuesta fisiolÛgica y evitar la agresiÛn.",
+      "titulo": "T√©cnica: Tiempo Fuera",
+      "contenido": "Consiste en alejarse de la situaci√≥n de conflicto para enfriar la respuesta fisiol√≥gica y evitar la agresi√≥n.",
       "etiquetas": [
-        "regulaciÛn",
-        "tÈcnica"
+        "regulaci√≥n",
+        "t√©cnica"
       ]
     },
     {
       "id": "IRA_F03",
       "titulo": "Exigencia Racional",
-      "contenido": "Cuestionar las demandas absolutas sobre cÛmo 'deberÌan' actuar los dem·s ayuda a reducir la frustraciÛn.",
+      "contenido": "Cuestionar las demandas absolutas sobre c√≥mo 'deber√≠an' actuar los dem√°s ayuda a reducir la frustraci√≥n.",
       "etiquetas": [
         "cognitivo"
       ]
     },
     {
       "id": "IRA_F04",
-      "titulo": "Disparadores FÌsicos",
-      "contenido": "La tensiÛn en la mandÌbula y en las manos son indicadores clave de que la ira est· escalando.",
+      "titulo": "Disparadores F√≠sicos",
+      "contenido": "La tensi√≥n en la mand√≠bula y en las manos son indicadores clave de que la ira est√° escalando.",
       "etiquetas": [
-        "identificaciÛn"
+        "identificaci√≥n"
       ]
     },
     {
       "id": "IRA_F05",
       "titulo": "Asertividad vs Agresividad",
-      "contenido": "La asertividad permite comunicar la injusticia percibida sin vulnerar los derechos de los dem·s.",
+      "contenido": "La asertividad permite comunicar la injusticia percibida sin vulnerar los derechos de los dem√°s.",
       "etiquetas": [
-        "comunicaciÛn"
+        "comunicaci√≥n"
       ]
     }
   ],

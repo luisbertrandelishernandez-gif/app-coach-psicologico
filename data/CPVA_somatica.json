@@ -1,11 +1,11 @@
-{
+Ôªø{
   "modulo": "somatica",
-  "titulo": "MANUAL DE REGULACI”N SOM¡TICA Y AUT”NOMA",
-  "descripcion": "Ejercicios basados en la neurociencia del sistema nervioso autÛnomo y tÈcnicas de anclaje para la gestiÛn del estrÈs, dolor y ansiedad.",
+  "titulo": "MANUAL DE REGULACI√ìN SOM√ÅTICA Y AUT√ìNOMA",
+  "descripcion": "Ejercicios basados en la neurociencia del sistema nervioso aut√≥nomo y t√©cnicas de anclaje para la gesti√≥n del estr√©s, dolor y ansiedad.",
   "ejercicios": [
     {
       "id": "SOM_001",
-      "nombre": "RespiraciÛn 4-7-8 (Tranquilizante Natural)",
+      "nombre": "Respiraci√≥n 4-7-8 (Tranquilizante Natural)",
       "tipo": "respiracion",
       "duracion_min": 2,
       "nivel": "basico",
@@ -22,7 +22,7 @@
         },
         {
           "orden": 3,
-          "instruccion": "Mantenga la respiraciÛn contando hasta 7.",
+          "instruccion": "Mantenga la respiraci√≥n contando hasta 7.",
           "duracion_seg": 7
         },
         {
@@ -31,38 +31,38 @@
           "duracion_seg": 8
         }
       ],
-      "indicaciones": "Usar cuando ocurra algo molesto (antes de reaccionar), cuando haya tensiÛn interna o para ayudar a conciliar el sueÒo.",
-      "contraindicaciones": "No realizar m·s de cuatro respiraciones por vez durante el primer mes de pr·ctica. No usar si tiene problemas respiratorios graves o mareos frecuentes."
+      "indicaciones": "Usar cuando ocurra algo molesto (antes de reaccionar), cuando haya tensi√≥n interna o para ayudar a conciliar el sue√±o.",
+      "contraindicaciones": "No realizar m√°s de cuatro respiraciones por vez durante el primer mes de pr√°ctica. No usar si tiene problemas respiratorios graves o mareos frecuentes."
     },
     {
       "id": "SOM_002",
-      "nombre": "RespiraciÛn Diafragm·tica Abdominal",
+      "nombre": "Respiraci√≥n Diafragm√°tica Abdominal",
       "tipo": "respiracion",
       "duracion_min": 5,
       "nivel": "basico",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Ponga una mano en el pecho y la otra en el estÛmago; la mano del pecho no debe moverse.",
+          "instruccion": "Ponga una mano en el pecho y la otra en el est√≥mago; la mano del pecho no debe moverse.",
           "duracion_seg": 30
         },
         {
           "orden": 2,
-          "instruccion": "Inhale por la nariz de 3 a 5 segundos permitiendo que el estÛmago suba como un globo.",
+          "instruccion": "Inhale por la nariz de 3 a 5 segundos permitiendo que el est√≥mago suba como un globo.",
           "duracion_seg": 5
         },
         {
           "orden": 3,
-          "instruccion": "Exhale por la boca de 3 a 5 segundos permitiendo que el estÛmago baje conforme sale el aire.",
+          "instruccion": "Exhale por la boca de 3 a 5 segundos permitiendo que el est√≥mago baje conforme sale el aire.",
           "duracion_seg": 5
         }
       ],
-      "indicaciones": "Para estimular el nervio vago, reducir la presiÛn arterial, el ritmo cardÌaco y la tensiÛn muscular.",
-      "contraindicaciones": "Si se siente mareado, regrese a su patrÛn normal de respiraciÛn."
+      "indicaciones": "Para estimular el nervio vago, reducir la presi√≥n arterial, el ritmo card√≠aco y la tensi√≥n muscular.",
+      "contraindicaciones": "Si se siente mareado, regrese a su patr√≥n normal de respiraci√≥n."
     },
     {
       "id": "SOM_003",
-      "nombre": "TÈcnica de Grounding (Enraizado) 5-4-3-2-1",
+      "nombre": "T√©cnica de Grounding (Enraizado) 5-4-3-2-1",
       "tipo": "corporal",
       "duracion_min": 3,
       "nivel": "basico",
@@ -74,16 +74,16 @@
         },
         {
           "orden": 2,
-          "instruccion": "Identifique 5 cosas que pueda mirar a su alrededor y 4 cosas que pueda tocar o sentir fÌsicamente.",
+          "instruccion": "Identifique 5 cosas que pueda mirar a su alrededor y 4 cosas que pueda tocar o sentir f√≠sicamente.",
           "duracion_seg": 60
         },
         {
           "orden": 3,
-          "instruccion": "Identifique 3 sonidos que pueda oÌr, 2 cosas que pueda oler y 1 sabor o emociÛn que estÈ sintiendo.",
+          "instruccion": "Identifique 3 sonidos que pueda o√≠r, 2 cosas que pueda oler y 1 sabor o emoci√≥n que est√© sintiendo.",
           "duracion_seg": 60
         }
       ],
-      "indicaciones": "Especialmente indicado para crisis de ansiedad, p·nico o cuando las emociones abruman la capacidad de pensar.",
+      "indicaciones": "Especialmente indicado para crisis de ansiedad, p√°nico o cuando las emociones abruman la capacidad de pensar.",
       "contraindicaciones": "Ninguna reportada en las fuentes."
     },
     {
@@ -95,53 +95,53 @@
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "SiÈntese o acuÈstese cÛmodamente y note el peso de su cuerpo apoyado en la silla o cama.",
+          "instruccion": "Si√©ntese o acu√©stese c√≥modamente y note el peso de su cuerpo apoyado en la silla o cama.",
           "duracion_seg": 30
         },
         {
           "orden": 2,
-          "instruccion": "Lleve su atenciÛn a la zona del estÛmago o abdomen. Observe la sensaciÛn (tensiÛn, hinchazÛn o vacÌo) con curiosidad.",
+          "instruccion": "Lleve su atenci√≥n a la zona del est√≥mago o abdomen. Observe la sensaci√≥n (tensi√≥n, hinchaz√≥n o vac√≠o) con curiosidad.",
           "duracion_seg": 60
         },
         {
           "orden": 3,
-          "instruccion": "Describa la sensaciÛn sin juzgar: øes pesada, vibra, est· apretada? RepÌtase: 'Esta sensaciÛn es incÛmoda, pero no es peligrosa'.",
+          "instruccion": "Describa la sensaci√≥n sin juzgar: ¬øes pesada, vibra, est√° apretada? Rep√≠tase: 'Esta sensaci√≥n es inc√≥moda, pero no es peligrosa'.",
           "duracion_seg": 90
         },
         {
           "orden": 4,
-          "instruccion": "Permanezca con la sensaciÛn sin intentar cambiarla, enseÒando a su cerebro que es seguro estar presente con ella.",
+          "instruccion": "Permanezca con la sensaci√≥n sin intentar cambiarla, ense√±ando a su cerebro que es seguro estar presente con ella.",
           "duracion_seg": 120
         }
       ],
-      "indicaciones": "Para gestionar el hambre emocional, molestias gastrointestinales crÛnicas y ansiedad por la salud.",
-      "contraindicaciones": "No intentar forzar la desapariciÛn de la sensaciÛn; el objetivo es la aceptaciÛn de la presencia sensorial."
+      "indicaciones": "Para gestionar el hambre emocional, molestias gastrointestinales cr√≥nicas y ansiedad por la salud.",
+      "contraindicaciones": "No intentar forzar la desaparici√≥n de la sensaci√≥n; el objetivo es la aceptaci√≥n de la presencia sensorial."
     },
     {
       "id": "SOM_005",
-      "nombre": "ActivaciÛn del Sistema Adrenal (RegulaciÛn AutÛnoma)",
+      "nombre": "Activaci√≥n del Sistema Adrenal (Regulaci√≥n Aut√≥noma)",
       "tipo": "corporal",
       "duracion_min": 2,
       "nivel": "avanzado",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "ColÛquese tumbado boca abajo (dec˙bito prono) para facilitar la activaciÛn del sistema adrenal.",
+          "instruccion": "Col√≥quese tumbado boca abajo (dec√∫bito prono) para facilitar la activaci√≥n del sistema adrenal.",
           "duracion_seg": 30
         },
         {
           "orden": 2,
-          "instruccion": "Realice ciclos respiratorios cortos, con inspiraciones y espiraciones r·pidas y controladas.",
+          "instruccion": "Realice ciclos respiratorios cortos, con inspiraciones y espiraciones r√°pidas y controladas.",
           "duracion_seg": 60
         },
         {
           "orden": 3,
-          "instruccion": "Mantenga el enfoque en la demanda cardiovascular para elevar la energÌa si se siente en un estado de agotamiento o 'vago alto'.",
+          "instruccion": "Mantenga el enfoque en la demanda cardiovascular para elevar la energ√≠a si se siente en un estado de agotamiento o 'vago alto'.",
           "duracion_seg": 30
         }
       ],
-      "indicaciones": "Para pacientes en estados de agotamiento neurovegetativo o cuando el sistema parasimp·tico est· excesivamente alto sin adaptaciÛn.",
-      "contraindicaciones": "No usar en crisis de ansiedad aguda con sistema simp·tico ya elevado."
+      "indicaciones": "Para pacientes en estados de agotamiento neurovegetativo o cuando el sistema parasimp√°tico est√° excesivamente alto sin adaptaci√≥n.",
+      "contraindicaciones": "No usar en crisis de ansiedad aguda con sistema simp√°tico ya elevado."
     },
     {
       "id": "SOM_001",
@@ -152,52 +152,52 @@
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Detectar la apariciÛn del impulso oral-compensatorio (comer por ansiedad) sin juzgarlo [1].",
+          "instruccion": "Detectar la aparici√≥n del impulso oral-compensatorio (comer por ansiedad) sin juzgarlo [1].",
           "duracion_seg": 30
         },
         {
           "orden": 2,
-          "instruccion": "Utilizar la respiraciÛn para observar cÛmo el impulso crece y decrece como una ola en el mar [1, 2].",
+          "instruccion": "Utilizar la respiraci√≥n para observar c√≥mo el impulso crece y decrece como una ola en el mar [1, 2].",
           "duracion_seg": 120
         },
         {
           "orden": 3,
-          "instruccion": "Mantener la atenciÛn en la respiraciÛn hasta que la intensidad de la urgencia disminuya por sÌ sola [2].",
+          "instruccion": "Mantener la atenci√≥n en la respiraci√≥n hasta que la intensidad de la urgencia disminuya por s√≠ sola [2].",
           "duracion_seg": 60
         }
       ],
       "indicaciones": "Usar cuando surja un impulso repentino de comer por ansiedad [1].",
-      "contraindicaciones": "No aplicar si existe una necesidad fisiolÛgica real de alimento."
+      "contraindicaciones": "No aplicar si existe una necesidad fisiol√≥gica real de alimento."
     },
     {
       "id": "SOM_002",
-      "nombre": "IdentificaciÛn Som·tica de la EmociÛn",
+      "nombre": "Identificaci√≥n Som√°tica de la Emoci√≥n",
       "tipo": "corporal",
       "duracion_min": 8,
       "nivel": "intermedio",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Hacer una pausa ante la sensaciÛn de hambre e identificar dÛnde se siente la tensiÛn en el cuerpo [1].",
+          "instruccion": "Hacer una pausa ante la sensaci√≥n de hambre e identificar d√≥nde se siente la tensi√≥n en el cuerpo [1].",
           "duracion_seg": 60
         },
         {
           "orden": 2,
-          "instruccion": "Preguntarse quÈ emociÛn subyace al hambre en este momento (ansiedad, tristeza, aburrimiento) [1, 2].",
+          "instruccion": "Preguntarse qu√© emoci√≥n subyace al hambre en este momento (ansiedad, tristeza, aburrimiento) [1, 2].",
           "duracion_seg": 120
         },
         {
           "orden": 3,
-          "instruccion": "Nombrar la emociÛn identificada para permitir que el sistema nervioso comience a regularse [1].",
+          "instruccion": "Nombrar la emoci√≥n identificada para permitir que el sistema nervioso comience a regularse [1].",
           "duracion_seg": 60
         }
       ],
-      "indicaciones": "Ideal para identificar la emociÛn bajo el hambre antes de actuar el impulso [1].",
-      "contraindicaciones": "En estados de disociaciÛn severa."
+      "indicaciones": "Ideal para identificar la emoci√≥n bajo el hambre antes de actuar el impulso [1].",
+      "contraindicaciones": "En estados de disociaci√≥n severa."
     },
     {
       "id": "SOM_003",
-      "nombre": "DefusiÛn del Impulso Oral",
+      "nombre": "Defusi√≥n del Impulso Oral",
       "tipo": "cognitivo",
       "duracion_min": 5,
       "nivel": "avanzado",
@@ -209,7 +209,7 @@
         },
         {
           "orden": 2,
-          "instruccion": "Practicar la defusiÛn reconociendo que el impulso es una respuesta aprendida del ciclo emocional [1].",
+          "instruccion": "Practicar la defusi√≥n reconociendo que el impulso es una respuesta aprendida del ciclo emocional [1].",
           "duracion_seg": 90
         },
         {
@@ -219,28 +219,28 @@
         }
       ],
       "indicaciones": "Para romper el automatismo de los impulsos oral-compensatorios [1].",
-      "contraindicaciones": "No sustituye el tratamiento mÈdico para trastornos de la conducta alimentaria."
+      "contraindicaciones": "No sustituye el tratamiento m√©dico para trastornos de la conducta alimentaria."
     },
     {
       "id": "SOM_004",
-      "nombre": "Grounding: Hambre FÌsica vs. Emocional",
+      "nombre": "Grounding: Hambre F√≠sica vs. Emocional",
       "tipo": "reflexion",
       "duracion_min": 6,
       "nivel": "basico",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Evaluar si el hambre apareciÛ de forma repentina (emocional) o gradual (fÌsica) [2].",
+          "instruccion": "Evaluar si el hambre apareci√≥ de forma repentina (emocional) o gradual (f√≠sica) [2].",
           "duracion_seg": 60
         },
         {
           "orden": 2,
-          "instruccion": "Analizar si se busca un alimento especÌfico o cualquier tipo de nutriciÛn [2].",
+          "instruccion": "Analizar si se busca un alimento espec√≠fico o cualquier tipo de nutrici√≥n [2].",
           "duracion_seg": 60
         },
         {
           "orden": 3,
-          "instruccion": "Conectar con la sensaciÛn fÌsica del estÛmago para verificar si hay seÒales biolÛgicas de hambre [2].",
+          "instruccion": "Conectar con la sensaci√≥n f√≠sica del est√≥mago para verificar si hay se√±ales biol√≥gicas de hambre [2].",
           "duracion_seg": 60
         }
       ],
@@ -249,7 +249,7 @@
     },
     {
       "id": "SOM_005",
-      "nombre": "InterrupciÛn del Ciclo de Culpa",
+      "nombre": "Interrupci√≥n del Ciclo de Culpa",
       "tipo": "escritura",
       "duracion_min": 10,
       "nivel": "intermedio",
@@ -261,24 +261,24 @@
         },
         {
           "orden": 2,
-          "instruccion": "Escribir la emociÛn que precediÛ a la ingesta para hacer visible el ciclo emocional [1, 2].",
+          "instruccion": "Escribir la emoci√≥n que precedi√≥ a la ingesta para hacer visible el ciclo emocional [1, 2].",
           "duracion_seg": 180
         },
         {
           "orden": 3,
-          "instruccion": "Validar la emociÛn identificada en lugar de centrarse en la nutriciÛn o el peso [1].",
+          "instruccion": "Validar la emoci√≥n identificada en lugar de centrarse en la nutrici√≥n o el peso [1].",
           "duracion_seg": 120
         }
       ],
-      "indicaciones": "Para prevenir la repeticiÛn de patrones de hambre compulsiva tras un episodio [1, 2].",
-      "contraindicaciones": "Si la reflexiÛn genera niveles de angustia incapacitantes."
+      "indicaciones": "Para prevenir la repetici√≥n de patrones de hambre compulsiva tras un episodio [1, 2].",
+      "contraindicaciones": "Si la reflexi√≥n genera niveles de angustia incapacitantes."
     }
   ],
   "fichas_rapidas": [
     {
       "id": "SOM_F01",
-      "titulo": "Nervio Vago y RelajaciÛn",
-      "contenido": "Estimular el nervio vago reduce el estrÈs y la inflamaciÛn al activar la respuesta de relajaciÛn del sistema parasimp·tico.",
+      "titulo": "Nervio Vago y Relajaci√≥n",
+      "contenido": "Estimular el nervio vago reduce el estr√©s y la inflamaci√≥n al activar la respuesta de relajaci√≥n del sistema parasimp√°tico.",
       "etiquetas": [
         "vago",
         "parasimpatico"
@@ -286,8 +286,8 @@
     },
     {
       "id": "SOM_F02",
-      "titulo": "VFC (Variabilidad de la Frecuencia CardÌaca)",
-      "contenido": "Es un marcador de resiliencia. Una VFC alta indica un sistema autÛnomo flexible y capaz de adaptarse a desafÌos psicolÛgicos y fÌsicos.",
+      "titulo": "VFC (Variabilidad de la Frecuencia Card√≠aca)",
+      "contenido": "Es un marcador de resiliencia. Una VFC alta indica un sistema aut√≥nomo flexible y capaz de adaptarse a desaf√≠os psicol√≥gicos y f√≠sicos.",
       "etiquetas": [
         "VFC",
         "HRV"
@@ -295,8 +295,8 @@
     },
     {
       "id": "SOM_F03",
-      "titulo": "JerarquÌa de Sistemas",
-      "contenido": "No se puede modular un sistema bajo (como el visceral) si el sistema alto (emocional/cognitivo) est· descontrolado o 'prendido a fuego'.",
+      "titulo": "Jerarqu√≠a de Sistemas",
+      "contenido": "No se puede modular un sistema bajo (como el visceral) si el sistema alto (emocional/cognitivo) est√° descontrolado o 'prendido a fuego'.",
       "etiquetas": [
         "SNA",
         "emociones"
@@ -305,7 +305,7 @@
     {
       "id": "SOM_F04",
       "titulo": "Presiones Internas",
-      "contenido": "El cambio de presiones entre tÛrax, abdomen y pelvis es el principal mecanismo regulador de las funciones viscerales.",
+      "contenido": "El cambio de presiones entre t√≥rax, abdomen y pelvis es el principal mecanismo regulador de las funciones viscerales.",
       "etiquetas": [
         "visceral",
         "presion"
@@ -313,17 +313,17 @@
     },
     {
       "id": "SOM_F05",
-      "titulo": "El SueÒo como Prioridad",
-      "contenido": "El sueÒo es la prioridad n˙mero uno para la recuperaciÛn del SNA. La melatonina depende de una correcta liberaciÛn de noradrenalina simp·tica nocturna.",
+      "titulo": "El Sue√±o como Prioridad",
+      "contenido": "El sue√±o es la prioridad n√∫mero uno para la recuperaci√≥n del SNA. La melatonina depende de una correcta liberaci√≥n de noradrenalina simp√°tica nocturna.",
       "etiquetas": [
-        "sueÒo",
+        "sue√±o",
         "ritmo circadiano"
       ]
     },
     {
       "id": "SOM_F01",
       "titulo": "Urge Surfing",
-      "contenido": "TÈcnica para surfear el impulso de comer por ansiedad sin actuar sobre Èl, trat·ndolo como una ola transitoria [1, 2].",
+      "contenido": "T√©cnica para surfear el impulso de comer por ansiedad sin actuar sobre √©l, trat√°ndolo como una ola transitoria [1, 2].",
       "etiquetas": [
         "impulso",
         "ansiedad"
@@ -332,7 +332,7 @@
     {
       "id": "SOM_F02",
       "titulo": "Hambre Emocional",
-      "contenido": "Impulso que surge de estados emocionales y busca compensaciÛn oral en lugar de nutriciÛn biolÛgica [1, 2].",
+      "contenido": "Impulso que surge de estados emocionales y busca compensaci√≥n oral en lugar de nutrici√≥n biol√≥gica [1, 2].",
       "etiquetas": [
         "emocion",
         "hambre"
@@ -341,7 +341,7 @@
     {
       "id": "SOM_F03",
       "titulo": "Ciclo de Culpa",
-      "contenido": "PatrÛn donde la ingesta compulsiva genera malestar, reforzando la emociÛn negativa que iniciÛ el ciclo [2].",
+      "contenido": "Patr√≥n donde la ingesta compulsiva genera malestar, reforzando la emoci√≥n negativa que inici√≥ el ciclo [2].",
       "etiquetas": [
         "culpa",
         "ciclo"
@@ -349,7 +349,7 @@
     },
     {
       "id": "SOM_F04",
-      "titulo": "DefusiÛn Cognitiva",
+      "titulo": "Defusi√≥n Cognitiva",
       "contenido": "Capacidad de observar los impulsos y pensamientos como eventos mentales pasajeros sin identificarse con ellos [1].",
       "etiquetas": [
         "cognicion",
@@ -358,8 +358,8 @@
     },
     {
       "id": "SOM_F05",
-      "titulo": "IdentificaciÛn Emocional",
-      "contenido": "Proceso de descubrir la emociÛn oculta tras el hambre para desactivar la necesidad de compensaciÛn oral [1].",
+      "titulo": "Identificaci√≥n Emocional",
+      "contenido": "Proceso de descubrir la emoci√≥n oculta tras el hambre para desactivar la necesidad de compensaci√≥n oral [1].",
       "etiquetas": [
         "conciencia",
         "emocion"
