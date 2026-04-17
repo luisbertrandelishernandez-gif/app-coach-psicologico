@@ -30,6 +30,16 @@
             >
                 Aprendizaje CPVA
             </button>
+            <button
+                id="btn-ayuda"
+                class="nav-btn nav-btn-ayuda"
+                onclick="abrirModalAyuda()"
+                aria-label="Abrir ayuda"
+                aria-haspopup="dialog"
+                aria-controls="modal-ayuda"
+            >
+                ?
+            </button>
         </nav>
     </header>
 
@@ -169,6 +179,84 @@
     <footer>
         Antigravity — Coach Psicológico CPVA &copy; 2026
     </footer>
+
+    <!-- === MODAL AYUDA START === -->
+    <!-- Overlay del modal de ayuda -->
+    <div id="modal-ayuda-overlay" class="modal-overlay" hidden>
+        <div
+            id="modal-ayuda"
+            class="modal-ayuda"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-ayuda-titulo"
+            tabindex="-1"
+        >
+            <h2 id="modal-ayuda-titulo">Ayuda — Coach Psicológico</h2>
+
+            <!-- Sección 1: Hoy -->
+            <section>
+                <h3>Sección Hoy</h3>
+                <p>La sección <strong>Hoy</strong> muestra el contenido del día según una rotación secuencial de 11 cuadernos CPVA. Cada día avanza al siguiente cuaderno en el ciclo.</p>
+                <ul>
+                    <li><strong>Reflexión diaria:</strong> Texto del cuaderno del día. Aparece siempre. Puedes leerlo desplazándote por el visor de texto.</li>
+                    <li><strong>Podcast:</strong> Solo disponible lunes, miércoles y viernes (L/X/V). Usa el reproductor de audio integrado para escucharlo.</li>
+                    <li><strong>API key de Drive:</strong> Si el contenido no carga, introduce tu API key de Google Drive en el panel de configuración que aparece automáticamente. La key debe empezar por <code>AIzaSy</code> y tener 39 caracteres.</li>
+                </ul>
+            </section>
+
+            <!-- Sección 2: Aprendizaje CPVA -->
+            <section>
+                <h3>Aprendizaje CPVA</h3>
+                <p>La sección <strong>Aprendizaje CPVA</strong> da acceso a los 9 módulos terapéuticos locales.</p>
+                <ul>
+                    <li><strong>Elegir módulo:</strong> Pulsa cualquiera de las 9 tarjetas (ACT, Ansiedad, Apego, Crisis, Focusing, Ira, Logoterapia, Somática, TREC) para abrirlo.</li>
+                    <li><strong>Ejercicios:</strong> Pasos secuenciales numerados para practicar la técnica. Indicados para uso continuado.</li>
+                    <li><strong>Fichas rápidas:</strong> Resumen de consulta para recordar los conceptos clave de la técnica sin seguir pasos.</li>
+                    <li><strong>Badges de nivel:</strong>
+                        <ul>
+                            <li><em>Básico</em> — ejercicios accesibles para cualquier persona.</li>
+                            <li><em>Intermedio</em> — requieren práctica previa.</li>
+                            <li><em>Avanzado</em> — para uso con supervisión profesional.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Etiquetas:</strong> Palabras clave descriptivas de cada ficha para identificar el contexto de uso.</li>
+                </ul>
+            </section>
+
+            <!-- Sección 3: TTS -->
+            <section>
+                <h3>Lectura en voz alta (TTS)</h3>
+                <p>Pulsa el botón <strong>🔊</strong> junto a una reflexión, ejercicio o ficha para que la app lea el contenido en voz alta.</p>
+                <ul>
+                    <li><strong>Detener:</strong> Vuelve a pulsar el botón 🔊 para parar la lectura en cualquier momento.</li>
+                    <li><strong>Cambiar velocidad:</strong> Usa el selector de velocidad de más abajo para ajustar el ritmo de lectura. El cambio se guarda automáticamente.</li>
+                </ul>
+            </section>
+
+            <!-- Selector de velocidad TTS -->
+            <fieldset id="tts-rate-selector">
+                <legend>Velocidad de lectura</legend>
+                <label>
+                    <input type="radio" name="app002-tts-rate" value="0.75">
+                    0.75× (lenta)
+                </label>
+                <label>
+                    <input type="radio" name="app002-tts-rate" value="1.0" checked>
+                    1.0× (normal)
+                </label>
+                <label>
+                    <input type="radio" name="app002-tts-rate" value="1.25">
+                    1.25× (rápida)
+                </label>
+            </fieldset>
+
+            <!-- Botón cerrar -->
+            <button id="btn-cerrar-ayuda" onclick="cerrarModalAyuda()">
+                Cerrar
+            </button>
+        </div>
+    </div>
+    <!-- === MODAL AYUDA END === -->
 
     <script src="drive-reader.js"></script>
     <script src="app.js"></script>

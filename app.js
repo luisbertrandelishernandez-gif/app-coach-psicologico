@@ -813,3 +813,143 @@ document.addEventListener('DOMContentLoaded', () => {
         cargarContenidoDelDia();
     }
 });
+
+// === MODAL AYUDA START ===
+
+/**
+ * Variable para recordar el elemento que tenía el foco antes de abrir el modal.
+ * @type {Element|null}
+ */
+let __ayudaTriggerPrev = null;
+
+/**
+ * Referencias a los listeners para poder quitarlos al cerrar.
+ */
+let __ayudaEscListener = null;
+let __ayudaClickListener = null;
+
+/**
+ * Abre el modal de ayuda:
+ * - Guarda el elemento con foco actual.
+ * - Muestra el overlay.
+ * - Carga la velocidad TTS guardada y marca el radio correspondiente.
+ * - Mueve el foco al diálogo.
+ * - Añade listeners de Escape y click-outside.
+ */
+function abrirModalAyuda() {
+    // Guardar foco actual
+    __ayudaTriggerPrev = document.activeElement;
+
+    const overlay = document.getElementById('modal-ayuda-overlay');
+    const dialogo = document.getElementById('modal-ayuda');
+
+    // Mostrar overlay (quitar hidden)
+    overlay.removeAttribute('hidden');
+
+    // Cargar velocidad TTS guardada y marcar radio correspondiente
+    const tasaGuardada = localStorage.getItem('app002_tts_rate') || '1.0';
+    const radios = overlay.querySelectorAll('input[name="app002-tts-rate"]');
+    radios.forEach(radio => {
+        radio.checked = (radio.value === tasaGuardada);
+    });
+
+    // Mover foco al diálogo
+    dialogo.focus();
+
+    // Listener de Escape para cerrar
+    __ayudaEscListener = function(e) {
+        if (e.key === 'Escape') {
+            cerrarModalAyuda();
+        }
+    };
+    document.addEventListener('keydown', __ayudaEscListener);
+
+    // Listener de click en overlay para cerrar si se hace click fuera del diálogo
+    __ayudaClickListener = function(e) {
+        if (e.target === overlay) {
+            cerrarModalAyuda();
+        }
+    };
+    overlay.addEventListener('click', __ayudaClickListener);
+
+    // Focus trap: Tab / Shift+Tab cicla dentro del modal
+    dialogo.addEventListener('keydown', __ayudaFocusTrap);
+}
+
+/**
+ * Cierra el modal de ayuda:
+ * - Oculta el overlay.
+ * - Elimina los listeners.
+ * - Devuelve el foco al elemento trigger.
+ */
+function cerrarModalAyuda() {
+    const overlay = document.getElementById('modal-ayuda-overlay');
+    const dialogo = document.getElementById('modal-ayuda');
+
+    // Ocultar overlay
+    overlay.setAttribute('hidden', '');
+
+    // Quitar listeners
+    if (__ayudaEscListener) {
+        document.removeEventListener('keydown', __ayudaEscListener);
+        __ayudaEscListener = null;
+    }
+    if (__ayudaClickListener) {
+        overlay.removeEventListener('click', __ayudaClickListener);
+        __ayudaClickListener = null;
+    }
+    dialogo.removeEventListener('keydown', __ayudaFocusTrap);
+
+    // Devolver foco al trigger o al botón de ayuda
+    const destino = __ayudaTriggerPrev || document.getElementById('btn-ayuda');
+    if (destino && typeof destino.focus === 'function') {
+        destino.focus();
+    }
+    __ayudaTriggerPrev = null;
+}
+
+/**
+ * Focus trap: mantiene el foco dentro del modal al usar Tab / Shift+Tab.
+ * @param {KeyboardEvent} e
+ */
+function __ayudaFocusTrap(e) {
+    if (e.key !== 'Tab') return;
+
+    const dialogo = document.getElementById('modal-ayuda');
+    const focusables = Array.from(
+        dialogo.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')
+    ).filter(el => !el.disabled && el.offsetParent !== null);
+
+    if (focusables.length === 0) return;
+
+    const primero = focusables[0];
+    const ultimo  = focusables[focusables.length - 1];
+
+    if (e.shiftKey) {
+        // Shift+Tab: si el foco está en el primero, ir al último
+        if (document.activeElement === primero) {
+            e.preventDefault();
+            ultimo.focus();
+        }
+    } else {
+        // Tab: si el foco está en el último, ir al primero
+        if (document.activeElement === ultimo) {
+            e.preventDefault();
+            primero.focus();
+        }
+    }
+}
+
+// Listener de cambio de velocidad TTS: persiste en localStorage
+document.addEventListener('DOMContentLoaded', () => {
+    const overlay = document.getElementById('modal-ayuda-overlay');
+    if (overlay) {
+        overlay.addEventListener('change', function(e) {
+            if (e.target && e.target.name === 'app002-tts-rate') {
+                localStorage.setItem('app002_tts_rate', e.target.value);
+            }
+        });
+    }
+});
+
+// === MODAL AYUDA END ===
