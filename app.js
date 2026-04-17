@@ -350,7 +350,7 @@ async function cargarContenidoDelDia() {
             htmlHoy += `
                 <div>
                     <span class="tipo-contenido tipo-reflexion">Reflexión diaria</span>
-                    <h3>${cuaderno.nombre}</h3>
+                    <h3>${cuaderno.nombre}${crearBotonTTS(cuaderno.nombre + '. ' + (texto || ''))}</h3>
                     <div class="visor-texto">${texto || 'Cargando reflexión...'}</div>
                 </div>`;
         }
@@ -497,7 +497,7 @@ function renderizarJsonCPVA(data, cuadernoNombre, contenedorHoy, contenedorHisto
     let html = '';
 
     html += `<span class="tipo-contenido tipo-reflexion">Contenido local</span>`;
-    html += `<h3>${data.titulo || cuadernoNombre}</h3>`;
+    html += `<h3>${data.titulo || cuadernoNombre}${crearBotonTTS((data.titulo || cuadernoNombre) + '. ' + (data.descripcion || ''))}</h3>`;
     if (data.descripcion) {
         html += `<p class="visor-texto">${data.descripcion}</p>`;
     }
@@ -508,7 +508,7 @@ function renderizarJsonCPVA(data, cuadernoNombre, contenedorHoy, contenedorHisto
         for (const ej of data.ejercicios) {
             html += `
                 <div class="ejercicio-card">
-                    <h4>${ej.titulo || ej.nombre || 'Ejercicio'}</h4>
+                    <h4>${ej.titulo || ej.nombre || 'Ejercicio'}${crearBotonTTS(ttsTextoEjercicio(ej))}</h4>
                     <p class="visor-texto">${ej.descripcion || ej.instrucciones || ''}</p>`;
             if (ej.pasos && ej.pasos.length > 0) {
                 html += '<ol>';
@@ -531,7 +531,7 @@ function renderizarJsonCPVA(data, cuadernoNombre, contenedorHoy, contenedorHisto
         for (const ficha of data.fichas_rapidas) {
             html += `
                 <div class="ficha-card">
-                    <h4>${ficha.titulo || ficha.nombre || 'Ficha'}</h4>
+                    <h4>${ficha.titulo || ficha.nombre || 'Ficha'}${crearBotonTTS(ttsTextoFicha(ficha))}</h4>
                     <p class="visor-texto">${ficha.contenido || ficha.descripcion || ficha.texto || ''}</p>
                 </div>`;
         }
@@ -703,7 +703,7 @@ function renderizarEjercicios(ejercicios) {
     for (const ej of ejercicios) {
         html += `
             <div class="ejercicio-item">
-                <h3>${ej.nombre || ej.titulo || 'Ejercicio'}</h3>
+                <h3>${ej.nombre || ej.titulo || 'Ejercicio'}${crearBotonTTS(ttsTextoEjercicio(ej))}</h3>
                 <div class="ejercicio-meta">
                     <span class="badge badge-${ej.nivel || 'basico'}">${ej.nivel || 'básico'}</span>
                     <span class="duracion">${ej.duracion_min || '—'} min</span>
@@ -748,7 +748,7 @@ function renderizarFichas(fichas) {
     for (const ficha of fichas) {
         html += `
             <div class="ficha-item">
-                <h3>${ficha.titulo || ficha.nombre || 'Ficha'}</h3>
+                <h3>${ficha.titulo || ficha.nombre || 'Ficha'}${crearBotonTTS(ttsTextoFicha(ficha))}</h3>
                 <p>${ficha.contenido || ficha.descripcion || ficha.texto || ''}</p>`;
 
         if (ficha.etiquetas && ficha.etiquetas.length > 0) {
@@ -953,3 +953,173 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // === MODAL AYUDA END ===
+
+// === TTS START ===
+/* ============================================================
+   TTS — Lectura en voz alta accesible (speechSynthesis es-ES)
+   ============================================================ */
+
+// Clave localStorage para persistir la velocidad de lectura
+const APP002_TTS_RATE_KEY = 'app002_tts_rate';
+
+// Estado global: utterance activo y voz cacheada
+let __ttsActive = null;
+let __ttsVoice  = null;
+
+// Referencia al botón actualmente marcado como activo
+let __ttsBtnActivo = null;
+
+/**
+ * Devuelve la primera voz en español disponible (cacheada).
+ * Si aún no hay voces cargadas devuelve null.
+ */
+function obtenerVozEspanola() {
+    if (__ttsVoice) return __ttsVoice;
+    const voces = speechSynthesis.getVoices();
+    if (!voces || voces.length === 0) return null;
+    const voz = voces.find(v => v.lang.startsWith('es'));
+    if (voz) __ttsVoice = voz;
+    return __ttsVoice || null;
+}
+
+/**
+ * Devuelve la velocidad de lectura almacenada, clampeada a [0.75, 1.25].
+ */
+function obtenerVelocidadTTS() {
+    const raw = parseFloat(localStorage.getItem(APP002_TTS_RATE_KEY)) || 1.0;
+    return Math.min(1.25, Math.max(0.75, raw));
+}
+
+/**
+ * Limpia el estado visual del botón TTS activo.
+ */
+function _limpiarBtnTTS() {
+    if (__ttsBtnActivo) {
+        __ttsBtnActivo.classList.remove('activo');
+        __ttsBtnActivo = null;
+    }
+}
+
+/**
+ * Inicia la lectura en voz alta del texto dado.
+ * Cancela cualquier lectura previa antes de comenzar.
+ * @param {string} texto - Texto a leer.
+ */
+function hablarTexto(texto) {
+    // Cancelar síntesis activa
+    if (__ttsActive) {
+        speechSynthesis.cancel();
+        __ttsActive = null;
+    }
+
+    if (!texto) return;
+
+    const utt = new SpeechSynthesisUtterance(texto);
+    utt.lang = 'es-ES';
+
+    const voz = obtenerVozEspanola();
+    if (voz) utt.voice = voz;
+
+    utt.rate = obtenerVelocidadTTS();
+
+    // Limpiar estado al terminar o si hay error
+    utt.onend  = () => { __ttsActive = null; _limpiarBtnTTS(); };
+    utt.onerror = () => { __ttsActive = null; _limpiarBtnTTS(); };
+
+    __ttsActive = utt;
+    speechSynthesis.speak(utt);
+}
+
+/**
+ * Detiene la síntesis de voz activa y limpia el estado visual.
+ */
+function detenerTTS() {
+    speechSynthesis.cancel();
+    __ttsActive = null;
+    _limpiarBtnTTS();
+}
+
+/**
+ * Genera el HTML de un botón TTS. El texto se codifica con
+ * encodeURIComponent en data-tts-texto para evitar problemas con comillas.
+ * @param {string} texto - Texto a leer cuando se pulse el botón.
+ * @returns {string} HTML del botón.
+ */
+function crearBotonTTS(texto) {
+    const encoded = encodeURIComponent(texto || '');
+    return `<button type="button" class="btn-tts" aria-label="Leer en voz alta" data-tts-texto="${encoded}">🔊</button>`;
+}
+
+/**
+ * Construye el texto completo de un ejercicio para lectura TTS.
+ * @param {Object} ej - Objeto ejercicio del JSON CPVA.
+ * @returns {string}
+ */
+function ttsTextoEjercicio(ej) {
+    const partes = [];
+
+    // Título del ejercicio
+    if (ej.nombre || ej.titulo) partes.push(ej.nombre || ej.titulo);
+
+    // Pasos (acepta string, {instruccion}, o {texto})
+    if (ej.pasos && ej.pasos.length > 0) {
+        for (const paso of ej.pasos) {
+            const txt = typeof paso === 'string' ? paso : (paso.instruccion || paso.texto || '');
+            if (txt) partes.push(txt);
+        }
+    }
+
+    // Campos adicionales
+    if (ej.indicaciones)      partes.push(ej.indicaciones);
+    if (ej.contraindicaciones) partes.push(ej.contraindicaciones);
+
+    return partes.join('. ');
+}
+
+/**
+ * Construye el texto completo de una ficha para lectura TTS.
+ * @param {Object} ficha - Objeto ficha del JSON CPVA.
+ * @returns {string}
+ */
+function ttsTextoFicha(ficha) {
+    const titulo    = ficha.titulo || ficha.nombre || '';
+    const contenido = ficha.contenido || ficha.descripcion || ficha.texto || '';
+    return [titulo, contenido].filter(Boolean).join('. ');
+}
+
+// --- Warmup de voces (listener adicional, no modifica el existente) ---
+document.addEventListener('DOMContentLoaded', () => {
+    // Precalentar: intentar cargar voces ya disponibles
+    const vocesIniciales = speechSynthesis.getVoices();
+    if (!vocesIniciales || vocesIniciales.length === 0) {
+        // Registrar listener para cachear cuando estén disponibles
+        speechSynthesis.addEventListener('voiceschanged', () => {
+            __ttsVoice = null;       // invalidar cache por si el navegador actualizó
+            obtenerVozEspanola();    // cachear la voz española
+        });
+    }
+});
+
+// --- Cancelar síntesis al abandonar la página ---
+window.addEventListener('beforeunload', () => {
+    speechSynthesis.cancel();
+});
+
+// --- Delegación global de eventos para botones TTS ---
+document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.btn-tts');
+    if (!btn) return;
+
+    if (btn.classList.contains('activo')) {
+        // El botón ya estaba activo: detener lectura
+        detenerTTS();
+    } else {
+        // Iniciar nueva lectura
+        _limpiarBtnTTS();
+        const texto = decodeURIComponent(btn.dataset.ttsTexto || '');
+        hablarTexto(texto);
+        btn.classList.add('activo');
+        __ttsBtnActivo = btn;
+    }
+});
+// === TTS END ===

@@ -972,3 +972,38 @@ footer {
 }
 
 /* MODAL AYUDA END */
+
+
+/* TTS START */
+/* ============================================================
+   BOTÓN TTS — Lectura en voz alta accesible
+   ============================================================ */
+.btn-tts {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--color-superficie);
+    border: 2px solid var(--color-borde);
+    cursor: pointer;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+    font-size: 1.1rem;
+    line-height: 1;
+    padding: 0;
+    transition: border-color 0.2s, background 0.2s, color 0.2s;
+}
+
+.btn-tts:hover {
+    border-color: var(--color-primario);
+}
+
+.btn-tts:focus-visible {
+    outline: var(--focus-ring);
+}
+
+.btn-tts.activo {
+    background: var(--color-primario);
+    color: white;
+}
+/* TTS END */
