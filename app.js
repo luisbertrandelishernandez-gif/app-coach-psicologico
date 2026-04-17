@@ -581,7 +581,7 @@ function mostrarSeccion(seccion) {
         btnAprendizaje.classList.add('activo');
 
         // Cargar módulos si aún no se han cargado
-        if (!document.getElementById('selector-modulos').hasChildNodes()) {
+        if (document.querySelectorAll('#selector-modulos .tarjeta-modulo').length !== 9) {
             cargarAprendizaje();
         }
     }
