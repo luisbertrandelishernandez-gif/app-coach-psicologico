@@ -542,5 +542,274 @@ function renderizarJsonCPVA(data, cuadernoNombre, contenedorHoy, contenedorHisto
     contenedorHistorial.innerHTML = '<p class="estado-vacio">Contenido cargado desde datos locales (MOT-008)</p>';
 }
 
+/* ============================================================
+   SECCIÓN APRENDIZAJE CPVA (9 módulos locales)
+   ============================================================ */
+
+// Los 9 módulos CPVA disponibles con sus archivos JSON
+const MODULOS_CPVA = [
+    { id: 'act', archivo: 'CPVA_act.json', nombre: 'ACT', nombreCompleto: 'Terapia de Aceptación y Compromiso' },
+    { id: 'ansiedad', archivo: 'CPVA_ansiedad.json', nombre: 'Ansiedad', nombreCompleto: 'Manejo de la Ansiedad' },
+    { id: 'apego', archivo: 'CPVA_apego.json', nombre: 'Apego', nombreCompleto: 'Apego y Vínculos' },
+    { id: 'crisis', archivo: 'CPVA_crisis.json', nombre: 'Crisis', nombreCompleto: 'Gestión de Crisis' },
+    { id: 'focusing', archivo: 'CPVA_focusing.json', nombre: 'Focusing', nombreCompleto: 'Focusing de Gendlin' },
+    { id: 'ira', archivo: 'CPVA_ira.json', nombre: 'Ira', nombreCompleto: 'Regulación de la Ira' },
+    { id: 'logoterapia', archivo: 'CPVA_logoterapia.json', nombre: 'Logoterapia', nombreCompleto: 'Logoterapia de Frankl' },
+    { id: 'somatica', archivo: 'CPVA_somatica.json', nombre: 'Somática', nombreCompleto: 'Regulación Somática' },
+    { id: 'trec', archivo: 'CPVA_trec.json', nombre: 'TREC', nombreCompleto: 'Terapia Racional Emotiva Conductual' }
+];
+
+/**
+ * Alterna entre la sección "Hoy" y "Aprendizaje CPVA".
+ * Persiste la última sección en localStorage.
+ */
+function mostrarSeccion(seccion) {
+    const seccionHoy = document.getElementById('seccion-hoy');
+    const seccionAprendizaje = document.getElementById('seccion-aprendizaje');
+    const btnHoy = document.getElementById('btn-hoy');
+    const btnAprendizaje = document.getElementById('btn-aprendizaje');
+
+    if (seccion === 'hoy') {
+        seccionHoy.style.display = '';
+        seccionAprendizaje.style.display = 'none';
+        btnHoy.classList.add('activo');
+        btnAprendizaje.classList.remove('activo');
+    } else if (seccion === 'aprendizaje') {
+        seccionHoy.style.display = 'none';
+        seccionAprendizaje.style.display = '';
+        btnHoy.classList.remove('activo');
+        btnAprendizaje.classList.add('activo');
+
+        // Cargar módulos si aún no se han cargado
+        if (!document.getElementById('selector-modulos').hasChildNodes()) {
+            cargarAprendizaje();
+        }
+    }
+
+    // Persistir última sección visitada
+    localStorage.setItem('cpva_seccion', seccion);
+}
+
+/**
+ * Carga los 9 módulos CPVA y genera el selector de tarjetas.
+ */
+async function cargarAprendizaje() {
+    const selector = document.getElementById('selector-modulos');
+    selector.innerHTML = '<div class="cargando"><div class="spinner" role="status"></div><p>Cargando módulos...</p></div>';
+
+    let html = '';
+    for (const modulo of MODULOS_CPVA) {
+        try {
+            const resp = await fetch(`data/${modulo.archivo}`);
+            if (!resp.ok) continue;
+            const data = await resp.json();
+
+            const numEjercicios = data.ejercicios?.length || 0;
+            const numFichas = data.fichas_rapidas?.length || 0;
+
+            html += `
+                <div class="tarjeta-modulo" role="listitem" tabindex="0"
+                     onclick="cargarModulo('${modulo.archivo}')"
+                     onkeydown="if(event.key==='Enter')cargarModulo('${modulo.archivo}')"
+                     aria-label="${modulo.nombreCompleto}: ${numEjercicios} ejercicios, ${numFichas} fichas">
+                    <h3>${modulo.nombre}</h3>
+                    <p class="modulo-subtitulo">${modulo.nombreCompleto}</p>
+                    <div class="modulo-stats">
+                        <span>${numEjercicios} ejercicios</span>
+                        <span>${numFichas} fichas</span>
+                    </div>
+                </div>`;
+        } catch (err) {
+            console.error(`Error cargando ${modulo.archivo}:`, err);
+        }
+    }
+
+    selector.innerHTML = html || '<p class="estado-vacio">No se pudieron cargar los módulos.</p>';
+}
+
+/**
+ * Carga y muestra un módulo CPVA específico.
+ * @param {string} nombreJson - Nombre del archivo JSON (ej: 'CPVA_act.json')
+ */
+async function cargarModulo(nombreJson) {
+    const selector = document.getElementById('selector-modulos');
+    const contenido = document.getElementById('modulo-contenido');
+    const titulo = document.getElementById('mod-titulo');
+    const descripcion = document.getElementById('mod-descripcion');
+    const listaEjercicios = document.getElementById('lista-ejercicios');
+    const listaFichas = document.getElementById('lista-fichas');
+
+    // Ocultar selector, mostrar contenido del módulo
+    selector.style.display = 'none';
+    contenido.style.display = 'block';
+
+    // Cargar JSON
+    contenido.innerHTML = '<div class="cargando"><div class="spinner" role="status"></div><p>Cargando módulo...</p></div>';
+
+    try {
+        const resp = await fetch(`data/${nombreJson}`);
+        if (!resp.ok) throw new Error('No se pudo cargar el módulo');
+        const data = await resp.json();
+
+        // Restaurar estructura del contenido
+        contenido.innerHTML = `
+            <div class="modulo-header">
+                <button class="btn-volver" onclick="volverASelector()" aria-label="Volver al selector de módulos">
+                    ← Volver
+                </button>
+                <h2 id="mod-titulo">${data.titulo || 'Módulo'}</h2>
+                <p id="mod-descripcion" class="mod-descripcion">${data.descripcion || ''}</p>
+            </div>
+            <div class="pestanas" role="tablist">
+                <button id="tab-ejercicios" class="pestana activa" role="tab" aria-selected="true"
+                        aria-controls="lista-ejercicios" onclick="mostrarPestana('ejercicios')">
+                    Ejercicios
+                </button>
+                <button id="tab-fichas" class="pestana" role="tab" aria-selected="false"
+                        aria-controls="lista-fichas" onclick="mostrarPestana('fichas')">
+                    Fichas rápidas
+                </button>
+            </div>
+            <div id="lista-ejercicios" class="lista-ejercicios" role="tabpanel" aria-labelledby="tab-ejercicios"></div>
+            <div id="lista-fichas" class="lista-fichas" role="tabpanel" aria-labelledby="tab-fichas" style="display:none;"></div>`;
+
+        // Renderizar ejercicios
+        renderizarEjercicios(data.ejercicios || []);
+
+        // Renderizar fichas
+        renderizarFichas(data.fichas_rapidas || []);
+
+    } catch (err) {
+        contenido.innerHTML = `
+            <div class="estado-vacio">
+                <p>Error al cargar el módulo.</p>
+                <button class="btn-volver" onclick="volverASelector()">← Volver</button>
+            </div>`;
+        console.error('Error cargando módulo:', err);
+    }
+}
+
+/**
+ * Renderiza la lista de ejercicios de un módulo.
+ */
+function renderizarEjercicios(ejercicios) {
+    const lista = document.getElementById('lista-ejercicios');
+    if (!ejercicios || ejercicios.length === 0) {
+        lista.innerHTML = '<p class="estado-vacio">No hay ejercicios disponibles.</p>';
+        return;
+    }
+
+    let html = '';
+    for (const ej of ejercicios) {
+        html += `
+            <div class="ejercicio-item">
+                <h3>${ej.nombre || ej.titulo || 'Ejercicio'}</h3>
+                <div class="ejercicio-meta">
+                    <span class="badge badge-${ej.nivel || 'basico'}">${ej.nivel || 'básico'}</span>
+                    <span class="duracion">${ej.duracion_min || '—'} min</span>
+                    <span class="tipo">${ej.tipo || '—'}</span>
+                </div>`;
+
+        if (ej.pasos && ej.pasos.length > 0) {
+            html += '<ol class="pasos-ejercicio">';
+            for (const paso of ej.pasos) {
+                const texto = typeof paso === 'string' ? paso : (paso.instruccion || paso.texto || '');
+                const duracion = paso.duracion_seg ? ` <em>(${Math.round(paso.duracion_seg / 60)} min)</em>` : '';
+                html += `<li>${texto}${duracion}</li>`;
+            }
+            html += '</ol>';
+        }
+
+        if (ej.indicaciones) {
+            html += `<div class="ejercicio-indicaciones"><strong>Cuándo usarlo:</strong> ${ej.indicaciones}</div>`;
+        }
+
+        if (ej.contraindicaciones) {
+            html += `<div class="ejercicio-contraindicaciones"><strong>Contraindicaciones:</strong> ${ej.contraindicaciones}</div>`;
+        }
+
+        html += '</div>';
+    }
+
+    lista.innerHTML = html;
+}
+
+/**
+ * Renderiza la lista de fichas rápidas de un módulo.
+ */
+function renderizarFichas(fichas) {
+    const lista = document.getElementById('lista-fichas');
+    if (!fichas || fichas.length === 0) {
+        lista.innerHTML = '<p class="estado-vacio">No hay fichas disponibles.</p>';
+        return;
+    }
+
+    let html = '';
+    for (const ficha of fichas) {
+        html += `
+            <div class="ficha-item">
+                <h3>${ficha.titulo || ficha.nombre || 'Ficha'}</h3>
+                <p>${ficha.contenido || ficha.descripcion || ficha.texto || ''}</p>`;
+
+        if (ficha.etiquetas && ficha.etiquetas.length > 0) {
+            html += '<div class="ficha-etiquetas">';
+            for (const tag of ficha.etiquetas) {
+                html += `<span class="tag">${tag}</span>`;
+            }
+            html += '</div>';
+        }
+
+        html += '</div>';
+    }
+
+    lista.innerHTML = html;
+}
+
+/**
+ * Alterna entre las pestañas "Ejercicios" y "Fichas rápidas".
+ */
+function mostrarPestana(pestana) {
+    const tabEjercicios = document.getElementById('tab-ejercicios');
+    const tabFichas = document.getElementById('tab-fichas');
+    const listaEjercicios = document.getElementById('lista-ejercicios');
+    const listaFichas = document.getElementById('lista-fichas');
+
+    if (pestana === 'ejercicios') {
+        tabEjercicios.classList.add('activa');
+        tabEjercicios.setAttribute('aria-selected', 'true');
+        tabFichas.classList.remove('activa');
+        tabFichas.setAttribute('aria-selected', 'false');
+        listaEjercicios.style.display = '';
+        listaFichas.style.display = 'none';
+    } else if (pestana === 'fichas') {
+        tabEjercicios.classList.remove('activa');
+        tabEjercicios.setAttribute('aria-selected', 'false');
+        tabFichas.classList.add('activa');
+        tabFichas.setAttribute('aria-selected', 'true');
+        listaEjercicios.style.display = 'none';
+        listaFichas.style.display = '';
+    }
+}
+
+/**
+ * Vuelve del módulo al selector de módulos.
+ */
+function volverASelector() {
+    const selector = document.getElementById('selector-modulos');
+    const contenido = document.getElementById('modulo-contenido');
+    selector.style.display = '';
+    contenido.style.display = 'none';
+}
+
 // Iniciar al cargar la página
-document.addEventListener('DOMContentLoaded', cargarContenidoDelDia);
+document.addEventListener('DOMContentLoaded', () => {
+    // Recuperar última sección visitada
+    const ultimaSeccion = localStorage.getItem('cpva_seccion') || 'hoy';
+
+    if (ultimaSeccion === 'aprendizaje') {
+        mostrarSeccion('aprendizaje');
+    } else {
+        // Sección Hoy (por defecto)
+        cargarContenidoDelDia();
+    }
+});

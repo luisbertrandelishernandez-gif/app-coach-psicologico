@@ -11,9 +11,32 @@
     <header>
         <h1>Coach Psicológico</h1>
         <p class="subtitulo">Reflexiones diarias y podcasts L/X/V</p>
+
+        <!-- Navegación entre secciones -->
+        <nav role="navigation" aria-label="Navegación principal">
+            <button
+                id="btn-hoy"
+                class="nav-btn activo"
+                onclick="mostrarSeccion('hoy')"
+                aria-label="Ver contenido de hoy"
+            >
+                Hoy
+            </button>
+            <button
+                id="btn-aprendizaje"
+                class="nav-btn"
+                onclick="mostrarSeccion('aprendizaje')"
+                aria-label="Explorar módulos CPVA"
+            >
+                Aprendizaje CPVA
+            </button>
+        </nav>
     </header>
 
-    <main class="contenedor">
+    <!-- =====================================================
+         SECCIÓN HOY (contenido diario desde Drive)
+         ===================================================== -->
+    <main id="seccion-hoy" class="contenedor">
         <!-- Panel configuración API key -->
         <div id="config-api" class="config-panel" style="display:none;" role="region" aria-label="Configuración de API key">
             <p><strong>Configuración inicial</strong></p>
@@ -74,6 +97,71 @@
                 <div class="cargando">
                     <div class="spinner" role="status" aria-label="Cargando historial"></div>
                 </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- =====================================================
+         SECCIÓN APRENDIZAJE CPVA (contenido local de 9 módulos)
+         ===================================================== -->
+    <main id="seccion-aprendizaje" class="contenedor" style="display:none;">
+        <div class="intro-aprendizaje">
+            <h2>Módulos de Aprendizaje CPVA</h2>
+            <p>Explora los 9 enfoques terapéuticos con ejercicios prácticos y fichas de consulta rápida.</p>
+        </div>
+
+        <!-- Selector de módulos (9 tarjetas) -->
+        <div id="selector-modulos" class="selector-modulos" role="list">
+            <!-- Se genera dinámicamente en app.js -->
+        </div>
+
+        <!-- Contenido del módulo seleccionado -->
+        <div id="modulo-contenido" class="modulo-contenido" style="display:none;">
+            <!-- Encabezado del módulo -->
+            <div class="modulo-header">
+                <button
+                    class="btn-volver"
+                    onclick="volverASelector()"
+                    aria-label="Volver al selector de módulos"
+                >
+                    ← Volver
+                </button>
+                <h2 id="mod-titulo">—</h2>
+                <p id="mod-descripcion" class="mod-descripcion">—</p>
+            </div>
+
+            <!-- Pestañas: Ejercicios / Fichas rápidas -->
+            <div class="pestanas" role="tablist">
+                <button
+                    id="tab-ejercicios"
+                    class="pestana activa"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="lista-ejercicios"
+                    onclick="mostrarPestana('ejercicios')"
+                >
+                    Ejercicios
+                </button>
+                <button
+                    id="tab-fichas"
+                    class="pestana"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="lista-fichas"
+                    onclick="mostrarPestana('fichas')"
+                >
+                    Fichas rápidas
+                </button>
+            </div>
+
+            <!-- Contenido de ejercicios -->
+            <div id="lista-ejercicios" class="lista-ejercicios" role="tabpanel" aria-labelledby="tab-ejercicios">
+                <!-- Se genera dinámicamente -->
+            </div>
+
+            <!-- Contenido de fichas -->
+            <div id="lista-fichas" class="lista-fichas" role="tabpanel" aria-labelledby="tab-fichas" style="display:none;">
+                <!-- Se genera dinámicamente -->
             </div>
         </div>
     </main>
