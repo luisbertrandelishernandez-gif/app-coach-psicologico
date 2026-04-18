@@ -6,7 +6,7 @@
 
 // API key de Google Drive (lectura pública, restringida a *.github.io)
 // Si no hay key configurada, se muestra mensaje de configuración
-const API_KEY = localStorage.getItem('drive_api_key') || 'PENDIENTE_CONFIGURAR';
+const API_KEY = localStorage.getItem('drive_api_key') || 'AIzaSyCnszcj3XPvSca_oNGJtDyMZuYpYlwD99k';
 
 /**
  * Lista los archivos de una carpeta Drive pública
