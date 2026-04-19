@@ -59,12 +59,20 @@ function getDriveDownloadUrl(fileId) {
 }
 
 /**
- * Obtiene la URL de stream para audio (Google Drive)
+ * Obtiene la URL de stream para audio (Google Drive).
+ *
+ * FIX (19/04): La URL anterior usaba Drive API v3 con alt=media + API key,
+ * que falla en sesiones normales por restricciones CORS de Google en streams
+ * autenticados. Ahora usa la URL pública de descarga/exportación de Drive
+ * (uc?export=download&id=...) que no requiere API key ni autenticación,
+ * funciona en etiquetas <audio> y respeta el encabezado Range para seeking.
+ *
  * @param {string} fileId - ID del archivo de audio
  * @returns {string} URL para el elemento <audio>
  */
 function getDriveAudioUrl(fileId) {
-    return getDriveDownloadUrl(fileId);
+    // URL pública de Drive sin API key — funciona en sesiones normales y en incógnito
+    return `https://drive.google.com/uc?export=download&id=${fileId}`;
 }
 
 /**

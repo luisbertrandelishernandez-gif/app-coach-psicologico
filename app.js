@@ -559,9 +559,17 @@ const MODULOS_CPVA = [
     { id: 'trec', archivo: 'CPVA_trec.json', nombre: 'TREC', nombreCompleto: 'Terapia Racional Emotiva Conductual' }
 ];
 
+// Flag para evitar recargar los módulos CPVA si ya se cargaron al menos una vez
+let __modulosCargados = false;
+
 /**
  * Alterna entre la sección "Hoy" y "Aprendizaje CPVA".
  * Persiste la última sección en localStorage.
+ *
+ * FIX (19/04): El selector anterior usaba .length !== 9, lo que causaba
+ * recargas infinitas si algún módulo fallaba al cargar. Ahora usa un flag
+ * booleano __modulosCargados que solo se activa cuando cargarAprendizaje()
+ * termina con éxito (al menos 1 módulo), evitando bucles de recarga.
  */
 function mostrarSeccion(seccion) {
     const seccionHoy = document.getElementById('seccion-hoy');
@@ -580,8 +588,8 @@ function mostrarSeccion(seccion) {
         btnHoy.classList.remove('activo');
         btnAprendizaje.classList.add('activo');
 
-        // Cargar módulos si aún no se han cargado
-        if (document.querySelectorAll('#selector-modulos .tarjeta-modulo').length !== 9) {
+        // Cargar módulos solo si aún no se han cargado (usa flag, no DOM count)
+        if (!__modulosCargados) {
             cargarAprendizaje();
         }
     }
@@ -625,6 +633,11 @@ async function cargarAprendizaje() {
     }
 
     selector.innerHTML = html || '<p class="estado-vacio">No se pudieron cargar los módulos.</p>';
+
+    // Marcar como cargados si al menos 1 módulo se renderizó correctamente
+    if (html) {
+        __modulosCargados = true;
+    }
 }
 
 /**
