@@ -1,0 +1,29 @@
+# APP-002 Coach Psicológico CPVA - ficheros ignorados
+
+# Metadatos herramientas locales (Claude Code, IDEs)
+.claude/
+.vscode/
+.idea/
+
+# Node / npm (por si se usa en el futuro)
+node_modules/
+npm-debug.log*
+
+# Python (por si se añade backend local)
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Variables de entorno y secretos
+.env
+.env.local
+.env.*
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
