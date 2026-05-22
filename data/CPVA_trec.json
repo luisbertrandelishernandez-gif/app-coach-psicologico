@@ -1,7 +1,7 @@
 {
   "modulo": "trec",
-  "titulo": "Manual de Transformación Racional Emotiva",
-  "descripcion": "Ejercicios basados en la Terapia Racional Emotiva Conductual de Albert Ellis para transformar creencias irracionales en filosofías de vida eficaces.",
+  "titulo": "Manual de Entrenamiento Racional Emotivo Conductual",
+  "descripcion": "Ejercicios prácticos y conceptos fundamentales extraídos del protocolo de Albert Ellis para transformar creencias irracionales y desarrollar resiliencia emocional.",
   "ejercicios": [
     {
       "id": "TRC_001",
@@ -12,63 +12,63 @@
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Identifica el Acontecimiento Activador (A): Describe el hecho objetivo o la adversidad que percibes como causa de tu malestar.",
+          "instruccion": "Identifica el Acontecimiento Activador (A): Describe el hecho objetivo, pensamiento o situación externa percibida como causa de malestar.",
           "duracion_seg": 180
         },
         {
           "orden": 2,
-          "instruccion": "Identifica las Consecuencias (C): Anota tus respuestas emocionales (ansiedad, rabia) y conductuales (evitación, autosabotaje).",
-          "duracion_seg": 180
+          "instruccion": "Anota las Consecuencias (C): Describe tus respuestas emocionales (ansiedad, depresión) y conductuales (evitación, autosabotaje).",
+          "duracion_seg": 120
         },
         {
           "orden": 3,
-          "instruccion": "Detecta las Creencias (B): Identifica los pensamientos irracionales, especialmente exigencias absolutistas como 'debo' o 'tengo que'.",
-          "duracion_seg": 300
+          "instruccion": "Detecta las Creencias (B): Localiza las exigencias absolutistas, dogmáticas y rígidas disfrazadas de 'deberías' o 'tienes que'.",
+          "duracion_seg": 240
         },
         {
           "orden": 4,
-          "instruccion": "Inicia el Debate (D): Cuestiona la evidencia lógica y empírica de esas creencias. ¿Dónde está escrito que 'debe' ser así?",
+          "instruccion": "Inicia el Debate (D): Cuestiona la evidencia lógica y empírica de tus exigencias. ¿Dónde está escrito que 'deba' ser así?",
           "duracion_seg": 300
         },
         {
           "orden": 5,
-          "instruccion": "Genera el Nuevo Efecto (E): Formula una nueva filosofía basada en preferencias racionales (ej. 'Me gustaría, pero no necesito').",
+          "instruccion": "Genera el Nuevo Efecto (E): Construye una nueva filosofía basada en preferencias racionales que transforme emociones destructivas en saludables.",
           "duracion_seg": 180
         }
       ],
       "indicaciones": "Usar cuando experimentes malestar emocional intenso o conductas que frustren tus objetivos.",
-      "contraindicaciones": "No usar durante una crisis psicótica aguda o en situaciones de peligro físico real donde se requiera acción inmediata."
+      "contraindicaciones": "No sustituye tratamiento médico en crisis psicóticas agudas."
     },
     {
       "id": "TRC_002",
-      "nombre": "Técnica DIBS (Disputa de Creencias)",
+      "nombre": "Técnica DIBS (Discusión de Creencias)",
       "tipo": "cognitivo",
       "duracion_min": 10,
       "nivel": "intermedio",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Escribe una creencia irracional específica que desees discutir (ej. 'Tengo que ser aprobado por todos').",
-          "duracion_seg": 120
+          "instruccion": "Selecciona una creencia irracional autoderrotista (ej. 'Debo tener éxito en todo').",
+          "duracion_seg": 60
         },
         {
           "orden": 2,
-          "instruccion": "Pregúntate: ¿Puedo demostrar que esta creencia es cierta? ¿Qué evidencia existe de su falsedad?",
+          "instruccion": "Pregúntate: ¿Puedo demostrar que esta creencia es cierta? ¿Qué evidencias existen de su falsedad?",
           "duracion_seg": 240
         },
         {
           "orden": 3,
-          "instruccion": "Responde: ¿Qué es lo peor que podría pasar si no consigo lo que 'debo' conseguir?",
+          "instruccion": "Analiza: ¿Qué es lo peor que podría pasar realmente si no consigo lo que exijo? ¿Podría soportarlo?",
           "duracion_seg": 180
         },
         {
           "orden": 4,
-          "instruccion": "Formular una respuesta racional basada en los hechos y la probabilidad, no en la certeza absoluta.",
-          "duracion_seg": 180
+          "instruccion": "Sustitución: Formula una respuesta racional basada en hechos y probabilidades reales en lugar de necesidades absolutas.",
+          "duracion_seg": 120
         }
       ],
-      "indicaciones": "Eficaz para cambiar ideas con las que saboteas tus objetivos personales.",
-      "contraindicaciones": "Cuando la persona presente una deficiencia cognitiva grave que impida el razonamiento lógico."
+      "indicaciones": "Eficaz para desmontar pensamientos saboteadores y perfeccionistas.",
+      "contraindicaciones": "Personas con deficiencia cognitiva grave que impida el razonamiento lógico."
     },
     {
       "id": "TRC_003",
@@ -79,48 +79,48 @@
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Cierra los ojos e imagina vívidamente la peor adversidad que temes (A). Siente la emoción disfuncional (C1).",
+          "instruccion": "Cierra los ojos e imagina vívidamente la peor adversidad que temes (A) y siente la emoción disfuncional intensamente (C1).",
           "duracion_seg": 120
         },
         {
           "orden": 2,
-          "instruccion": "Sin cambiar la escena imaginada, esfuérzate por cambiar tu sentimiento (C1) por uno saludable como decepción o pesar (C2).",
+          "instruccion": "Sin cambiar la escena imaginada, esfuérzate por cambiar tu sentimiento (C1) por uno negativo saludable (C2) como pesar o frustración.",
           "duracion_seg": 300
         },
         {
           "orden": 3,
-          "instruccion": "Identifica qué cambio de pensamiento en B permitió el cambio de sentimiento. Repite el proceso durante 30 días.",
+          "instruccion": "Identifica qué cambio en tus pensamientos (B) permitió el cambio emocional y mantén esa nueva creencia.",
           "duracion_seg": 180
         }
       ],
-      "indicaciones": "Para entrenar la resiliencia emocional ante eventos futuros temidos.",
-      "contraindicaciones": "No usar si el paciente tiene dificultades para distinguir entre fantasía y realidad."
+      "indicaciones": "Para entrenar la resiliencia emocional ante eventos futuros temidos o pasados traumáticos.",
+      "contraindicaciones": "Dificultad extrema para distinguir entre fantasía y realidad."
     },
     {
       "id": "TRC_004",
-      "nombre": "Ataque a la Vergüenza",
+      "nombre": "Ejercicio de Ataque a la Vergüenza",
       "tipo": "corporal",
       "duracion_min": 20,
       "nivel": "avanzado",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Selecciona una acción que consideres ridícula o vergonzosa pero que sea inofensiva (ej. cantar en voz alta en la calle).",
+          "instruccion": "Selecciona una acción inofensiva pero ridícula (ej. pedir algo absurdo en una tienda o pasear un plátano con correa).",
           "duracion_seg": 120
         },
         {
           "orden": 2,
-          "instruccion": "Realiza la acción deliberadamente mientras te repites: 'Puedo actuar de forma estúpida y eso no me convierte en un estúpido'.",
+          "instruccion": "Realiza la acción deliberadamente mientras te repites: 'Puedo actuar de forma tonta y eso no me convierte en un estúpido'.",
           "duracion_seg": 600
         },
         {
           "orden": 3,
-          "instruccion": "Observa la reacción real de los demás y comprueba que no es 'terrible' ni el fin del mundo.",
+          "instruccion": "Observa la reacción de los demás y comprueba que la desaprobación social es tolerable y no catastrófica.",
           "duracion_seg": 480
         }
       ],
-      "indicaciones": "Para personas con alta necesidad de aprobación o fobia social.",
-      "contraindicaciones": "No realizar actos ilegales, peligrosos o que infrinjan los derechos de los demás."
+      "indicaciones": "Para superar la fobia social y la necesidad extrema de aprobación ajena.",
+      "contraindicaciones": "Prohibido realizar actos ilegales, peligrosos o que infrinjan los derechos de otros."
     },
     {
       "id": "TRC_005",
@@ -131,21 +131,26 @@
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Elige un hábito autoderrotista (fumar, procrastinar). Haz una lista de sus desventajas reales a largo plazo.",
-          "duracion_seg": 300
+          "instruccion": "Identifica un hábito autoderrotista (ej. fumar, procrastinar) o una creencia perturbadora.",
+          "duracion_seg": 60
         },
         {
           "orden": 2,
-          "instruccion": "Haz una lista de las ventajas reales de abandonar dicho hábito.",
+          "instruccion": "Haz una lista exhaustiva de las desventajas reales de mantener dicho hábito o creencia a largo plazo.",
           "duracion_seg": 300
         },
         {
           "orden": 3,
-          "instruccion": "Lee y piensa sobre esta lista varias veces al día, especialmente cuando sientas el impulso de recaer.",
+          "instruccion": "Haz una lista de las ventajas reales que obtendrás al adoptar la conducta o filosofía racional.",
           "duracion_seg": 300
+        },
+        {
+          "orden": 4,
+          "instruccion": "Revisa esta lista varias veces al día para fortalecer tu convicción racional ante los impulsos.",
+          "duracion_seg": 240
         }
       ],
-      "indicaciones": "Especialmente útil en conductas adictivas y baja tolerancia a la frustración.",
+      "indicaciones": "Especialmente útil en adicciones y baja tolerancia a la frustración.",
       "contraindicaciones": "Ninguna conocida."
     },
     {
@@ -153,155 +158,155 @@
       "nombre": "Autorregistro ABCDEF Completo",
       "tipo": "escritura",
       "duracion_min": 15,
-      "level": "basico",
+      "nivel": "basico",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Identifica el Acontecimiento Activador (A): Describe brevemente el hecho objetivo, interno o externo, que desencadenó el malestar.",
+          "instruccion": "Identifica el Acontecimiento Activador (A): Describe el hecho objetivo o la percepción de la situación que desencadenó el malestar sin juzgarlo.",
           "duracion_seg": 180
         },
         {
           "orden": 2,
-          "instruccion": "Detecta las Creencias (B): Anota los pensamientos irracionales, exigencias absolutistas ('debo', 'tengo que') o catastrofismo.",
+          "instruccion": "Detecta las Creencias (B): Anota pensamientos automáticos y exigencias absolutistas ('debo', 'tengo que') que pasaron por tu mente.",
           "duracion_seg": 240
         },
         {
           "orden": 3,
-          "instruccion": "Registra las Consecuencias (C): Describe la emoción insana (ansiedad, depresión, ira) y la conducta disfuncional resultante.",
+          "instruccion": "Registra las Consecuencias (C): Describe la emoción negativa insana (ansiedad, depresión, ira) y la conducta disfuncional resultante.",
           "duracion_seg": 120
         },
         {
           "orden": 4,
-          "instruccion": "Realiza el Debate (D): Cuestiona la validez de B mediante argumentos empíricos (¿evidencia?), lógicos (¿tiene sentido?) y pragmáticos (¿utilidad?).",
+          "instruccion": "Realiza el Debate (D): Cuestiona la validez de tus creencias usando argumentos empíricos (¿evidencia?), lógicos (¿coherencia?) y pragmáticos (¿utilidad?).",
           "duracion_seg": 300
         },
         {
           "orden": 5,
-          "instruccion": "Genera una Nueva Filosofía Efectiva (E): Sustituye la exigencia por una preferencia flexible y realista.",
+          "instruccion": "Genera una Nueva Filosofía (E): Formula una creencia racional basada en preferencias flexibles y aceptación de la realidad.",
           "duracion_seg": 180
         },
         {
           "orden": 6,
-          "instruccion": "Evalúa el Efecto (F): Nota el cambio hacia una emoción negativa sana (tristeza, preocupación, molestia) y conductas constructivas.",
+          "instruccion": "Evalúa el Efecto (F): Registra la nueva emoción sana (tristeza, preocupación) y conductas constructivas que surgen tras el cambio.",
           "duracion_seg": 60
         }
       ],
-      "indicaciones": "Usar ante situaciones que generen perturbación emocional intensa o conductas auto-saboteadoras.",
-      "contraindicaciones": "No usar si la intensidad emocional impide el razonamiento lógico mínimo; en ese caso, usar primero distracción cognitiva."
+      "indicaciones": "Usar ante situaciones que generen malestar emocional significativo o bloqueos conductuales.",
+      "contraindicaciones": "No usar en momentos de crisis emocional extrema que impidan el razonamiento lógico mínimo."
     },
     {
       "id": "TRC_002",
       "nombre": "Imaginación Racional Emotiva (IRE)",
       "tipo": "guiado",
       "duracion_min": 10,
-      "level": "intermedio",
+      "nivel": "intermedio",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Cierra los ojos e imagínate vívidamente una de las peores cosas que podrían sucederte (ej. un fracaso o rechazo importante).",
+          "instruccion": "Imagina vívidamente un acontecimiento altamente desafortunado o un fracaso temido que te perturbe intensamente.",
           "duracion_seg": 120
         },
         {
           "orden": 2,
-          "instruccion": "Permítete sentir la emoción negativa perturbadora (ansiedad o pánico) con toda su intensidad.",
+          "instruccion": "Permítete sentir la emoción negativa insana (pánico, depresión o rabia) con toda su intensidad espontánea.",
           "duracion_seg": 60
         },
         {
           "orden": 3,
-          "instruccion": "Cambia activamente esa emoción por una saludable (como decepción o frustración) modificando tu pensamiento interno.",
-          "duracion_seg": 180
+          "instruccion": "Cambia activamente esa emoción por una saludable (como decepción o preocupación) modificando únicamente tu pensamiento interno de B.",
+          "duracion_seg": 300
         },
         {
           "orden": 4,
-          "instruccion": "Identifica qué pensamientos específicos te ayudaron a realizar el cambio emocional y anótalos.",
+          "instruccion": "Identifica los pensamientos específicos que te ayudaron a realizar el cambio emocional y anótalos.",
           "duracion_seg": 120
         }
       ],
-      "indicaciones": "Eficaz para entrenar el cambio cualitativo de emociones insanas a sanas antes de enfrentar situaciones reales.",
-      "contraindicaciones": "Evitar en pacientes con dificultad para distinguir fantasía de realidad o tendencias disociativas."
+      "indicaciones": "Eficaz para entrenar el paso del insight intelectual al emocional y practicar nuevos hábitos racionales.",
+      "contraindicaciones": "Evitar si el sujeto tiene dificultad para distinguir fantasía de realidad o presenta imágenes vagas."
     },
     {
       "id": "TRC_003",
-      "nombre": "Disputa Socrática de Exigencias",
+      "nombre": "Técnica del Zigzag (Dos Sillas)",
       "tipo": "reflexion",
-      "duracion_min": 12,
-      "level": "basico",
+      "duracion_min": 15,
+      "nivel": "intermedio",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Localiza un pensamiento con la estructura 'yo debo', 'él debe' o 'el mundo tiene que'.",
+          "instruccion": "Siéntate en una silla y expresa una creencia racional que te cueste creer, indicando tu grado de convicción inicial (0-100).",
           "duracion_seg": 120
         },
         {
           "orden": 2,
-          "instruccion": "Aplica el Debate Empírico: Pregúntate '¿Dónde está la evidencia de que esto DEBA ser así?' y busca pruebas en la realidad.",
+          "instruccion": "Cambia a la 'silla irracional' y ataca esa idea racional con argumentos dogmáticos y absolutistas de tus 'deberías'.",
           "duracion_seg": 240
         },
         {
           "orden": 3,
-          "instruccion": "Aplica el Debate Lógico: Pregúntate '¿Del hecho de que yo desee esto, se deduce lógicamente que tiene que ocurrir?'.",
-          "duracion_seg": 240
+          "instruccion": "Vuelve a la silla racional y rebate cada ataque irracional con vigor, lógica y evidencia empírica.",
+          "duracion_seg": 420
         },
         {
           "orden": 4,
-          "instruccion": "Aplica el Debate Pragmático: Pregúntate '¿De qué me sirve mantener esta exigencia a largo plazo? ¿Me ayuda a ser feliz?'.",
+          "instruccion": "Mide nuevamente tu grado de convicción en la idea racional tras haberla defendido activamente.",
           "duracion_seg": 120
         }
       ],
-      "indicaciones": "Útil para desmontar la rigidez mental y el perfeccionismo.",
-      "contraindicaciones": "No recomendado cuando el sujeto está en medio de una crisis de pánico activa."
+      "indicaciones": "Útil para trabajar la disonancia cognitiva y fortalecer las nuevas filosofías de vida.",
+      "contraindicaciones": "No recomendado si el paciente aún no distingue claramente entre pensamientos racionales e irracionales."
     },
     {
       "id": "TRC_004",
-      "nombre": "Inversión de Rol Racional",
+      "nombre": "Ejercicio de Ataque a la Vergüenza",
       "tipo": "cognitivo",
-      "duracion_min": 15,
-      "level": "avanzado",
+      "duracion_min": 20,
+      "nivel": "avanzado",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Imagina que eres el terapeuta y tienes un paciente que sostiene tus mismas creencias irracionales.",
+          "instruccion": "Elige una acción deliberadamente 'tonta' para realizar en público que sea inocua (ej. preguntar la hora a diez personas).",
           "duracion_seg": 180
         },
         {
           "orden": 2,
-          "instruccion": "Desarrolla una serie de argumentos lógicos y enérgicos para persuadir a ese 'paciente' de que sus ideas son falsas y dañinas.",
+          "instruccion": "Realiza la acción mientras mantienes pensamientos racionales: 'Es incómodo pero no es el fin del mundo', 'Mi valor no depende de su aprobación'.",
+          "duracion_seg": 600
+        },
+        {
+          "orden": 3,
+          "instruccion": "Evalúa los resultados comprobando que no ocurrió ninguna catástrofe y que puedes soportar la incomodidad social.",
+          "duracion_seg": 420
+        }
+      ],
+      "indicaciones": "Ideal para tratar ansiedad social, miedo al rechazo y aumentar la autoaceptación incondicional.",
+      "contraindicaciones": "No realizar actos que sean ilegales, peligrosos o que infrinjan los derechos de los demás."
+    },
+    {
+      "id": "TRC_005",
+      "nombre": "Inversión de Rol Racional",
+      "tipo": "cognitivo",
+      "duracion_min": 12,
+      "nivel": "avanzado",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Imagina que eres el terapeuta y tienes un paciente que sostiene tus mismas creencias irracionales actuales.",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 2,
+          "instruccion": "Debate vigorosamente esas ideas irracionales usando preguntas socráticas y argumentos lógicos para convencer al 'paciente'.",
           "duracion_seg": 420
         },
         {
           "orden": 3,
-          "instruccion": "Formula en voz alta o por escrito la nueva creencia racional que le sugerirías adoptar para que sea más feliz.",
-          "duracion_seg": 300
-        }
-      ],
-      "indicaciones": "Usar cuando ya se tiene habilidad para debatir y se necesita fortalecer la convicción en las nuevas ideas.",
-      "contraindicaciones": "Cuando el paciente aún no comprende la diferencia entre pensamiento racional e irracional."
-    },
-    {
-      "id": "TRC_005",
-      "nombre": "Plan de 5 minutos contra la Procrastinación",
-      "tipo": "cognitivo",
-      "duracion_min": 8,
-      "level": "basico",
-      "pasos": [
-        {
-          "orden": 1,
-          "instruccion": "Identifica una tarea que estás postergando por Baja Tolerancia a la Frustración (BTF).",
-          "duracion_seg": 60
-        },
-        {
-          "orden": 2,
-          "instruccion": "Identifica el pensamiento de 'no puedo soportarlo' o 'es demasiado difícil' y debátelo.",
+          "instruccion": "Formula y explica al 'paciente' la alternativa racional más saludable y los beneficios de adoptarla.",
           "duracion_seg": 180
-        },
-        {
-          "orden": 3,
-          "instruccion": "Comprométete a trabajar en la tarea solo durante 5 minutos, aceptando la incomodidad sin exigirte terminarla.",
-          "duracion_seg": 300
         }
       ],
-      "indicaciones": "Eficaz para romper la inercia de la evitación y aumentar la tolerancia a la frustración.",
-      "contraindicaciones": "No aplicable a tareas que requieren seguridad física extrema si hay distracción."
+      "indicaciones": "Usar cuando se tiene habilidad para debatir pero se necesita fortalecer la convicción personal.",
+      "contraindicaciones": "Requiere que el sujeto ya conozca los principios básicos y el modelo ABC de la TREC."
     }
   ],
   "fichas_rapidas": [
@@ -316,8 +321,8 @@
     },
     {
       "id": "TRC_F02",
-      "titulo": "Terribilitis y Necesititis",
-      "contenido": "Terribilitis: Calificar un evento negativo como 'terrible' o 'insoportable'. Necesititis: Transformar deseos en necesidades absolutas ('necesito que me amen').",
+      "titulo": "Terribilitis",
+      "contenido": "Distorsión cognitiva de calificar contratiempos negativos como 'terribles', 'insoportables' o 'el fin del mundo', magnificando la adversidad por encima del 100%.",
       "etiquetas": [
         "distorsion",
         "vocabulario"
@@ -325,26 +330,26 @@
     },
     {
       "id": "TRC_F03",
+      "titulo": "Necesititis",
+      "contenido": "Creencia irracional de transformar simples deseos (éxito, amor, comodidad) en necesidades absolutas inventadas sin las cuales uno cree no poder ser feliz.",
+      "etiquetas": [
+        "distorsion",
+        "deseo"
+      ]
+    },
+    {
+      "id": "TRC_F04",
       "titulo": "Autoaceptación Incondicional (USA)",
-      "contenido": "Aceptarte como un ser humano falible simplemente por estar vivo. Eres demasiado complejo para ser calificado globalmente como 'bueno' o 'malo'.",
+      "contenido": "Aceptarte como un ser humano falible por estar vivo. Puedes calificar tus actos (buenos o malos), pero nunca tu valor global como persona.",
       "etiquetas": [
         "filosofia",
         "bienestar"
       ]
     },
     {
-      "id": "TRC_F04",
-      "titulo": "Baja Tolerancia a la Frustración (BTF)",
-      "contenido": "La creencia irracional de que la vida DEBE ser fácil y que NO PUEDES SOPORTAR la incomodidad. Superarla es la clave para la autodisciplina.",
-      "etiquetas": [
-        "obstaculo",
-        "resiliencia"
-      ]
-    },
-    {
       "id": "TRC_F05",
-      "titulo": "Tres Debes Absolutistas",
-      "contenido": "1. Yo debo actuar bien. 2. Tú debes tratarme bien. 3. El mundo debe ser fácil. Estas exigencias rinden el 90% de los trastornos emocionales.",
+      "titulo": "Los Tres Debes Absolutistas",
+      "contenido": "1. Yo debo actuar bien. 2. Tú debes tratarme bien. 3. El mundo debe ser fácil. Estas exigencias causan el 90% de los trastornos emocionales.",
       "etiquetas": [
         "creencia-irracional",
         "resumen"
@@ -352,51 +357,52 @@
     },
     {
       "id": "TRC_F01",
-      "titulo": "El Esquema ABC",
-      "contenido": "A (Activating Event): El hecho. B (Beliefs): Interpretación. C (Consequences): Emociones y conductas. No es A lo que causa C, sino B.",
+      "titulo": "El Esquema ABC de Ellis",
+      "contenido": "A (Activating Event): El hecho. B (Beliefs): Tu interpretación y juicios de valor. C (Consequences): Tus emociones y conductas. B es el mediador fundamental.",
       "etiquetas": [
         "modelo",
-        "abc"
-      ]
-    },
-    {
-      "id": "TRC_F02",
-      "titulo": "Las 4 Formas de Pensamiento Irracional",
-      "contenido": "1. Demandas/Exigencias ('debo'). 2. Catastrofismo ('es horrible'). 3. Baja Tolerancia a la Frustración ('no lo soporto'). 4. Condenación global ('soy inútil').",
-      "etiquetas": [
-        "creencias",
         "conceptos"
       ]
     },
     {
-      "id": "TRC_F03",
-      "titulo": "Emociones Sanas vs. Insanas",
-      "contenido": "Insana: Ansiedad, Depresión, Ira, Culpa. Sana: Preocupación, Tristeza, Enfado, Arrepentimiento. El objetivo es el cambio cualitativo.",
+      "id": "TRC_F02",
+      "titulo": "Las 3 Exigencias Absolutistas",
+      "contenido": "1. 'Debo hacerlo bien (Éxito)'. 2. 'Los demás deben tratarme justamente (Justicia)'. 3. 'La vida debe ser fácil (Comodidad)'. Son la raíz de la perturbación.",
       "etiquetas": [
-        "emociones"
+        "creencias",
+        "irracionalidad"
+      ]
+    },
+    {
+      "id": "TRC_F03",
+      "titulo": "Estrategias de Debate (D)",
+      "contenido": "Empírica: ¿Dónde está la evidencia? Lógica: ¿Se deduce de mis deseos? Pragmática: ¿Me ayuda a lograr mis metas pensar así?",
+      "etiquetas": [
+        "tecnica",
+        "debate"
       ]
     },
     {
       "id": "TRC_F04",
-      "titulo": "Insight Racional-Emotivo",
-      "contenido": "Responsabilidad emocional: Somos responsables de lo que sentimos por nuestra forma de pensar. El cambio requiere trabajo constante en el presente.",
+      "titulo": "Emociones Sanas vs. Insanas",
+      "contenido": "Insana: Ansiedad, Depresión, Ira, Culpa. Sana: Preocupación, Tristeza, Enfado, Arrepentimiento. El objetivo es el cambio cualitativo.",
       "etiquetas": [
-        "insight",
-        "cambio"
+        "emociones",
+        "salud"
       ]
     },
     {
       "id": "TRC_F05",
-      "titulo": "Autoaceptación Incondicional (AAI)",
-      "contenido": "Aceptarse como ser humano falible, complejo y en constante cambio. No evaluarse globalmente por conductas o logros específicos.",
+      "titulo": "Los 3 Insights de la TREC",
+      "contenido": "1. Somos responsables de lo que sentimos. 2. Nos perturbamos por repetir creencias irracionales hoy. 3. Solo el trabajo constante logra el cambio.",
       "etiquetas": [
-        "autoaceptacion",
+        "insight",
         "filosofia"
       ]
     }
   ],
   "recursos_audio": [],
-  "version": "2026-04-04",
+  "version": "2026-05-18",
   "generado_por": "MOT-008",
   "meta": {
     "fuentesUsadas": 2,
@@ -404,6 +410,6 @@
     "totalFichas": 10,
     "totalAudios": 0,
     "generadoCon": "nlm_query_notebook",
-    "timestamp": "2026-04-04T22:23:15.479820"
+    "timestamp": "2026-05-18T19:03:21.452629"
   }
 }

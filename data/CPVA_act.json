@@ -1,33 +1,178 @@
 {
   "modulo": "act",
-  "titulo": "Herramientas ACT para el Manejo del TOC",
-  "descripcion": "Conjunto de ejercicios y fichas de Terapia de Aceptación y Compromiso centrados en la defusión de pensamientos intrusivos y la flexibilidad ante la rumiación.",
+  "titulo": "Kit de Flexibilidad Psicológica ACT",
+  "descripcion": "Herramientas operativas basadas en la Terapia de Aceptación y Compromiso para el distanciamiento de pensamientos automáticos, la aceptación de experiencias privadas y la acción basada en valores.",
   "ejercicios": [
     {
       "id": "ACT_001",
-      "nombre": "Pérdida de sentido",
+      "nombre": "Atención Plena de la Respiración",
+      "tipo": "respiracion",
+      "duracion_min": 10,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Siéntate con los pies apoyados en el piso y la espalda derecha; cierra los ojos o fíjalos en un punto.",
+          "duracion_seg": 30
+        },
+        {
+          "orden": 2,
+          "instruccion": "Trae tu atención a la respiración y obsérvala como un científico curioso: nota el aire entrando por las fosas nasales, bajando a los pulmones y fluyendo hacia afuera.",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 3,
+          "instruccion": "Nota la sutil elevación y descenso de tus hombros, tórax y abdomen, fijando tu atención en el área que prefieras.",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 4,
+          "instruccion": "Cuando tu atención se pierda en pensamientos, nota qué te ha distraído y trae gentilmente la atención a la respiración nuevamente.",
+          "duracion_seg": 120
+        }
+      ],
+      "indicaciones": "Para entrenar el contacto con el momento presente y la capacidad de re-enfocar la atención ante distracciones mentales.",
+      "contraindicaciones": "No utilizar como estrategia de control para 'eliminar' la ansiedad, ya que el esfuerzo por suprimir sensaciones puede incrementarlas."
+    },
+    {
+      "id": "ACT_002",
+      "nombre": "Defusión para Pensamientos Intrusivos (Enfoque TOC)",
       "tipo": "cognitivo",
       "duracion_min": 5,
       "nivel": "basico",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Identifica una palabra clave o el pensamiento intrusivo que te perturba en este momento [1]",
-          "duracion_seg": 30
+          "instruccion": "Identifica un pensamiento intrusivo difícil y antepón la frase: 'Estoy teniendo el pensamiento de que...'.",
+          "duracion_seg": 60
         },
         {
           "orden": 2,
-          "instruccion": "Repite la palabra de manera continua, acelerada e intensa sin detenerte [1]",
+          "instruccion": "Di el pensamiento muy lentamente, alargando cada palabra, o cántalo con una melodía ridícula.",
           "duracion_seg": 120
         },
         {
           "orden": 3,
-          "instruccion": "Observa cómo la palabra pierde su valor de verdad y su sentido original, convirtiéndose en un mero sonido [1]",
+          "instruccion": "Etiqueta el pensamiento como un capítulo repetitivo: 'Ya está aquí la historia de que algo malo pasará, episodio 2 millones'.",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 4,
+          "instruccion": "Agradécele a tu mente: 'Gracias por este pensamiento, no lo voy a usar ahora'.",
+          "duracion_seg": 30
+        }
+      ],
+      "indicaciones": "Especialmente útil para pensamientos obsesivos, autocrítica severa o rumiación repetitiva.",
+      "contraindicaciones": "No utilizar para 'refutar' o debatir la veracidad del pensamiento; el objetivo es solo distanciarse de él."
+    },
+    {
+      "id": "ACT_003",
+      "nombre": "Dejando el Pensamiento en el Corazón",
+      "tipo": "guiado",
+      "duracion_min": 8,
+      "nivel": "intermedio",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Trae un pensamiento inaceptable a tu mente y déjalo estar allí con compasión, notando cómo la mente se contrae en torno a él.",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 2,
+          "instruccion": "Permite que el pensamiento flote libre y se experimente como una sensación física, notando su densidad y sus bordes.",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 3,
+          "instruccion": "Imagina que el pensamiento baja por la garganta y se asienta en el espacio del corazón, donde hay lugar para todo y nada se juzga.",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 4,
+          "instruccion": "Experimenta cada pensamiento como solo otro movimiento en la mente, recibido con calidez y paciencia.",
           "duracion_seg": 60
         }
       ],
-      "indicaciones": "Para desintegrar el valor de verdad de pensamientos intrusivos que generan malestar inmediato [1]",
-      "contraindicaciones": "Si el paciente intenta usar la repetición como un ritual supersticioso para aliviar la ansiedad (compulsión) [2, 3]"
+      "indicaciones": "Para trabajar la aceptación de contenidos mentales que generan culpa, vergüenza o rechazo interno profundo.",
+      "contraindicaciones": "Dificultad severa de conexión corporal o crisis de angustia activa donde la introspección profunda sea desestabilizante."
+    },
+    {
+      "id": "ACT_004",
+      "nombre": "Brújula y Plan de Acción Valiosa",
+      "tipo": "escritura",
+      "duracion_min": 15,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Identifica un valor (ej: ser un padre presente) y una actividad concreta que lo alimente (ej: ayudar con la tarea).",
+          "duracion_seg": 240
+        },
+        {
+          "orden": 2,
+          "instruccion": "Adjudica una dificultad del 1 al 10 y define la fecha y hora exacta en la que llevarás a cabo esta acción.",
+          "duracion_seg": 180
+        },
+        {
+          "orden": 3,
+          "instruccion": "Anticipa obstáculos internos (pensamientos/emociones) e identifica una solución basada en la aceptación para sortearlos.",
+          "duracion_seg": 300
+        }
+      ],
+      "indicaciones": "Para personas que experimentan falta de dirección, procrastinación o sensación de vacío vital.",
+      "contraindicaciones": "No confundir los valores (direcciones constantes) con metas (paradas alcanzables que se terminan al cumplirse)."
+    },
+    {
+      "id": "ACT_005",
+      "nombre": "Navegando Experiencias Difíciles",
+      "tipo": "corporal",
+      "duracion_min": 10,
+      "nivel": "intermedio",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Realiza diez respiraciones conscientes y relaja partes del cuerpo contraídas como mandíbulas, hombros y abdomen.",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 2,
+          "instruccion": "Identifica la emoción presente por su nombre y observa los pensamientos como simples 'historias' o 'movimientos de la mente'.",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 3,
+          "instruccion": "Pregúntate: '¿Actuar siguiendo este pensamiento me acerca a mis valores?' e identifica un paso concreto para dar ahora mismo.",
+          "duracion_seg": 120
+        }
+      ],
+      "indicaciones": "Coreografía para aplicar en momentos de malestar emocional intenso o bloqueo conductual impulsivo.",
+      "contraindicaciones": "En situaciones de riesgo vital inminente o crisis de seguridad inmediata que requieran protocolos de emergencia."
+    },
+    {
+      "id": "ACT_001",
+      "nombre": "Técnica de Pérdida de Sentido",
+      "tipo": "cognitivo",
+      "duracion_min": 5,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Identifica una palabra clave o el pensamiento intrusivo que te está perturbando en este momento [1].",
+          "duracion_seg": 30
+        },
+        {
+          "orden": 2,
+          "instruccion": "Repite la palabra de manera continua, acelerada e intensa sin detenerte durante un par de minutos [1].",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 3,
+          "instruccion": "Observa cómo la palabra pierde su valor de verdad y su sentido original, convirtiéndose en un mero sonido [1].",
+          "duracion_seg": 60
+        }
+      ],
+      "indicaciones": "Cuando un pensamiento intrusivo genera un malestar inmediato por su valor de verdad percibido [1].",
+      "contraindicaciones": "No usar si el paciente intenta emplear la repetición como un ritual supersticioso para aliviar la ansiedad (compulsión) [1]."
     },
     {
       "id": "ACT_002",
@@ -38,48 +183,48 @@
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Detecta el inicio de una rumiación o pensamiento intruso sin juzgar su contenido [4]",
+          "instruccion": "Detecta el inicio de una posible rumiación o pensamiento intruso sin intentar bloquearlo [2].",
           "duracion_seg": 45
         },
         {
           "orden": 2,
-          "instruccion": "Reconoce la presencia de la emoción o pensamiento negativo sin intentar bloquearlo ni valorarlo [5]",
+          "instruccion": "Reconoce la presencia de la emoción o pensamiento negativo sin realizar valoraciones ni juicios [3].",
           "duracion_seg": 60
         },
         {
           "orden": 3,
-          "instruccion": "Reorienta tu atención hacia la actividad que estabas realizando en tu entorno actual [4, 5]",
+          "instruccion": "Reorienta tu atención suavemente hacia aspectos experienciales de tu entorno o hacia la actividad que estabas realizando [2, 3].",
           "duracion_seg": 120
         }
       ],
-      "indicaciones": "Útil para demostrar que la rumiación es ineficaz y retomar el contacto con el presente [6, 7]",
-      "contraindicaciones": "Cuando el malestar es tan extremo que impide cualquier nivel de atención al entorno sin guía previa [8, 9]"
+      "indicaciones": "Para romper el bucle mental y demostrar que la rumiación es ineficaz y más aversiva que enfrentar el presente [4, 5].",
+      "contraindicaciones": "En casos de fusión extrema donde el paciente no logra reconocer el pensamiento como un evento mental separado de la realidad [6]."
     },
     {
       "id": "ACT_003",
-      "nombre": "La Mente como Computadora",
+      "nombre": "La Mente como Maquinaria de Supervivencia",
       "tipo": "reflexion",
       "duracion_min": 10,
       "nivel": "basico",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Visualiza tu mente como una computadora de alto rendimiento que genera 'futuribles' o predicciones constantes [10, 11]",
+          "instruccion": "Visualiza tu mente como una maquinaria de supervivencia diseñada para generar simulaciones o 'futuribles' de peligro para protegerte [7, 8].",
           "duracion_seg": 60
         },
         {
           "orden": 2,
-          "instruccion": "Observa el pensamiento espeluznante como una simple salida de datos o una simulación de supervivencia [11, 12]",
+          "instruccion": "Observa el pensamiento espeluznante como una simple 'salida de datos' generada para escanear riesgos, sin valor real de ocurrencia [7-9].",
           "duracion_seg": 120
         },
         {
           "orden": 3,
-          "instruccion": "Reconoce que esos datos no son sinónimo de tu realidad presente ni de tu personalidad [13, 14]",
+          "instruccion": "Reconoce que tú eres el observador de estos procesos mentales y que estos no definen tu realidad ni tu personalidad [7, 8, 10].",
           "duracion_seg": 60
         }
       ],
-      "indicaciones": "Para entender el funcionamiento neuronal y reducir el miedo a los pensamientos egodistónicos [12, 15]",
-      "contraindicaciones": "No utilizar para debatir la lógica del pensamiento o buscar certezas matemáticas [16, 17]"
+      "indicaciones": "Para pacientes que temen sus pensamientos por considerarlos señales de su carácter o de peligros inminentes [8, 11].",
+      "contraindicaciones": "Evitar si el paciente intenta debatir la lógica del contenido del pensamiento en lugar de observar el proceso cerebral [12]."
     },
     {
       "id": "ACT_004",
@@ -90,22 +235,22 @@
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Siéntate cómodamente y cierra los ojos, llevando la atención a las sensaciones físicas de tu cuerpo [18]",
+          "instruccion": "Lleva la atención a las sensaciones físicas de ansiedad o malestar en tu cuerpo sin juzgarlas [13, 14].",
           "duracion_seg": 120
         },
         {
           "orden": 2,
-          "instruccion": "Localiza el malestar o la ansiedad provocada por la obsesión y obsérvala sin juzgarla ni reaccionar [18, 19]",
+          "instruccion": "Localiza el punto de mayor tensión y permite que la sensación esté presente, tomándola como un contacto directo sin manipularla [5, 15, 16].",
           "duracion_seg": 180
         },
         {
           "orden": 3,
-          "instruccion": "Mantente presente tolerando el malestar sin recurrir a ninguna compulsión o ritual [18, 20]",
+          "instruccion": "Mantente presente tolerando el malestar sensorial sin recurrir a rituales o compulsiones para aliviarlo [5, 13, 17].",
           "duracion_seg": 300
         }
       ],
-      "indicaciones": "Para reducir la reactividad a las obsesiones y mejorar la tolerancia al malestar [18, 19]",
-      "contraindicaciones": "En pacientes con crisis de angustia activas o síntomas disociativos severos [21, 22]"
+      "indicaciones": "Para mejorar la tolerancia al malestar y reducir la reactividad inmediata ante las obsesiones [5, 13, 17].",
+      "contraindicaciones": "En pacientes con síntomas disociativos severos o crisis de angustia activas que requieren estabilización previa [18]."
     },
     {
       "id": "ACT_005",
@@ -116,38 +261,83 @@
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Identifica áreas de tu vida (familiar, social, laboral) que son realmente importantes para ti, más allá del TOC [23]",
+          "instruccion": "Identifica áreas importantes de tu vida (familia, trabajo, relaciones) que valoras más allá de tus síntomas de TOC [19].",
           "duracion_seg": 300
         },
         {
           "orden": 2,
-          "instruccion": "Define una acción específica y pequeña que puedas realizar hoy mismo en línea con esos valores [23]",
+          "instruccion": "Define una acción específica y pequeña que puedas realizar hoy mismo que esté alineada con uno de esos valores [19].",
           "duracion_seg": 300
         },
         {
           "orden": 3,
-          "instruccion": "Realiza la acción elegida permitiendo que los pensamientos obsesivos te acompañen como 'pasajeros' sin darles el control [23, 24]",
-          "duracion_seg": 300
+          "instruccion": "Realiza la acción elegida permitiendo que los pensamientos intrusivos te acompañen como 'pasajeros', sin que ellos dirijan tu conducta [19, 20].",
+          "duracion_seg": 600
         }
       ],
-      "indicaciones": "Para orientar la vida hacia lo significativo a pesar de la presencia de síntomas [23-25]",
-      "contraindicaciones": "Cuando el paciente aún no ha comprendido el concepto de yo-contexto y se fusiona totalmente con el síntoma [23]"
+      "indicaciones": "Para orientar la vida hacia lo significativo y satisfactorio a pesar de la presencia de síntomas crónicos [21, 22].",
+      "contraindicaciones": "Cuando el paciente presenta una fuerte fusión pensamiento-acción y cree que actuar ignorando el pensamiento es inmoral o peligroso [23]."
     }
   ],
   "fichas_rapidas": [
     {
       "id": "ACT_F01",
-      "titulo": "Defusión Cognitiva",
-      "contenido": "Consiste en ver los pensamientos como lo que son: procesos mentales pasajeros, y no hechos irrefutables que definen la realidad [13, 26].",
+      "titulo": "Metáfora de las Arenas Movedizas",
+      "contenido": "Luchar contra una emoción difícil es como estar en arenas movedizas: cuanto más luchas, más te hundes. La aceptación es dejar de luchar para poder flotar.",
+      "etiquetas": [
+        "aceptacion",
+        "metafora"
+      ]
+    },
+    {
+      "id": "ACT_F02",
+      "titulo": "Valores vs Metas",
+      "contenido": "Los valores son direcciones constantes (ej: ir al Este); las metas son paradas (ej: llegar al árbol). Los valores nunca se agotan y siempre motivan.",
+      "etiquetas": [
+        "valores",
+        "conceptos"
+      ]
+    },
+    {
+      "id": "ACT_F03",
+      "titulo": "Metáfora de la Gárgola",
+      "contenido": "Los pensamientos negativos son como una gárgola pesada en tu hombro que susurra insultos. Son solo sus 'opiniones' y no verdades absolutas sobre ti.",
       "etiquetas": [
         "defusion",
-        "pensamiento"
+        "depresion"
+      ]
+    },
+    {
+      "id": "ACT_F04",
+      "titulo": "El Teatro (Yo-Contexto)",
+      "contenido": "Tu mente es un escenario donde pensamientos y emociones son los actores que entran y salen. Tú no eres los actores; tú eres el teatro que permanece estable.",
+      "etiquetas": [
+        "yo-contexto",
+        "identidad"
+      ]
+    },
+    {
+      "id": "ACT_F05",
+      "titulo": "Máquina de No-Seas-la-Cena",
+      "contenido": "Tu mente es un detector de amenazas diseñado para sobrevivir. A veces trata tus pensamientos internos como leones reales; no necesitas creer todas sus alertas.",
+      "etiquetas": [
+        "defusion",
+        "mente"
+      ]
+    },
+    {
+      "id": "ACT_F01",
+      "titulo": "Defusión Cognitiva",
+      "contenido": "Consiste en ver los pensamientos como lo que son: procesos mentales pasajeros, y no hechos irrefutables que definen la realidad o la identidad [10, 24].",
+      "etiquetas": [
+        "defusion",
+        "proceso"
       ]
     },
     {
       "id": "ACT_F02",
       "titulo": "Aceptación Experiencial",
-      "contenido": "Tomar contacto con los eventos internos (obsesiones, ansiedad) de forma directa sin actuar para reducirlos ni manipularlos [27-29].",
+      "contenido": "Implica tomar contacto con los eventos internos de forma directa y automática, sin actuar para reducirlos, manipularlos o bloquearlos [14-16].",
       "etiquetas": [
         "aceptacion",
         "tolerancia"
@@ -156,40 +346,40 @@
     {
       "id": "ACT_F03",
       "titulo": "Yo-Contexto",
-      "contenido": "Comprensión de que nuestros pensamientos obsesivos o compulsiones no nos definen; somos el espacio donde estos eventos ocurren [23, 30].",
+      "contenido": "Comprensión de que nuestros pensamientos obsesivos o compulsiones no nos definen; somos el espacio o contexto donde estos eventos ocurren [19, 25].",
       "etiquetas": [
         "identidad",
-        "yo"
+        "contexto"
       ]
     },
     {
       "id": "ACT_F04",
       "titulo": "Fusión Pensamiento-Acción",
-      "contenido": "Creencia distorsionada de que tener un pensamiento inmoral es tan grave como actuarlo, o que pensar algo aumenta la probabilidad de que ocurra [31].",
+      "contenido": "Sesgo cognitivo donde se cree que tener un pensamiento es tan inmoral como actuarlo o que aumenta la probabilidad de que ocurra [23].",
       "etiquetas": [
         "sesgo",
-        "moral"
+        "fusion"
       ]
     },
     {
       "id": "ACT_F05",
-      "titulo": "Tolerancia a la Incertidumbre",
-      "contenido": "Aprender a aceptar la ambigüedad y la falta de certeza absoluta sobre el futuro en lugar de buscarla mediante compulsiones [17, 32].",
+      "titulo": "Sesgo de Disponibilidad",
+      "contenido": "Tendencia de la psique a evaluar la probabilidad de un peligro en función de la facilidad con la que el pensamiento viene a la mente [26].",
       "etiquetas": [
-        "incertidumbre",
-        "control"
+        "heuristico",
+        "probabilidad"
       ]
     }
   ],
   "recursos_audio": [],
-  "version": "2026-04-04",
+  "version": "2026-05-18",
   "generado_por": "MOT-008",
   "meta": {
     "fuentesUsadas": 2,
-    "totalEjercicios": 5,
-    "totalFichas": 5,
+    "totalEjercicios": 10,
+    "totalFichas": 10,
     "totalAudios": 0,
     "generadoCon": "nlm_query_notebook",
-    "timestamp": "2026-04-04T22:24:46.444266"
+    "timestamp": "2026-05-18T19:04:31.462114"
   }
 }

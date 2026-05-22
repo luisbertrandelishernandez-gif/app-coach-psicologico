@@ -1,64 +1,69 @@
 {
   "modulo": "ansiedad",
-  "titulo": "Protocolos de Intervención para la Ansiedad Generalizada",
-  "descripcion": "Conjunto de herramientas basadas en terapia cognitivo-conductual y metacognitiva para el manejo de la preocupación crónica, la intolerancia a la incertidumbre y la exposición gradual.",
+  "titulo": "Protocolo para el Manejo de la Ansiedad Generalizada",
+  "descripcion": "Conjunto de herramientas basadas en el modelo cognitivo-conductual y metacognitivo para el tratamiento de la preocupación crónica, la intolerancia a la incertidumbre y la evitación, centrado en la modificación de valoraciones de amenaza [1-3].",
   "ejercicios": [
     {
       "id": "ANS_001",
-      "nombre": "Planificación de Jerarquía de Exposición",
+      "nombre": "Construcción de la Escalera de Caracol (Jerarquía de Exposición)",
       "tipo": "escritura",
       "duracion_min": 20,
       "nivel": "basico",
       "pasos": [
         {
           "orden": 1,
-          "instrucción": "Elaborar una lista de entre 10 y 20 situaciones, objetos o sensaciones que provocan ansiedad y que se suelen evitar.",
+          "instruccion": "Elaborar una lista de entre 10 y 20 situaciones, objetos o sensaciones que se suelen evitar por temor o ansiedad [4-6].",
           "duracion_seg": 300
         },
         {
           "orden": 2,
-          "instrucción": "Asignar a cada situación un valor de 0 a 100 (SUDS) según el grado de ansiedad que se espera sentir.",
+          "instruccion": "Asignar a cada situación un valor de 0 a 100 en la escala SUDS según el grado de ansiedad que se espera sentir [7, 8].",
           "duracion_seg": 300
         },
         {
           "orden": 3,
-          "instrucción": "Ordenar la lista de menor a mayor grado de dificultad para crear una escalera de exposición gradual.",
+          "instruccion": "Ordenar las situaciones de menor a mayor dificultad para crear los peldaños de la escalera [4, 9, 10].",
           "duracion_seg": 300
         },
         {
           "orden": 4,
-          "instrucción": "Seleccionar una tarea de dificultad moderada (nivel medio) para iniciar la práctica real, asegurándose de permanecer en ella hasta que la ansiedad baje al menos un 50%.",
+          "instruccion": "Seleccionar una tarea de nivel moderado (aprox. 30-40 SUDS) para iniciar la práctica, asegurándose de permanecer en ella hasta que la ansiedad baje al menos un 50% [11-13].",
           "duracion_seg": 300
         }
       ],
-      "indicaciones": "Usar para romper patrones de evitación y habituarse a los estímulos temidos.",
-      "contraindicaciones": "No usar si la persona no está dispuesta a tolerar niveles moderados de malestar temporal."
+      "indicaciones": "Usar para romper patrones de evitación y habituarse a estímulos temidos [14-16].",
+      "contraindicaciones": "No usar si la persona presenta riesgos médicos graves no evaluados previamente [17, 18]."
     },
     {
       "id": "ANS_002",
-      "nombre": "Momento para Preocuparte (Técnica Paradójica)",
+      "nombre": "Técnica de Aplazamiento (Momento para Preocuparse)",
       "tipo": "cognitivo",
       "duracion_min": 15,
       "nivel": "intermedio",
       "pasos": [
         {
           "orden": 1,
-          "instrucción": "Reservar dos momentos fijos al día de 10 minutos exclusivamente para dedicarse a las preocupaciones.",
+          "instruccion": "Identificar el pensamiento intrusivo o desencadenante ('¿y si...?') en cuanto aparezca en la conciencia [19-21].",
           "duracion_seg": 60
         },
         {
           "orden": 2,
-          "instrucción": "Durante ese tiempo, enfocarse intensamente en los temas negativos sin buscar alternativas positivas o soluciones.",
-          "duracion_seg": 600
+          "instruccion": "Aplicar Mindfulness Desapegado: observar el pensamiento como un evento mental pasajero sin intentar resolverlo o suprimirlo [22, 23].",
+          "duracion_seg": 120
         },
         {
           "orden": 3,
-          "instrucción": "Tratar de experimentar tanta ansiedad como sea posible mientras se piensa en estas preocupaciones.",
-          "duracion_seg": 240
+          "instruccion": "Posponer deliberadamente el proceso de preocupación activa hasta un momento fijo del día de 15 minutos, establecido de antemano [24-26].",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 4,
+          "instruccion": "Durante el 'momento para preocuparse', pensar intensamente en los temas sin buscar soluciones, permitiendo que la ansiedad fluya [27-29].",
+          "duracion_seg": 660
         }
       ],
-      "indicaciones": "Útil para personas con rumiación incontrolable que sienten que deben preocuparse para estar preparadas.",
-      "contraindicaciones": "No forzar si genera perturbaciones extremas que no se disipan al terminar el tiempo fijado."
+      "indicaciones": "Útil para reducir la incontrolabilidad percibida de la preocupación patológica [24, 30, 31].",
+      "contraindicaciones": "No realizar en las dos horas previas al sueño para evitar el insomnio [24, 29, 32]."
     },
     {
       "id": "ANS_003",
@@ -69,131 +74,126 @@
       "pasos": [
         {
           "orden": 1,
-          "instrucción": "Definir la preocupación actual por escrito con la mayor claridad posible.",
+          "instruccion": "Definir la preocupación por escrito con claridad, diferenciando entre problemas reales modificables y anticipaciones futuras hipotéticas [33, 34].",
           "duracion_seg": 180
         },
         {
           "orden": 2,
-          "instrucción": "Distinguir entre la parte del problema que es real y modificable de la que es una anticipación futura o no modificable.",
+          "instruccion": "Generar una lista de soluciones alternativas para la parte del problema que está bajo control personal [35, 36].",
           "duracion_seg": 300
         },
         {
           "orden": 3,
-          "instrucción": "Generar al menos tres soluciones alternativas para la parte del problema que está bajo control personal.",
-          "duracion_seg": 300
-        },
-        {
-          "orden": 4,
-          "instrucción": "Seleccionar una acción inmediata y aplicarla, evaluando objetivamente los resultados después.",
-          "duracion_seg": 120
+          "instruccion": "Diseñar un plan de acción concreto (cuándo, dónde y cómo) y aplicarlo, aceptando soluciones imperfectas [34, 36].",
+          "duracion_seg": 420
         }
       ],
-      "indicaciones": "Usar cuando la preocupación se refiere a situaciones reales de la vida diaria.",
-      "contraindicaciones": "No aplicar a preocupaciones puramente hipotéticas o existenciales."
+      "indicaciones": "Aplicar ante preocupaciones sobre situaciones actuales, reales y modificables [33, 34].",
+      "contraindicaciones": "No es útil para preocupaciones puramente existenciales o eventos futuros inciertos sin base real [37, 38]."
     },
     {
       "id": "ANS_004",
       "nombre": "Inoculación de Incertidumbre",
-      "tipo": "conductual",
+      "tipo": "cognitivo",
       "duracion_min": 10,
       "nivel": "avanzado",
       "pasos": [
         {
           "orden": 1,
-          "instrucción": "Identificar una conducta de comprobación (como revisar repetidamente el correo o preguntar si todo está bien) que se use para obtener certeza.",
+          "instruccion": "Identificar una conducta de búsqueda de seguridad o comprobación motivada por la duda (ej. revisar correos o pedir reaseguración) [16, 39, 40].",
           "duracion_seg": 120
         },
         {
           "orden": 2,
-          "instrucción": "Comprometerse a retrasar o reducir deliberadamente esa conducta de comprobación.",
-          "duracion_seg": 60
+          "instruccion": "Retrasar intencionadamente la ejecución de esa conducta de comprobación, permitiendo que la duda permanezca en la mente [41, 42].",
+          "duracion_seg": 180
         },
         {
           "orden": 3,
-          "instrucción": "Tolerar la duda y la inquietud resultante sin actuar, observando cómo el sentimiento de urgencia disminuye con el tiempo.",
-          "duracion_seg": 420
+          "instruccion": "Tolerar el malestar del 'no saber' sin buscar confirmación externa, observando cómo la urgencia disminuye con el tiempo [43-45].",
+          "duracion_seg": 300
         }
       ],
-      "indicaciones": "Especialmente indicado para el tratamiento de la intolerancia a la incertidumbre en el TAG.",
-      "contraindicaciones": "Evitar en situaciones donde la falta de comprobación suponga un riesgo físico real inmediato."
+      "indicaciones": "Diseñado para aumentar la tolerancia al riesgo y reducir el perfeccionismo ansioso en el TAG [45-47].",
+      "contraindicaciones": "Evitar en situaciones donde la falta de comprobación suponga un peligro físico real e inminente [18, 48]."
     },
     {
       "id": "ANS_005",
-      "nombre": "Registro de Sensaciones y Escala SUDS",
+      "nombre": "Auto-monitoreo de Sensaciones y Escala SUDS",
       "tipo": "escritura",
       "duracion_min": 5,
       "nivel": "basico",
       "pasos": [
         {
           "orden": 1,
-          "instrucción": "Valorar el nivel de ansiedad inicial del 1 (calma) al 10 (pánico) antes de enfrentar una situación temida.",
+          "instruccion": "Calificar el nivel medio de ansiedad del día en una escala de 0 (relajación total) a 100 (pánico mximo) antes de dormir [49-51].",
           "duracion_seg": 60
         },
         {
           "orden": 2,
-          "instrucción": "Describir brevemente las sensaciones físicas presentes (tensión muscular, ritmo cardíaco, respiración).",
+          "instruccion": "Identificar y describir brevemente la situación o pensamiento que provocó el pico de ansiedad más alto [52, 53].",
           "duracion_seg": 120
         },
         {
           "orden": 3,
-          "instrucción": "Volver a valorar el nivel de ansiedad (SUDS) después de realizar el ejercicio o 15 minutos después para observar el descenso natural.",
+          "instruccion": "Anotar la interpretación catastrófica (lo peor que se temía que ocurriera) y los síntomas físicos percibidos [54-56].",
           "duracion_seg": 120
         }
       ],
-      "indicaciones": "Usar diariamente para familiarizarse con los patrones de intensidad de la ansiedad.",
-      "contraindicaciones": "No usar como distracción, sino como herramienta de observación consciente."
+      "indicaciones": "Usar diariamente para aumentar la meta-conciencia y detectar patrones del ciclo de la ansiedad [57-59].",
+      "contraindicaciones": "No usar si la tarea se convierte en un ritual compulsivo de autovigilancia que genere más estrés [60, 61]."
     },
     {
       "id": "ANS_001",
-      "nombre": "Tiempo de Preocupacion",
+      "nombre": "Tiempo de Preocupación",
       "tipo": "cognitivo",
       "duracion_min": 20,
       "nivel": "basico",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Programa un periodo de 20 minutos cada dia, en un lugar tranquilo y sin distracciones, para dedicarlo exclusivamente a preocuparte.",
+          "instruccion": "Reserve un período de 20 minutos cada día en un lugar tranquilo y sin distracciones para dedicarlos exclusivamente a sus preocupaciones hipotéticas.",
           "duracion_seg": 60
         },
         {
           "orden": 2,
-          "instruccion": "Durante el dia, si aparece una preocupacion, anotala en tu hoja de registro y posponla para el momento programado.",
+          "instruccion": "Durante el día, si aparece una preocupación, anótela en su hoja de registro y pospóngala deliberadamente para el momento programado.",
           "duracion_seg": 30
         },
         {
           "orden": 3,
-          "instruccion": "En el tiempo programado, lee tus notas y preocupate solo por esos temas; si alguno ya no te molesta o tiene solucion practica, tachalo.",
-          "duracion_seg": 1200
+          "instruccion": "En el tiempo programado, lea sus notas; si alguna preocupación ya no le molesta o tiene solución práctica, táchela. Use el resto del tiempo para preocuparse por las restantes.",
+          "duracion_seg": 1110
         }
       ],
-      "indicaciones": "Utilizar cuando las preocupaciones hipoteticas del tipo '¿que pasaria si...?' interfieran con las tareas diarias.",
-      "contraindicaciones": "No programar demasiado cerca de la hora de acostarse."
+      "indicaciones": "Utilizar cuando las preocupaciones hipotéticas ('¿qué pasaría si...?') interfieren con las tareas diarias.",
+      "contraindicaciones": "No programar el tiempo de preocupación demasiado cerca de la hora de acostarse."
     },
     {
       "id": "ANS_002",
-      "nombre": "Resolucion Estructurada de Problemas",
+      "nombre": "Resolución Estructurada de Problemas",
       "tipo": "cognitivo",
       "duracion_min": 15,
       "nivel": "intermedio",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Identifica una preocupacion importante y determina si es un problema practico con una solucion posible en el presente.",
+          "instruccion": "Identifique una preocupación importante y determine si es un problema práctico con una solución posible en el presente (ej. factura sin pagar).",
           "duracion_seg": 120
         },
         {
           "orden": 2,
-          "instruccion": "Genera una lista de tantas soluciones potenciales como sea posible, sin juzgar si son ridiculas en este punto.",
+          "instruccion": "Genere una lista de soluciones potenciales sin juzgar su viabilidad en este momento inicial.",
           "duracion_seg": 300
         },
         {
           "orden": 3,
-          "instruccion": "Selecciona una solucion y crea un plan de accion detallado, asegurandote de que no sea un comportamiento de busqueda de seguridad.",
-          "duracion_seg": 300
+          "instruccion": "Seleccione una opción, valore sus fortalezas y debilidades, y cree un plan de acción detallado (Qué, Dónde, Cuándo, Quién).",
+          "duracion_seg": 480
         }
       ],
-      "indicaciones": "Usar ante preocupaciones sobre situaciones reales y resolubles (finanzas, tareas del hogar, plazos laborales).",
-      "contraindicaciones": "No aplicar a preocupaciones hipoteticas sobre eventos futuros inciertos."
+      "indicaciones": "Aplicar a preocupaciones sobre problemas reales y modificables de la vida cotidiana.",
+      "contraindicaciones": "No aplicar a preocupaciones hipotéticas sobre eventos futuros inciertos que no dependen de la acción inmediata."
     },
     {
       "id": "ANS_003",
@@ -204,81 +204,81 @@
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Al notar una preocupacion intrusiva, reconoce su presencia y decide posponerla para tu tiempo de preocupacion.",
+          "instruccion": "Al notar una preocupación intrusiva, reconozca su presencia y decida dejarla ir temporalmente hacia su tiempo de preocupación programado.",
           "duracion_seg": 30
         },
         {
           "orden": 2,
-          "instruccion": "Dirige tu atencion a la tarea actual utilizando tus cinco sentidos (el tacto de la ropa, el aroma del entorno, los sonidos lejanos).",
+          "instruccion": "Dirija su atención a la tarea actual utilizando sus cinco sentidos: observe colores, identifique aromas o sienta el tacto de lo que está haciendo.",
           "duracion_seg": 120
         },
         {
           "orden": 3,
-          "instruccion": "Si la mente vuelve a la preocupacion, suavemente redirige la atencion al detalle fisico de lo que estas haciendo en ese instante.",
+          "instruccion": "Si la mente vuelve a la preocupación, suavemente y sin juzgarse, regrese su atención al detalle físico de su actividad actual (ej. la temperatura del agua).",
           "duracion_seg": 150
         }
       ],
-      "indicaciones": "Efectivo cuando te resulta dificil dejar ir una preocupacion despues de haberla anotado.",
-      "contraindicaciones": "Ninguna reportada; requiere practica constante."
+      "indicaciones": "Efectivo cuando resulta difícil reenfocarse tras haber anotado una preocupación durante el día.",
+      "contraindicaciones": "Requiere práctica constante; no usar como técnica de evitación cognitiva a largo plazo."
     },
     {
       "id": "ANS_004",
-      "nombre": "Analisis del Circulo Vicioso",
-      "tipo": "reflexion",
-      "duracion_min": 15,
-      "nivel": "basico",
-      "pasos": [
-        {
-          "orden": 1,
-          "instruccion": "Identifica una situacion desencadenante y anota los pensamientos tipo '¿y si...?' que surgieron.",
-          "duracion_seg": 300
-        },
-        {
-          "orden": 2,
-          "instruccion": "Describe las sensaciones fisicas (tension muscular, inquietud, nauseas) y las emociones (miedo, irritabilidad) experimentadas.",
-          "duracion_seg": 300
-        },
-        {
-          "orden": 3,
-          "instruccion": "Registra los comportamientos realizados, como buscar consuelo, sobrepreparacion o evitacion de la situacion.",
-          "duracion_seg": 300
-        }
-      ],
-      "indicaciones": "Util para psicoeducacion y para identificar que factores mantienen la ansiedad a largo plazo.",
-      "contraindicaciones": "Evitar si la persona esta en medio de una crisis de panico aguda."
-    },
-    {
-      "id": "ANS_005",
-      "nombre": "Exposicion Gradual a la Incertidumbre",
+      "nombre": "Exposición Gradual a la Incertidumbre (SUDS)",
       "tipo": "cognitivo",
       "duracion_min": 30,
       "nivel": "avanzado",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Identifica un comportamiento de comprobacion o busqueda de seguridad (ej. verificar el telefono constantemente).",
+          "instruccion": "Identifique una conducta de búsqueda de seguridad o comprobación (ej. verificar el teléfono constantemente) y puntúe su malestar inicial de 0 a 100.",
           "duracion_seg": 180
         },
         {
           "orden": 2,
-          "instruccion": "Establece una jerarquia de situaciones inciertas y elige una de nivel bajo para enfrentar sin realizar el comportamiento de seguridad.",
+          "instruccion": "Permanezca en la situación de duda sin realizar la conducta de seguridad habitual, permitiéndose sentir el malestar sin intentar controlarlo.",
           "duracion_seg": 300
         },
         {
           "orden": 3,
-          "instruccion": "Permanece en la situacion incierta observando la ansiedad sin intentar controlarla, hasta que esta disminuya de forma natural.",
-          "duracion_seg": 1200
+          "instruccion": "Observe cómo la ansiedad disminuye naturalmente con el paso del tiempo hasta que la puntuación SUDS se reduzca significativamente.",
+          "duracion_seg": 1320
         }
       ],
-      "indicaciones": "Para romper el ciclo de mantenimiento del TAG y aprender a vivir con la duda.",
-      "contraindicaciones": "No forzar niveles de exposicion para los que el paciente no se sienta preparado."
+      "indicaciones": "Para romper el mantenimiento del TAG y aprender a vivir con la duda sin recurrir a la sobrepreparación.",
+      "contraindicaciones": "No forzar niveles de exposición excesivos sin una base previa de psicoeducación sobre el ciclo de la ansiedad."
+    },
+    {
+      "id": "ANS_005",
+      "nombre": "Entrenamiento en Respiración Diafragmática",
+      "tipo": "respiracion",
+      "duracion_min": 10,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Colóquese en una posición cómoda, de pie o sentado, y tome aire lenta y profundamente por la nariz.",
+          "duracion_seg": 60
+        },
+        {
+          "orden": 2,
+          "instruccion": "Mantenga la inspiración durante unos segundos sintiendo la expansión del abdomen.",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 3,
+          "instruccion": "Exhale todo el aire por la boca lentamente y repita el proceso de forma rítmica.",
+          "duracion_seg": 420
+        }
+      ],
+      "indicaciones": "Para reducir la activación fisiológica (tensión, palpitaciones) y actuar de forma precoz ante la ansiedad.",
+      "contraindicaciones": "Si experimenta mareo, detenga el ejercicio y respire con normalidad."
     }
   ],
   "fichas_rapidas": [
     {
       "id": "ANS_F01",
       "titulo": "El Ciclo de la Ansiedad",
-      "contenido": "Se trata de un círculo vicioso donde una situación se valora como amenaza, disparando síntomas físicos (palpitaciones, tensión). Estos síntomas se interpretan como peligrosos, lo que aumenta el miedo y genera una espiral de pánico.",
+      "contenido": "Un círculo vicioso donde un desencadenante activa esquemas de amenaza, produciendo síntomas físicos que se interpretan catastróficamente, lo que aumenta la ansiedad y refuerza el ciclo [62-65].",
       "etiquetas": [
         "psicoeducacion",
         "ciclo"
@@ -286,26 +286,26 @@
     },
     {
       "id": "ANS_F02",
-      "titulo": "Escala de Unidades Subjetivas de Malestar (SUDS)",
-      "contenido": "Sistema para medir la intensidad de la ansiedad. 0 representa relajación completa y 10 (o 100) representa el nivel máximo de pánico o malestar insoportable experimentado.",
-      "etiquetas": [
-        "evaluacion",
-        "suds"
-      ]
-    },
-    {
-      "id": "ANS_F03",
       "titulo": "La Trampa de la Evitación",
-      "contenido": "La evitación proporciona alivio a corto plazo, pero mantiene la ansiedad a largo plazo porque impide aprender que la situación no es realmente peligrosa y que se es capaz de afrontarla.",
+      "contenido": "La evitación proporciona alivio a corto plazo (refuerzo negativo), pero mantiene la ansiedad a largo plazo porque impide aprender que la situación no es realmente peligrosa [66-69].",
       "etiquetas": [
         "conducta",
         "evitacion"
       ]
     },
     {
+      "id": "ANS_F03",
+      "titulo": "Escala SUDS (Subjetive Units of Distress Scale)",
+      "contenido": "Sistema de medición del 0 al 100. 0 representa relajación absoluta; 50 malestar moderado pero manejable; 100 es el máximo pánico o malestar experimentado [70-74].",
+      "etiquetas": [
+        "evaluacion",
+        "suds"
+      ]
+    },
+    {
       "id": "ANS_F04",
       "titulo": "Pensamiento Catastrófico",
-      "contenido": "Tendencia automática a suponer que ocurrirá el peor resultado posible ('¿y si...?') y a sobrestimar la probabilidad de que suceda una catástrofe ante situaciones cotidianas.",
+      "contenido": "Tendencia automática a suponer que ocurrirá el peor resultado posible ('¿y si...?') y a sobrestimar la probabilidad y gravedad de una amenaza [8, 20, 54, 75, 76].",
       "etiquetas": [
         "cognitivo",
         "distorsion"
@@ -314,7 +314,7 @@
     {
       "id": "ANS_F05",
       "titulo": "Mindfulness Desapegado",
-      "contenido": "Técnica que consiste en ver los pensamientos como eventos mentales pasajeros (como olas en el mar o nubes) sin intentar controlarlos, juzgarlos o luchar contra ellos.",
+      "contenido": "Técnica consistente en ver los pensamientos como eventos mentales pasajeros (como nubes en el cielo o trenes pasando) sin involucrarse en su contenido ni intentar controlarlos [21, 22, 77, 78].",
       "etiquetas": [
         "metacognicion",
         "mindfulness"
@@ -322,35 +322,35 @@
     },
     {
       "id": "ANS_F01",
-      "titulo": "Definicion de TAG",
-      "contenido": "Estado persistente de ansiedad y preocupacion excesiva, presente la mayor parte de los dias durante al menos 6 meses, sobre diversos sucesos o actividades.",
+      "titulo": "Definición del TAG",
+      "contenido": "Estado persistente de ansiedad y preocupación excesiva, presente la mayor parte de los días durante al menos 6 meses, sobre diversos sucesos cotidianos percibidos como difíciles de controlar.",
       "etiquetas": [
-        "diagnostico",
-        "psicoeducacion"
+        "psicoeducacion",
+        "diagnostico"
       ]
     },
     {
       "id": "ANS_F02",
-      "titulo": "Intolerancia a la Incertidumbre",
-      "contenido": "Factor mantenedor clave donde la persona sobreestima la probabilidad de eventos negativos y siente que no podra hacer frente si ocurre lo peor.",
+      "titulo": "El Ciclo de la Ansiedad en el TAG",
+      "contenido": "Situación desencadenante -> Pensamientos '¿y si...?' -> Preocupación incontrolable -> Síntomas físicos (tensión, inquietud) -> Conductas de evitación o búsqueda de seguridad que mantienen el trastorno.",
       "etiquetas": [
-        "concepto",
+        "psicoeducacion",
         "mantenimiento"
       ]
     },
     {
       "id": "ANS_F03",
-      "titulo": "Preocupacion como Evitacion",
-      "contenido": "La preocupacion a menudo actua como una estrategia de evitacion experiencial para no sentir emociones mas profundas o enfrentar situaciones inciertas.",
+      "titulo": "Intolerancia a la Incertidumbre",
+      "contenido": "Factor mantenedor clave donde la persona sobreestima la probabilidad de eventos negativos y siente que no podrá hacer frente si ocurre lo peor, impulsando la preocupación como forma de 'preparación'.",
       "etiquetas": [
-        "ACT",
-        "evitacion"
+        "mantenimiento",
+        "concepto"
       ]
     },
     {
       "id": "ANS_F04",
-      "titulo": "Tipos de Preocupacion",
-      "contenido": "1. Sin importancia (olvidar). 2. Importantes y resolubles (plan de accion). 3. Importantes no resolubles/hipoteticas (tiempo de preocupacion).",
+      "titulo": "Preocupación Hipotética vs Práctica",
+      "contenido": "Las prácticas son sobre problemas reales con solución actual (ej. factura). Las hipotéticas son sobre el futuro incierto ('¿y si enfermo en 10 años?'), para las cuales no hay acción inmediata posible.",
       "etiquetas": [
         "tecnica",
         "clasificacion"
@@ -359,7 +359,7 @@
     {
       "id": "ANS_F05",
       "titulo": "Escala GAD-7",
-      "contenido": "Cuestionario de 7 items para cribado de ansiedad. Puntuacion: 0-4 (minima), 5-9 (leve), 10-14 (moderada), 15-21 (grave). El punto de corte para TAG es 10.",
+      "contenido": "Cuestionario de 7 ítems para evaluar la gravedad de la ansiedad. Puntuación: 0-4 (mínima), 5-9 (leve), 10-14 (moderada), 15-21 (grave). Una puntuación ≥ 10 sugiere necesidad de consulta clínica.",
       "etiquetas": [
         "evaluacion",
         "escalas"
@@ -367,7 +367,7 @@
     }
   ],
   "recursos_audio": [],
-  "version": "2026-04-04",
+  "version": "2026-05-18",
   "generado_por": "MOT-008",
   "meta": {
     "fuentesUsadas": 2,
@@ -375,6 +375,6 @@
     "totalFichas": 10,
     "totalAudios": 0,
     "generadoCon": "nlm_query_notebook",
-    "timestamp": "2026-04-04T22:27:49.939258"
+    "timestamp": "2026-05-18T19:07:59.502659"
   }
 }

@@ -1,0 +1,22 @@
+{
+  "id": "caso-invernadero",
+  "titulo": "Invernadero Zarzalejo",
+  "subtitulo": "Ira crónica · Injusticia · TOC · Recuperación",
+  "icono": "🌱",
+  "titulo_largo": "Programa de recuperación: injusticia y ira crónica",
+  "fecha_inicio": "2026-05-22",
+  "version": "1.0",
+  "cuadernos_activos": ["b5afa51d", "c9b5997b", "dc15ca48", "dd52cfd8", "9c30b43b", "4e2d6cf2", "07dc293d"],
+  "modulos": [
+    {"id": "M1", "nombre": "Regulación de la ira", "notebook": "b5afa51d", "prioridad": 1},
+    {"id": "M2", "nombre": "TOC y rumiación", "notebook": "c9b5997b", "prioridad": 2},
+    {"id": "M3", "nombre": "Distorsiones cognitivas", "notebook": "dc15ca48", "prioridad": 3},
+    {"id": "M4", "nombre": "Focusing corporal", "notebook": "dd52cfd8", "prioridad": 4},
+    {"id": "M5", "nombre": "Sentido del sufrimiento", "notebook": "9c30b43b", "prioridad": 5},
+    {"id": "M6", "nombre": "Regulación somática y EMDR", "notebook": "4e2d6cf2", "prioridad": 6},
+    {"id": "M7", "nombre": "Resiliencia e integración", "notebook": "07dc293d", "prioridad": 7}
+  ],
+  "estado": "activo",
+  "tipo": "supuesto_clinico_real",
+  "notas": "Primer supuesto clínico real. Testing de la app en situación real."
+}

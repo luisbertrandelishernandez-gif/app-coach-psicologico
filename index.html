@@ -1,264 +1,471 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coach Psicológico CPVA — Antigravity</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#129504;</text></svg>">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="color-scheme" content="dark">
+    <!-- FIX-4 22/05/2026: meta tags anti-cache para evitar HTML rancio en navegadores. -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <!-- FIX-4 22/05/2026: unregister preventivo de cualquier Service Worker antiguo. -->
+    <script>
+    (function(){
+        try {
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.getRegistrations().then(function(regs){
+                    for (var i = 0; i < regs.length; i++) {
+                        console.log('CPVA: desregistrando SW antiguo', regs[i].scope);
+                        regs[i].unregister();
+                    }
+                }).catch(function(e){ console.warn('CPVA: SW unregister fallo', e); });
+            }
+            if ('caches' in window) {
+                caches.keys().then(function(keys){
+                    keys.forEach(function(k){ caches.delete(k); });
+                }).catch(function(e){ console.warn('CPVA: caches clear fallo', e); });
+            }
+        } catch (e) { /* silencio */ }
+    })();
+    </script>
+    <title>CPVA | Coach Psicológico Adaptativo</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css?v=13">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body>
-    <header>
-        <h1>Coach Psicológico</h1>
-        <p class="subtitulo">Reflexiones diarias y podcasts L/X/V</p>
 
-        <!-- Navegación entre secciones -->
-        <nav role="navigation" aria-label="Navegación principal">
-            <button
-                id="btn-hoy"
-                class="nav-btn activo"
-                onclick="mostrarSeccion('hoy')"
-                aria-label="Ver contenido de hoy"
-            >
-                Hoy
-            </button>
-            <button
-                id="btn-aprendizaje"
-                class="nav-btn"
-                onclick="mostrarSeccion('aprendizaje')"
-                aria-label="Explorar módulos CPVA"
-            >
-                Aprendizaje CPVA
-            </button>
-            <button
-                id="btn-ayuda"
-                class="nav-btn nav-btn-ayuda"
-                onclick="abrirModalAyuda()"
-                aria-label="Abrir ayuda"
-                aria-haspopup="dialog"
-                aria-controls="modal-ayuda"
-            >
-                ?
-            </button>
-        </nav>
-    </header>
+<body class="theme-default">
 
-    <!-- =====================================================
-         SECCIÓN HOY (contenido diario desde Drive)
-         ===================================================== -->
-    <main id="seccion-hoy" class="contenedor">
-        <!-- Panel configuración API key -->
-        <div id="config-api" class="config-panel" style="display:none;" role="region" aria-label="Configuración de API key">
-            <p><strong>Configuración inicial</strong></p>
-            <p>Introduce la API key de Google Drive para acceder al contenido:</p>
-
-            <label for="input-api-key" class="config-label">API key de Google Drive</label>
-            <div class="config-input-wrap">
-                <input
-                    type="text"
-                    id="input-api-key"
-                    placeholder="AIzaSy..."
-                    autocomplete="off"
-                    spellcheck="false"
-                    aria-describedby="api-key-ayuda api-key-estado"
-                    maxlength="39"
-                >
-                <span id="api-key-icono" class="api-key-icono" aria-hidden="true"></span>
-            </div>
-
-            <!-- Indicador de estado / validación -->
-            <div id="api-key-estado" class="api-key-estado" role="status" aria-live="polite"></div>
-
-            <!-- Ayuda contextual -->
-            <p id="api-key-ayuda" class="api-key-ayuda">
-                La key debe empezar por <code>AIzaSy</code> y tener exactamente 39 caracteres.
-                Asegúrate de que la API de Google Drive está habilitada en tu proyecto de Google Cloud.
-            </p>
-
-            <div class="config-botones">
-                <button id="btn-guardar-key" onclick="guardarApiKey()" disabled>
-                    Verificar y guardar
-                </button>
-            </div>
-        </div>
-
-        <!-- Módulo temático del día -->
-        <div class="modulo-dia">
-            <div class="etiqueta" id="modulo-fecha">Cargando...</div>
-            <div class="nombre-modulo" id="modulo-nombre">—</div>
-            <div class="indice-ciclo" id="modulo-ciclo"></div>
-        </div>
-
-        <!-- Contenido del día -->
-        <div class="tarjeta">
-            <h2>Hoy</h2>
-            <div id="contenido-hoy">
-                <div class="cargando">
-                    <div class="spinner" role="status" aria-label="Cargando contenido"></div>
-                    <p>Cargando contenido...</p>
+    <div id="app">
+        <!-- Overlay de Crisis siempre presente -->
+        <div id="crisis-overlay" class="overlay">
+            <div class="overlay-content">
+                <button class="close-overlay">×</button>
+                <h2>SOS: Calma Inmediata</h2>
+                <div class="crisis-steps">
+                    <div id="step-respiration" class="crisis-step active">
+                        <h3>1. Respiración 4-7-8</h3>
+                        <div class="breathing-circle-container">
+                            <div id="breathing-circle"></div>
+                            <div id="breathing-text">Inhala...</div>
+                        </div>
+                    </div>
+                    <div id="step-grounding" class="crisis-step">
+                        <h3>2. Grounding 5-4-3-2-1</h3>
+                        <p class="subtitle">Enraizamiento sensorial</p>
+                        <div id="grounding-content">
+                            <div class="grounding-visual">
+                                <span id="grounding-counter">5</span>
+                                <span id="grounding-icon">👁️</span>
+                            </div>
+                            <p id="grounding-instruction">Busca 5 cosas que puedas ver ahora mismo.</p>
+                            <button id="next-grounding" class="btn-primary">Siguiente</button>
+                        </div>
+                    </div>
+                    <div id="step-contacts" class="crisis-step">
+                        <h3>3. Ayuda Externa</h3>
+                        <div class="emergency-numbers">
+                            <a href="tel:024" class="emergency-link">
+                                <strong>024</strong>
+                                <span>Prevención del Suicidio</span>
+                            </a>
+                            <a href="tel:112" class="emergency-link secondary">
+                                <strong>112</strong>
+                                <span>Emergencias Generales</span>
+                            </a>
+                        </div>
+                        <p class="note">No estás solo/a. Estos servicios están para ayudarte.</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Historial reciente -->
-        <div class="tarjeta">
-            <h2>Historial reciente</h2>
-            <div id="historial">
-                <div class="cargando">
-                    <div class="spinner" role="status" aria-label="Cargando historial"></div>
+        <!-- Cabecera Principal -->
+        <header id="main-header">
+            <div class="header-left">
+                <div class="logo">🧠 CPVA</div>
+            </div>
+            <nav>
+                <button data-screen="hub" class="nav-link active">Hub</button>
+                <button data-screen="programa" class="nav-link">Programa</button>
+                <button data-screen="recursos" class="nav-link">Recursos</button>
+                <button data-screen="progreso" class="nav-link">Progreso</button>
+                <button data-screen="cuaderno" class="nav-link">Cuaderno</button>
+            </nav>
+            <div class="header-right">
+                <!-- Badge de perfil eliminado en FASE 1: app personal sin perfiles AGA/APA/OBS -->
+            </div>
+        </header>
+
+        <!-- Pantalla 1: Hub + Check-in -->
+        <section id="screen-hub" class="screen active">
+            <div class="hub-container">
+                <div class="welcome-header">
+                    <h2 id="welcome-greeting">¿Cómo estás hoy?</h2>
+                    <p>Tómate un segundo para notar tu estado interno.</p>
+                </div>
+
+                <div class="checkin-card">
+                    <div class="card-header">
+                        <h3>Check-in Emocional</h3>
+                        <span id="mood-emoji">😐</span>
+                    </div>
+                    <div class="slider-container">
+                        <input type="range" min="1" max="10" value="5" id="mood-slider">
+                        <div id="mood-value">Neutral (5)</div>
+                    </div>
+                    <button id="confirm-checkin" class="btn-secondary">Confirmar Estado</button>
+                </div>
+
+                <div class="modes-info">
+                    <h3>¿En qué quieres trabajar hoy?</h3>
+                </div>
+
+                <div class="modes-grid">
+                    <div class="mode-item" data-mode="MOD-RAC">
+                        <div class="mode-icon">📋</div>
+                        <div class="mode-content">
+                            <h3>Racionalización</h3>
+                            <p>Método ABC con análisis cognitivo.</p>
+                        </div>
+                    </div>
+                    <div class="mode-item" data-mode="MOD-FOC">
+                        <div class="mode-icon">🌊</div>
+                        <div class="mode-content">
+                            <h3>Focusing</h3>
+                            <p>Escucha la sabiduría corporal.</p>
+                        </div>
+                    </div>
+                    <div class="mode-item" data-mode="MOD-EMDR">
+                        <div class="mode-icon">👁️</div>
+                        <div class="mode-content">
+                            <h3>EMDR</h3>
+                            <p>Estimulación bilateral guiada.</p>
+                        </div>
+                    </div>
+                    <div class="mode-item" data-mode="MOD-CRI">
+                        <div class="mode-icon">⚓</div>
+                        <div class="mode-content">
+                            <h3>Crisis</h3>
+                            <p>Atención inmediata.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pantalla 3: Sesión Activa -->
+        <section id="screen-session" class="screen hidden">
+            <div class="session-layout">
+                <aside class="session-sidebar">
+                    <div class="sidebar-top">
+                        <button id="cancel-session" class="btn-icon">×</button>
+                        <div class="active-mode-label">MODO ACTUAL</div>
+                        <div id="current-mode-name" class="active-mode-tag">Pensamiento</div>
+                    </div>
+                    <div class="session-progress">
+                        <div class="progress-line"></div>
+                        <div class="session-steps">
+                            <div class="step active" data-step="0">Notar</div>
+                            <div class="step" data-step="1">Explorar</div>
+                            <div class="step" data-step="2">Técnica</div>
+                            <div class="step" data-step="3">Cierre</div>
+                        </div>
+                    </div>
+                </aside>
+                <div class="chat-wrapper">
+                    <div id="chat-messages"></div>
+                    <div class="chat-input-area">
+                        <!-- Componente interactivo dinámico inyectado aquí -->
+                        <div id="dynamic-tool-container" class="hidden">
+                            <div class="tool-header">
+                                <span id="tool-title">Herramienta Adaptativa</span>
+                                <button id="close-tool">×</button>
+                            </div>
+                            <div id="dynamic-tool-content"></div>
+                        </div>
+                        <div class="input-row">
+                            <textarea id="user-input" placeholder="Escribe aquí..." rows="1"></textarea>
+                            <button id="send-msg">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 2L11 13M22 2L15 22L11 13M11 13L2 9L22 2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pantalla Programa personalizado (Mision B - 22/05/2026) -->
+        <section id="screen-programa" class="screen hidden" aria-labelledby="programa-title">
+            <div class="programa-container">
+                <div class="section-title">
+                    <h2 id="programa-title">Programa personalizado</h2>
+                    <p>Tu plan terapéutico semanal del supuesto activo.</p>
+                </div>
+
+                <button id="protocolo-crisis-btn" class="btn-crisis-destacado hidden"
+                        aria-label="Abrir protocolo de crisis aguda">
+                    🆘 Protocolo de crisis
+                </button>
+
+                <div id="programa-activo" class="programa-card">
+                    <div class="empty-state">
+                        <div class="empty-icon">📦</div>
+                        <p>Cargando programa…</p>
+                    </div>
+                </div>
+
+                <div class="biblioteca-section" id="biblioteca-section" hidden>
+                    <h3 class="biblioteca-title">Biblioteca del supuesto</h3>
+                    <div class="biblioteca-tabs" role="tablist" aria-label="Categorías de biblioteca">
+                        <button class="bib-tab active" data-bib="meditaciones" role="tab"
+                                aria-selected="true">🧘 Meditaciones</button>
+                        <button class="bib-tab" data-bib="ejercicios" role="tab"
+                                aria-selected="false">🌿 Ejercicios</button>
+                        <button class="bib-tab" data-bib="flashcards" role="tab"
+                                aria-selected="false">🗂️ Flashcards</button>
+                        <button class="bib-tab" data-bib="podcasts" role="tab"
+                                aria-selected="false">🎧 Podcast</button>
+                        <button class="bib-tab" data-bib="reflexiones" role="tab"
+                                aria-selected="false">🪞 Reflexiones</button>
+                    </div>
+                    <div id="biblioteca-content" class="biblioteca-content" role="tabpanel"></div>
+                </div>
+
+                <div class="herramientas-section">
+                    <h3 class="biblioteca-title">Herramientas guiadas</h3>
+                    <div class="herramientas-grid">
+                        <div class="herramienta-card" aria-labelledby="emdr-mini-title">
+                            <h4 id="emdr-mini-title">👁️ Estimulación bilateral (EMDR)</h4>
+                            <p class="herramienta-sub">Sigue el punto con la mirada de un lado a otro.</p>
+                            <div class="emdr-mini-stage" role="img"
+                                 aria-label="Punto que se desplaza de izquierda a derecha">
+                                <div id="emdr-mini-dot" class="emdr-mini-dot" aria-hidden="true"></div>
+                            </div>
+                            <div class="emdr-mini-velocidades" role="group" aria-label="Velocidad">
+                                <button class="emdr-vel-btn" data-vel="slow"
+                                        aria-label="Velocidad lenta">Lenta</button>
+                                <button class="emdr-vel-btn active" data-vel="medium"
+                                        aria-label="Velocidad media" aria-pressed="true">Media</button>
+                                <button class="emdr-vel-btn" data-vel="fast"
+                                        aria-label="Velocidad rápida">Rápida</button>
+                            </div>
+                            <div class="emdr-mini-controles">
+                                <button id="emdr-mini-start" class="btn-secondary"
+                                        aria-label="Iniciar estimulación bilateral">▶ Iniciar</button>
+                                <button id="emdr-mini-pause" class="btn-secondary" disabled
+                                        aria-label="Pausar estimulación bilateral">⏸ Pausar</button>
+                                <button id="emdr-mini-stop" class="btn-secondary" disabled
+                                        aria-label="Detener estimulación bilateral">⏹ Parar</button>
+                            </div>
+                            <div class="emdr-mini-guiada">
+                                <button id="emdr-guia-start" class="btn-secondary btn-guia"
+                                        aria-label="Iniciar sesión EMDR guiada por voz">🔊 Iniciar sesión guiada</button>
+                                <button id="emdr-guia-stop" class="btn-secondary btn-guia" disabled
+                                        aria-label="Parar sesión EMDR guiada">⏹ Parar guiada</button>
+                            </div>
+                            <div class="emdr-mini-info" aria-live="polite">
+                                Rondas: <span id="emdr-mini-rondas">0</span>
+                            </div>
+                        </div>
+
+                        <div class="herramienta-card" aria-labelledby="resp-coh-title">
+                            <h4 id="resp-coh-title">🫁 Respiración coherencia cardíaca</h4>
+                            <p class="herramienta-sub">Inhala 5s, exhala 5s. Sincroniza con el círculo.</p>
+                            <div class="resp-coh-container" role="img"
+                                 aria-label="Círculo que se expande al inhalar y se contrae al exhalar">
+                                <div id="resp-coh-circle" aria-hidden="true"></div>
+                                <div id="resp-coh-text" aria-live="polite">Listo</div>
+                            </div>
+                            <div class="resp-coh-controles">
+                                <button id="resp-coh-start" class="btn-secondary"
+                                        aria-label="Iniciar respiración guiada">▶ Iniciar</button>
+                                <button id="resp-coh-stop" class="btn-secondary" disabled
+                                        aria-label="Detener respiración guiada">⏹ Parar</button>
+                            </div>
+                            <div class="resp-coh-guiada">
+                                <button id="resp-guia-start" class="btn-secondary btn-guia"
+                                        aria-label="Iniciar respiración guiada por voz">🔊 Guiada por voz (6 ciclos)</button>
+                                <button id="resp-guia-stop" class="btn-secondary btn-guia" disabled
+                                        aria-label="Parar respiración guiada por voz">⏹ Parar guiada</button>
+                            </div>
+                            <div class="resp-coh-info" aria-live="polite">
+                                Ciclos: <span id="resp-coh-ciclos">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal visor de Markdown (Mision B) -->
+        <div id="md-modal" class="overlay" role="dialog" aria-modal="true"
+             aria-labelledby="md-modal-title">
+            <div class="overlay-content md-modal-content">
+                <button class="close-overlay" id="md-modal-close"
+                        aria-label="Cerrar visor de documento">×</button>
+                <h2 id="md-modal-title">Documento</h2>
+                <div id="md-modal-body" class="md-body" tabindex="0">
+                    <p>Cargando…</p>
                 </div>
             </div>
         </div>
-    </main>
 
-    <!-- =====================================================
-         SECCIÓN APRENDIZAJE CPVA (contenido local de 9 módulos)
-         ===================================================== -->
-    <main id="seccion-aprendizaje" class="contenedor" style="display:none;">
-        <div class="intro-aprendizaje">
-            <h2>Módulos de Aprendizaje CPVA</h2>
-            <p>Explora los 9 enfoques terapéuticos con ejercicios prácticos y fichas de consulta rápida.</p>
-        </div>
-
-        <!-- Selector de módulos (9 tarjetas) -->
-        <div id="selector-modulos" class="selector-modulos" role="list">
-            <!-- Se genera dinámicamente en app.js -->
-        </div>
-
-        <!-- Contenido del módulo seleccionado -->
-        <div id="modulo-contenido" class="modulo-contenido" style="display:none;">
-            <!-- Encabezado del módulo -->
-            <div class="modulo-header">
-                <button
-                    class="btn-volver"
-                    onclick="volverASelector()"
-                    aria-label="Volver al selector de módulos"
-                >
-                    ← Volver
-                </button>
-                <h2 id="mod-titulo">—</h2>
-                <p id="mod-descripcion" class="mod-descripcion">—</p>
-            </div>
-
-            <!-- Pestañas: Ejercicios / Fichas rápidas -->
-            <div class="pestanas" role="tablist">
-                <button
-                    id="tab-ejercicios"
-                    class="pestana activa"
-                    role="tab"
-                    aria-selected="true"
-                    aria-controls="lista-ejercicios"
-                    onclick="mostrarPestana('ejercicios')"
-                >
-                    Ejercicios
-                </button>
-                <button
-                    id="tab-fichas"
-                    class="pestana"
-                    role="tab"
-                    aria-selected="false"
-                    aria-controls="lista-fichas"
-                    onclick="mostrarPestana('fichas')"
-                >
-                    Fichas rápidas
-                </button>
-            </div>
-
-            <!-- Contenido de ejercicios -->
-            <div id="lista-ejercicios" class="lista-ejercicios" role="tabpanel" aria-labelledby="tab-ejercicios">
-                <!-- Se genera dinámicamente -->
-            </div>
-
-            <!-- Contenido de fichas -->
-            <div id="lista-fichas" class="lista-fichas" role="tabpanel" aria-labelledby="tab-fichas" style="display:none;">
-                <!-- Se genera dinámicamente -->
+        <!-- Modal visor de Flashcards (Mision B) -->
+        <div id="fc-modal" class="overlay" role="dialog" aria-modal="true"
+             aria-labelledby="fc-modal-title">
+            <div class="overlay-content fc-modal-content">
+                <button class="close-overlay" id="fc-modal-close"
+                        aria-label="Cerrar visor de flashcards">×</button>
+                <h2 id="fc-modal-title">Mazo</h2>
+                <div class="fc-card-container">
+                    <div id="fc-card" class="fc-flip-card" tabindex="0" role="button"
+                         aria-label="Tarjeta. Pulsar para voltear">
+                        <div class="fc-inner">
+                            <div class="fc-front" id="fc-front-text"></div>
+                            <div class="fc-back" id="fc-back-text"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fc-controles">
+                    <button id="fc-prev" class="btn-secondary"
+                            aria-label="Tarjeta anterior">← Anterior</button>
+                    <span id="fc-counter" aria-live="polite">0/0</span>
+                    <button id="fc-next" class="btn-secondary"
+                            aria-label="Tarjeta siguiente">Siguiente →</button>
+                </div>
+                <div class="fc-hint">Pulsa la tarjeta o la barra espaciadora para voltear.</div>
             </div>
         </div>
-    </main>
 
-    <footer>
-        Antigravity — Coach Psicológico CPVA &copy; 2026
-    </footer>
+        <!-- Pantalla 4: Recursos -->
+        <section id="screen-recursos" class="screen hidden">
+            <div class="recursos-container">
+                <div class="section-title">
+                    <h2>Caja de Herramientas</h2>
+                    <p>Contenido clínico personalizado para tu proceso.</p>
+                </div>
+                <div class="recursos-tabs">
+                    <button class="tab-link active" data-tab="flashcards">🗂️ Flashcards</button>
+                    <button class="tab-link" data-tab="ejercicios">🧠 Ejercicios</button>
+                    <button class="tab-link" data-tab="podcasts">🎧 Podcasts</button>
+                </div>
+                <div class="recursos-filtro" id="recursos-filtro"></div>
+                <div id="tab-content" class="tab-content">
+                    <!-- Contenido dinámico -->
+                </div>
+            </div>
+        </section>
 
-    <!-- === MODAL AYUDA START === -->
-    <!-- Overlay del modal de ayuda -->
-    <div id="modal-ayuda-overlay" class="modal-overlay" hidden>
-        <div
-            id="modal-ayuda"
-            class="modal-ayuda"
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="modal-ayuda-titulo"
-            tabindex="-1"
-        >
-            <h2 id="modal-ayuda-titulo">Ayuda — Coach Psicológico</h2>
+        <!-- Pantalla 5: Progreso -->
+        <section id="screen-progreso" class="screen hidden">
+            <div class="progreso-container">
+                <div class="section-title">
+                    <h2>Tu Trayectoria</h2>
+                    <p>Visualiza tu evolución y compromisos.</p>
+                </div>
+                <div class="progreso-grid">
+                    <div class="chart-card">
+                        <h3>Bienestar Semanal</h3>
+                        <div class="chart-container">
+                            <canvas id="evolution-chart"></canvas>
+                        </div>
+                    </div>
+                    <div class="stats-sidebar" id="stats-sidebar">
+                        <!-- Stats reales derivadas de savedResources (rellenadas en renderProgreso) -->
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <!-- Sección 1: Hoy -->
-            <section>
-                <h3>Sección Hoy</h3>
-                <p>La sección <strong>Hoy</strong> muestra el contenido del día según una rotación secuencial de 11 cuadernos CPVA. Cada día avanza al siguiente cuaderno en el ciclo.</p>
-                <ul>
-                    <li><strong>Reflexión diaria:</strong> Texto del cuaderno del día. Aparece siempre. Puedes leerlo desplazándote por el visor de texto.</li>
-                    <li><strong>Podcast:</strong> Solo disponible lunes, miércoles y viernes (L/X/V). Usa el reproductor de audio integrado para escucharlo.</li>
-                    <li><strong>API key de Drive:</strong> Si el contenido no carga, introduce tu API key de Google Drive en el panel de configuración que aparece automáticamente. La key debe empezar por <code>AIzaSy</code> y tener 39 caracteres.</li>
-                </ul>
-            </section>
+        <!-- Pantalla 6: Cuaderno -->
+        <section id="screen-cuaderno" class="screen hidden">
+            <div class="cuaderno-container">
+                <div class="section-title">
+                    <h2>Bitácora Terapéutica</h2>
+                    <p>Tus reflexiones y compromisos guardados.</p>
+                </div>
+                <div id="notebook-entries" class="entries-grid">
+                    <!-- Entradas generadas -->
+                </div>
+            </div>
+        </section>
 
-            <!-- Sección 2: Aprendizaje CPVA -->
-            <section>
-                <h3>Aprendizaje CPVA</h3>
-                <p>La sección <strong>Aprendizaje CPVA</strong> da acceso a los 9 módulos terapéuticos locales.</p>
-                <ul>
-                    <li><strong>Elegir módulo:</strong> Pulsa cualquiera de las 9 tarjetas (ACT, Ansiedad, Apego, Crisis, Focusing, Ira, Logoterapia, Somática, TREC) para abrirlo.</li>
-                    <li><strong>Ejercicios:</strong> Pasos secuenciales numerados para practicar la técnica. Indicados para uso continuado.</li>
-                    <li><strong>Fichas rápidas:</strong> Resumen de consulta para recordar los conceptos clave de la técnica sin seguir pasos.</li>
-                    <li><strong>Badges de nivel:</strong>
-                        <ul>
-                            <li><em>Básico</em> — ejercicios accesibles para cualquier persona.</li>
-                            <li><em>Intermedio</em> — requieren práctica previa.</li>
-                            <li><em>Avanzado</em> — para uso con supervisión profesional.</li>
-                        </ul>
-                    </li>
-                    <li><strong>Etiquetas:</strong> Palabras clave descriptivas de cada ficha para identificar el contexto de uso.</li>
-                </ul>
-            </section>
-
-            <!-- Sección 3: TTS -->
-            <section>
-                <h3>Lectura en voz alta (TTS)</h3>
-                <p>Pulsa el botón <strong>🔊</strong> junto a una reflexión, ejercicio o ficha para que la app lea el contenido en voz alta.</p>
-                <ul>
-                    <li><strong>Detener:</strong> Vuelve a pulsar el botón 🔊 para parar la lectura en cualquier momento.</li>
-                    <li><strong>Cambiar velocidad:</strong> Usa el selector de velocidad de más abajo para ajustar el ritmo de lectura. El cambio se guarda automáticamente.</li>
-                </ul>
-            </section>
-
-            <!-- Selector de velocidad TTS -->
-            <fieldset id="tts-rate-selector">
-                <legend>Velocidad de lectura</legend>
-                <label>
-                    <input type="radio" name="app002-tts-rate" value="0.75">
-                    0.75× (lenta)
-                </label>
-                <label>
-                    <input type="radio" name="app002-tts-rate" value="1.0" checked>
-                    1.0× (normal)
-                </label>
-                <label>
-                    <input type="radio" name="app002-tts-rate" value="1.25">
-                    1.25× (rápida)
-                </label>
-            </fieldset>
-
-            <!-- Botón cerrar -->
-            <button id="btn-cerrar-ayuda" onclick="cerrarModalAyuda()">
-                Cerrar
-            </button>
-        </div>
+        <!-- Botón de Crisis Permanente -->
+        <button id="crisis-button">SOS</button>
     </div>
-    <!-- === MODAL AYUDA END === -->
 
-    <script src="drive-reader.js"></script>
-    <script src="app.js"></script>
+    <!-- Plantillas ocultas para componentes interactivos -->
+    <template id="tpl-abc-map">
+        <div class="abc-container">
+            <div class="abc-column" data-col="A">
+                <div class="col-tag">A</div>
+                <h4>Hecho</h4>
+                <div class="col-content" contenteditable="true">Describe lo que pasó objetivamente...</div>
+            </div>
+            <div class="abc-arrow">→</div>
+            <div class="abc-column" data-col="B">
+                <div class="col-tag">B</div>
+                <h4>Pensamiento</h4>
+                <div class="col-content" contenteditable="true">¿Qué te dijiste a ti mismo/a?</div>
+            </div>
+            <div class="abc-arrow">→</div>
+            <div class="abc-column" data-col="C">
+                <div class="col-tag">C</div>
+                <h4>Consecuencia</h4>
+                <div class="col-content" contenteditable="true">¿Cómo te sentiste y qué hiciste?</div>
+            </div>
+        </div>
+    </template>
+
+    <template id="tpl-body-selector">
+        <div class="body-selector-wrapper">
+            <p>Toca la zona donde sientes la emoción:</p>
+            <div class="body-svg-container">
+                <svg viewBox="0 0 200 500" class="human-body">
+                    <path class="body-part" data-part="head" d="M100,20 c15,0 25,10 25,25 s-10,25 -25,25 s-25,-10 -25,-25 s10,-25 25,-25" />
+                    <path class="body-part" data-part="chest" d="M75,75 l50,0 l10,80 l-70,0 z" />
+                    <path class="body-part" data-part="belly" d="M75,160 l70,0 l-5,80 l-60,0 z" />
+                    <path class="body-part" data-part="arm-l" d="M70,80 l-40,80 l10,10 l30,-70 z" />
+                    <path class="body-part" data-part="arm-r" d="M130,80 l40,80 l-10,10 l-30,-70 z" />
+                    <path class="body-part" data-part="leg-l" d="M80,245 l-10,180 l15,0 l10,-150 l10,0 z" />
+                    <path class="body-part" data-part="leg-r" d="M120,245 l10,180 l-15,0 l-10,-150 l-10,0 z" />
+                </svg>
+            </div>
+            <div id="body-part-selected" class="selected-label">Ninguna zona seleccionada</div>
+        </div>
+    </template>
+
+    <template id="tpl-credibility-bar">
+        <div class="credibility-wrapper">
+            <label for="cred-num" class="cred-label">
+                ¿Cuánto te crees ese pensamiento?
+                <span class="cred-help">(0 = nada, 100 = totalmente)</span>
+            </label>
+            <input type="number" id="cred-num" min="0" max="100" step="1" value="70" inputmode="numeric" class="cred-input">
+            <button id="cred-submit" class="btn-primary cred-submit-btn">Continuar</button>
+        </div>
+    </template>
+
+    <template id="tpl-values-map">
+        <div class="values-grid">
+            <div class="value-node" data-val="salud">🍎 Salud</div>
+            <div class="value-node" data-val="relaciones">❤️ Relaciones</div>
+            <div class="value-node" data-val="trabajo">💼 Trabajo</div>
+            <div class="value-node" data-val="crecimiento">🌱 Crecimiento</div>
+            <div class="value-node" data-val="espiritualidad">✨ Trascendencia</div>
+            <div class="value-node" data-val="ocio">🎨 Creatividad</div>
+        </div>
+    </template>
+
+    <script src="js/gemini-client.js?v=13"></script>
+    <script src="js/app.js?v=13"></script>
 </body>
+
 </html>

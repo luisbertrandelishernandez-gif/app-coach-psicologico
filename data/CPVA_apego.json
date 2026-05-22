@@ -1,8 +1,138 @@
 {
   "modulo": "apego",
-  "titulo": "Sanando el Vínculo y la Soledad",
-  "descripcion": "Ejercicios basados en la teoría del apego y técnicas de regulación emocional para transitar de la inseguridad a una base segura interna.",
+  "titulo": "Sanación del Vínculo y Autonomía Emocional",
+  "descripcion": "Módulo práctico para la identificación de patrones relacionales, integración del niño interior y gestión de la soledad desde un enfoque de responsabilidad personal.",
   "ejercicios": [
+    {
+      "id": "APG_001",
+      "nombre": "Identificación de Patrones: ¿Dependiente o Rechazador?",
+      "tipo": "reflexion",
+      "duracion_min": 15,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Analiza tus relaciones pasadas e identifica si tiendes a la 'Dependencia' (pánico al distanciamiento y búsqueda de que el otro llene tu vacío) o al 'Rechazo' (sentirse invadido ante la intimidad y buscar espacio para protegerse).",
+          "duracion_seg": 300
+        },
+        {
+          "orden": 2,
+          "instruccion": "Diferencia si tu reacción actual ante un conflicto es una respuesta al presente o una 'carga emocional' de una herida antigua de tu niñez.",
+          "duracion_seg": 300
+        },
+        {
+          "orden": 3,
+          "instruccion": "Identifica qué mscaras o roles de tu 'coraza' activas (como el de 'niño bueno' complaciente o el de 'triunfador' distante) para evitar sentir vulnerabilidad.",
+          "duracion_seg": 300
+        }
+      ],
+      "indicaciones": "Usar cuando sientas que repites dinámicas dolorosas o te sientas estancado emocionalmente.",
+      "contraindicaciones": "No realizar durante crisis de pánico agudas sin apoyo profesional."
+    },
+    {
+      "id": "APG_002",
+      "nombre": "Rescate del Niño Interior ante el Miedo al Abandono",
+      "tipo": "guiado",
+      "duracion_min": 12,
+      "nivel": "intermedio",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Localiza en tu cuerpo dónde sientes la energía de la ansiedad y pon una mano sobre esa zona para conectar con tu presencia física.",
+          "duracion_seg": 120
+        },
+        {
+          "orden": 2,
+          "instruccion": "Visualiza al niño o niña que fuiste y pregúntale con ternura: '¿Qué te pasa? ¿Qué necesitas?'. Permite que exprese su temor sin juzgarlo.",
+          "duracion_seg": 300
+        },
+        {
+          "orden": 3,
+          "instruccion": "Repite como un mantra de protección: 'Yo estoy contigo, yo te cuido, yo nunca te abandonaré', dándole la seguridad que le faltó en su infancia.",
+          "duracion_seg": 300
+        }
+      ],
+      "indicaciones": "Eficaz para personas con apego ansioso ante el distanciamiento de la pareja.",
+      "contraindicaciones": "Evitar si existe una disociación severa que impida sentir el cuerpo."
+    },
+    {
+      "id": "APG_003",
+      "nombre": "Tolerancia a la Soledad: Entrenamiento a Intervalos",
+      "tipo": "cognitivo",
+      "duracion_min": 20,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Planifica breves rachas de soledad elegida durante el día para familiarizarte gradualmente con este espacio.",
+          "duracion_seg": 300
+        },
+        {
+          "orden": 2,
+          "instruccion": "Crea un 'marco' o plan específico (una receta, un libro, una manualidad) para ocupar tu atención y evitar la ansiedad del vacío inicial.",
+          "duracion_seg": 600
+        },
+        {
+          "orden": 3,
+          "instruccion": "Practica la 'regulación integrada': observa cualquier sentimiento de inquietud con curiosidad neutral en lugar de juzgarlo como algo negativo.",
+          "duracion_seg": 300
+        }
+      ],
+      "indicaciones": "Para quienes temen el silencio o dependen del estímulo externo constante.",
+      "contraindicaciones": "No recomendado si existe riesgo inminente de autolesión o depresión profunda."
+    },
+    {
+      "id": "APG_004",
+      "nombre": "Auto-Reparenting: La Silla del Sabio Interior",
+      "tipo": "guiado",
+      "duracion_min": 15,
+      "nivel": "avanzado",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Identifica los diálogos internos negativos de tu 'crítico interno' o 'Juez Interior' que te generan sentimientos de indignidad.",
+          "duracion_seg": 240
+        },
+        {
+          "orden": 2,
+          "instruccion": "Visualiza frente a ti una silla vacía donde se sienta un 'Sabio' o tu 'Yo Ideal' que te conoce profundamente y te ama incondicionalmente.",
+          "duracion_seg": 360
+        },
+        {
+          "orden": 3,
+          "instruccion": "Escucha los mensajes del Sabio que canjean tus creencias limitantes por palabras de validación, protección y aliento.",
+          "duracion_seg": 300
+        }
+      ],
+      "indicaciones": "Útil para fortalecer la autoestima y liberarse de mandatos familiares.",
+      "contraindicaciones": "Puede ser difícil en personas con alta resistencia al perdón personal."
+    },
+    {
+      "id": "APG_005",
+      "nombre": "Diario Relacional de Autenticidad",
+      "tipo": "escritura",
+      "duracion_min": 10,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Registra una interacción del día donde hayas mantenido tu 'funcionamiento autónomo', actuando por tus propios valores y no por presión social.",
+          "duracion_seg": 200
+        },
+        {
+          "orden": 2,
+          "instruccion": "Identifica el 'detonante' (persona/acción) y observa si activó alguna 'herida antigua' (abandono, shock, rechazo).",
+          "duracion_seg": 200
+        },
+        {
+          "orden": 3,
+          "instruccion": "Nombra la emoción primaria (ej. tristeza real) evitando quedarte en emociones secundarias como la queja reactiva o el juicio al otro.",
+          "duracion_seg": 200
+        }
+      ],
+      "indicaciones": "Usar diariamente durante 90 días para crear nuevos hábitos de independencia emocional.",
+      "contraindicaciones": "No convertir el diario en una herramienta de rumiación obsesiva sobre el dolor."
+    },
     {
       "id": "APG_001",
       "nombre": "Identificación del Patrón de Apego",
@@ -12,47 +142,47 @@
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Lee las tres afirmaciones fundamentales: A (incomodidad con la intimidad y dificultad para confiar), B (comodidad con la cercanía y dependencia mutua) y C (preocupación por no ser amado o alejar a otros por buscar demasiada intimidad).",
+          "instruccion": "Lee tres afirmaciones sobre relaciones: A (incomodidad con la cercanía y dificultad para confiar), B (comodidad con la dependencia mutua) y C (preocupación por no ser amado o alejar a otros por buscar demasiada intimidad).",
           "duracion_seg": 300
         },
         {
           "orden": 2,
-          "instruccion": "Identifica con cuál te sientes más reflejado históricamente en tus relaciones de pareja: A corresponde al apego evasivo, B al seguro y C al ansioso.",
+          "instruccion": "Identifica con cuál te sientes más reflejado históricamente: A corresponde al apego evasivo, B al seguro y C al ansioso.",
           "duracion_seg": 300
         },
         {
           "orden": 3,
-          "instruccion": "Reflexiona sobre cómo este estilo fue una estrategia de adaptación necesaria en tu niñez según la disponibilidad de tus cuidadores.",
+          "instruccion": "Reflexiona sobre cómo este estilo fue una estrategia de adaptación necesaria en tu niñez según la disponibilidad y consistencia de tus cuidadores.",
           "duracion_seg": 300
         }
       ],
-      "indicaciones": "Usar al inicio del proceso de autoconocimiento.",
+      "indicaciones": "Usar al inicio del proceso de autoconocimiento para desarrollar compasión hacia uno mismo.",
       "contraindicaciones": "No utilizar como una etiqueta fija, sino como una estrategia adaptable."
     },
     {
       "id": "APG_002",
-      "nombre": "Tolerando Emociones de Apego Ansioso",
+      "nombre": "Tolerando Emociones Incómodas (Ansiedad)",
       "tipo": "respiracion",
       "duracion_min": 10,
       "nivel": "intermedio",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Identifica una situación de malestar moderado (nivel 5-6) en tu relación, como un mensaje no respondido.",
+          "instruccion": "Escoge un escenario real de tu relación que evoque una emoción moderada (nivel 5 a 6), como la espera de un mensaje.",
           "duracion_seg": 60
         },
         {
           "orden": 2,
-          "instruccion": "Nota la sensación en tu cuerpo (opresión en el pecho, nudo en el estómago) y nómbrala: 'esto es miedo' o 'esto es ansiedad'.",
+          "instruccion": "Localiza la sensación en tu cuerpo (pecho, estómago) y nómbrala: 'esto es miedo' o 'esto es pánico', aceptando su presencia sin juzgarla.",
           "duracion_seg": 120
         },
         {
           "orden": 3,
-          "instruccion": "Respira profundo y tolera la sensación sin intentar cambiarla ni actuar impulsivamente (sin llamar o reclamar), aceptando su naturaleza temporal.",
-          "duracion_seg": 180
+          "instruccion": "Respira profundo y tolera la sensación sin intentar reprimirla ni actuar impulsivamente (sin llamar o reclamar), permitiendo que la intensidad baje sola al aceptar su curso temporal.",
+          "duracion_seg": 420
         }
       ],
-      "indicaciones": "Usar cuando se activa la alarma de abandono o la urgencia de reaseguración.",
+      "indicaciones": "Usar cuando se activa la alarma de abandono o el impulso de búsqueda de reaseguración.",
       "contraindicaciones": "En crisis de angustia severa o pánico nivel 10."
     },
     {
@@ -64,26 +194,26 @@
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Cierra los ojos e imagina un río que arrastra diferentes hojas mientras escuchas el sonido del agua.",
+          "instruccion": "Cierra los ojos e imagina un río que arrastra diferentes hojas mientras escuchas el sonido del agua fluyendo.",
           "duracion_seg": 120
         },
         {
           "orden": 2,
-          "instruccion": "Visualiza el sentimiento de soledad o el pensamiento 'nadie me va a querer' como un objeto con forma, color y peso.",
+          "instruccion": "Visualiza el sentimiento de soledad o el pensamiento 'nadie me va a querer' como un objeto con forma, color y peso que sale de tu interior.",
           "duracion_seg": 180
         },
         {
           "orden": 3,
-          "instruccion": "Deposita esa representación de la soledad sobre una hoja y observa cómo la corriente la aleja hasta que desaparece de tu vista.",
+          "instruccion": "Deposita esa representación de la soledad sobre una hoja y observa cómo la corriente la aleja hasta que desaparece por completo de tu vista.",
           "duracion_seg": 300
         }
       ],
-      "indicaciones": "Técnica de defusión cognitiva para pensamientos intrusivos sobre la soledad.",
-      "contraindicaciones": "Si la visualización genera desconexión de la realidad."
+      "indicaciones": "Técnica de defusión cognitiva para pensamientos intrusivos sobre la soledad y el vacío.",
+      "contraindicaciones": "Si la visualización genera desconexión de la realidad o disociación."
     },
     {
       "id": "APG_004",
-      "nombre": "Carta de Auto-reparenting",
+      "nombre": "Carta de Auto-reparenting (Compasión)",
       "tipo": "escritura",
       "duracion_min": 20,
       "nivel": "avanzado",
@@ -95,7 +225,7 @@
         },
         {
           "orden": 2,
-          "instruccion": "Adopta la posición de una 'madre amorosa' o cuidador primario compasivo y escríbete una carta de aceptación total.",
+          "instruccion": "Adopta la posición de una 'madre amorosa' o cuidador primario compasivo y escríbete una carta de aceptación total, consuelo y comprensión.",
           "duracion_seg": 600
         },
         {
@@ -104,7 +234,7 @@
           "duracion_seg": 300
         }
       ],
-      "indicaciones": "Para fortalecer la base segura interna y reducir la autocrítica.",
+      "indicaciones": "Para fortalecer la base segura interna y convertirte en tu propio cuidador principal.",
       "contraindicaciones": "Evitar si hay trauma activo reciente sin apoyo terapéutico."
     },
     {
@@ -121,163 +251,234 @@
         },
         {
           "orden": 2,
-          "instruccion": "Anota los pensamientos automáticos (B) y su nivel de credibilidad: 'me va a engañar', 'no le importo'.",
+          "instruccion": "Anota los pensamientos automáticos (B) y su nivel de credibilidad (0-100): 'me va a engañar', 'no le importo'.",
           "duracion_seg": 300
         },
         {
           "orden": 3,
-          "instruccion": "Escribe un pensamiento alternativo (E) basado en evidencias reales y nota cómo cambia tu emoción y conducta (C).",
+          "instruccion": "Escribe un pensamiento alternativo basado en evidencias reales y nota cómo cambia tu emoción y conducta (C).",
           "duracion_seg": 420
         }
       ],
-      "indicaciones": "Para identificar sesgos de hipervigilancia y rumiación.",
-      "contraindicaciones": "No usar para justificar conductas de control o maltrato real."
+      "indicaciones": "Para identificar sesgos de hipervigilancia y rumiación en la relación.",
+      "contraindicaciones": "No usar para justificar conductas de maltrato real."
     },
     {
-      "id": "APG_001",
-      "nombre": "Transición de Soledad a Solitud",
-      "tipo": "reflexion",
-      "duracion_min": 15,
-      "nivel": "basico",
+      "id": "APG_006",
+      "nombre": "Solución de Problemas para la Autonomía",
+      "tipo": "cognitivo",
+      "duracion_min": 20,
+      "nivel": "intermedio",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Identificar el sentimiento actual de soledad como una experiencia de dolor o vacío [1].",
+          "instruccion": "Define de forma operativa un problema actual que sientas que no puedes resolver sin el apoyo de otro.",
           "duracion_seg": 300
         },
         {
           "orden": 2,
-          "instruccion": "Reencuadrar la situación hacia el concepto de 'solitud', visualizándola como una oportunidad de fortaleza [1].",
-          "duracion_seg": 300
+          "instruccion": "Genera el mayor número posible de soluciones alternativas, incluso las que parezcan disparatadas, sin juzgarlas.",
+          "duracion_seg": 400
         },
         {
           "orden": 3,
-          "instruccion": "Escribir una acción pequeña que represente autonomía en lugar de dependencia [2].",
-          "duracion_seg": 300
+          "instruccion": "Valora cada opción según su viabilidad, elige una y elabora un plan de acción concreto para ejecutarlo de forma autónoma.",
+          "duracion_seg": 500
         }
       ],
-      "indicaciones": "Usar cuando el usuario experimenta miedo a estar solo o vacío [1].",
-      "contraindicaciones": "No usar en estados de desregulación emocional severa."
+      "indicaciones": "Fomenta la independencia emocional y la percepción de autoeficacia.",
+      "contraindicaciones": "No aplicar en situaciones de peligro inminente."
+    },
+    {
+      "id": "APG_001",
+      "nombre": "Diferenciación Soledad-Solitud",
+      "tipo": "reflexion",
+      "duracion_min": 10,
+      "nivel": "basico",
+      "pasos": [
+        {
+          "orden": 1,
+          "instruccion": "Identifica el sentimiento actual de vacío o miedo que experimentas al estar solo/a [1].",
+          "duracion_seg": 180
+        },
+        {
+          "orden": 2,
+          "instruccion": "Reencuadra el dolor de la soledad visualizándolo como una oportunidad para desarrollar fortaleza interna o solitud [1, 2].",
+          "duracion_seg": 240
+        },
+        {
+          "orden": 3,
+          "instruccion": "Escribe una frase que valide tu capacidad de estar contigo mismo/a como un acto de autonomía [2].",
+          "duracion_seg": 180
+        }
+      ],
+      "indicaciones": "Usar cuando el usuario experimenta miedo a estar solo o vacío tras una ruptura [1].",
+      "contraindicaciones": "No usar en estados de desregulación emocional severa que requieran intervención clínica."
     },
     {
       "id": "APG_002",
       "nombre": "Rescate de Actividades Valiosas Individuales",
       "tipo": "escritura",
-      "duracion_min": 20,
+      "duracion_min": 15,
       "nivel": "basico",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Listar intereses o actividades que se han dejado de lado por priorizar relaciones externas [1].",
-          "duracion_seg": 400
+          "instruccion": "Haz una lista de intereses o actividades individuales que has dejado de lado por priorizar relaciones externas [1].",
+          "duracion_seg": 300
         },
         {
           "orden": 2,
-          "instruccion": "Clasificar las actividades en categorías de 'dominio' (logro) o 'placer' (disfrute) [2].",
-          "duracion_seg": 400
+          "instruccion": "Identifica cuáles de estas actividades te devuelven una sensación de identidad propia o rescate del self [1, 2].",
+          "duracion_seg": 300
         },
         {
           "orden": 3,
-          "instruccion": "Elegir una actividad valiosa individual para realizar de forma autónoma esta semana [1, 2].",
-          "duracion_seg": 400
+          "instruccion": "Selecciona una actividad para realizarla de manera independiente esta semana [2].",
+          "duracion_seg": 300
         }
       ],
-      "indicaciones": "Orientado al rescate del self y la autonomía [1, 2].",
-      "contraindicaciones": "Cuando el usuario no tiene capacidad de autocuidado básico."
+      "indicaciones": "Útil para fortalecer la autonomía y la identidad fuera del vínculo [1].",
+      "contraindicaciones": "Ninguna identificada."
     },
     {
       "id": "APG_003",
-      "nombre": "Programación de Dominio y Placer",
+      "nombre": "Entrenamiento en Dominio Personal",
       "tipo": "cognitivo",
       "duracion_min": 10,
       "nivel": "intermedio",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Seleccionar una tarea que genere sensación de eficacia o control (dominio) [2].",
+          "instruccion": "Elige una tarea diaria que te proporcione una sensación de logro o competencia (actividad de dominio) [2].",
           "duracion_seg": 200
         },
         {
           "orden": 2,
-          "instruccion": "Seleccionar una tarea que genere gratificación sensorial o emocional (placer) [2].",
-          "duracion_seg": 200
+          "instruccion": "Realiza la tarea de forma autónoma, prestando atención a tu capacidad de resolución [2].",
+          "duracion_seg": 300
         },
         {
           "orden": 3,
-          "instruccion": "Agendar ambas actividades en momentos de soledad para fortalecer la solitud [1, 2].",
-          "duracion_seg": 200
+          "instruccion": "Registra cómo el completar esta acción refuerza tu percepción de independencia [1].",
+          "duracion_seg": 100
         }
       ],
-      "indicaciones": "Para combatir el vacío tras una ruptura o en soledad no deseada [1].",
-      "contraindicaciones": "Evitar si hay apatía clínica extrema sin supervisión."
+      "indicaciones": "Para fortalecer la sensación de control y eficacia personal en momentos de soledad [2].",
+      "contraindicaciones": "Evitar tareas excesivamente complejas que disparen la frustración."
     },
     {
       "id": "APG_004",
-      "nombre": "Identificación de Necesidades del Self",
-      "tipo": "reflexion",
-      "duracion_min": 12,
+      "nombre": "Cultivo de Placer en Solitud",
+      "tipo": "guiado",
+      "duracion_min": 15,
       "nivel": "intermedio",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Cerrar los ojos y observar el sentimiento de 'vacío' tras una pérdida o ruptura [1].",
-          "duracion_seg": 240
+          "instruccion": "Identifica una actividad que genere gratificación sensorial o emocional puramente individual (actividad de placer) [2].",
+          "duracion_seg": 300
         },
         {
           "orden": 2,
-          "instruccion": "Preguntar al 'Self': ¿Qué actividad individual me devolvería una sensación de autonomía hoy? [1, 2].",
-          "duracion_seg": 240
+          "instruccion": "Dedica 10 minutos a habitar esa experiencia, enfocándote en el bienestar que surge de tu propio Self [1, 2].",
+          "duracion_seg": 600
         },
         {
           "orden": 3,
-          "instruccion": "Comprometerse con un acto de independencia emocional basado en esa respuesta [2].",
-          "duracion_seg": 240
+          "instruccion": "Observa el cambio de estado emocional de la carencia a la plenitud personal [1].",
+          "duracion_seg": 300
         }
       ],
-      "indicaciones": "Cuando el usuario busca rescatar su identidad fuera de un vínculo [2].",
-      "contraindicaciones": "En casos de duelo agudo traumático reciente."
+      "indicaciones": "Para transformar la percepción de la soledad dolorosa en solitud nutritiva [1, 2].",
+      "contraindicaciones": "Si la soledad genera angustia severa, realizar en bloques de tiempo reducidos."
     },
     {
       "id": "APG_005",
-      "nombre": "Fortalecimiento de la Autonomía Post-Ruptura",
+      "nombre": "Diario de Autonomía y Rescate del Self",
       "tipo": "escritura",
-      "duracion_min": 15,
+      "duracion_min": 12,
       "nivel": "avanzado",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Escribir tres aspectos de la identidad personal que son independientes de cualquier pareja [2].",
-          "duracion_seg": 300
+          "instruccion": "Anota un momento del día en el que sentiste el impulso de buscar validación externa para evitar la soledad [1].",
+          "duracion_seg": 240
         },
         {
           "orden": 2,
-          "instruccion": "Describir cómo la solitud (fortaleza) permite explorar estos aspectos con mayor profundidad [1].",
-          "duracion_seg": 300
+          "instruccion": "Describe la acción de autonomía que realizaste para reconectar con tu identidad individual en ese momento [1, 2].",
+          "duracion_seg": 240
         },
         {
           "orden": 3,
-          "instruccion": "Diseñar un plan de 'solitud activa' para los próximos tres días [1].",
-          "duracion_seg": 300
+          "instruccion": "Reflexiona sobre qué habilidad o fortaleza de tu Self descubriste hoy [1].",
+          "duracion_seg": 240
         }
       ],
-      "indicaciones": "Para usuarios que experimentan miedo intenso a la soledad [1].",
-      "contraindicaciones": "No aplicar si hay ideación autolítica o riesgos de seguridad."
+      "indicaciones": "Seguimiento para integrar la autonomía emocional como hábito tras una ruptura o pérdida [1].",
+      "contraindicaciones": "Ninguna identificada."
     }
   ],
   "fichas_rapidas": [
     {
       "id": "APG_F01",
-      "titulo": "Apego Seguro",
-      "contenido": "Balance sano entre independencia y dependencia. Visión positiva de sí mismo y de los demás. Comodidad con la intimidad sin miedo al rechazo.",
+      "titulo": "La Coraza Emocional",
+      "contenido": "Mecanismo de defensa formado por máscaras y roles creados en la infancia para protegernos del dolor y asegurar la aceptación social. Oculta la verdadera individualidad.",
       "etiquetas": [
         "concepto",
-        "seguridad"
+        "defensa"
+      ]
+    },
+    {
+      "id": "APG_F02",
+      "titulo": "Movimiento de Amor Interrumpido",
+      "contenido": "Trauma temprano donde el vínculo con la fuente de amor (madre/padre) se rompe física o emocionalmente, provocando que el niño retraiga su energía y pierda la confianza básica.",
+      "etiquetas": [
+        "apego",
+        "trauma"
+      ]
+    },
+    {
+      "id": "APG_F03",
+      "titulo": "Responder vs. Reaccionar",
+      "contenido": "Responder es una acción consciente y responsable desde el presente; reaccionar es un impulso automático provocado por heridas del pasado que proyectamos en los demás.",
+      "etiquetas": [
+        "psicologia",
+        "conducta"
+      ]
+    },
+    {
+      "id": "APG_F04",
+      "titulo": "Soledad Acompañada",
+      "contenido": "Capacidad de estar psicológicamente separado y conectado con uno mismo mientras se comparte el espacio físico con otras personas, respetando la mutua soledad.",
+      "etiquetas": [
+        "soledad",
+        "bienestar"
+      ]
+    },
+    {
+      "id": "APG_F05",
+      "titulo": "Herida de Shock",
+      "contenido": "Respuesta involuntaria del sistema nervioso (congelación o disociación) ante una amenaza percibida que desborda los recursos del individuo, dejando la experiencia emocional incompleta.",
+      "etiquetas": [
+        "trauma",
+        "fisiologia"
+      ]
+    },
+    {
+      "id": "APG_F01",
+      "titulo": "La Paradoja de la Dependencia",
+      "contenido": "Estar apegado de forma segura nos permite ser más independientes. Una base segura es la plataforma necesaria para explorar el mundo y tomar riesgos.",
+      "etiquetas": [
+        "concepto",
+        "autonomia"
       ]
     },
     {
       "id": "APG_F02",
       "titulo": "Estrategias de Activación",
-      "contenido": "Pensamientos y sentimientos del apego ansioso para mantener la cercanía: idealizar a la pareja, dificultad para concentrarse en otra cosa y ansiedad que solo calma el contacto.",
+      "contenido": "Pensamientos del apego ansioso para mantener la cercanía: idealizar a la pareja, dificultad para concentrarse en otra cosa y ansiedad que solo calma el contacto.",
       "etiquetas": [
         "ansioso",
         "sintomas"
@@ -294,77 +495,72 @@
     },
     {
       "id": "APG_F04",
-      "titulo": "La Paradoja de la Dependencia",
-      "contenido": "Estar apegado de forma segura a alguien nos permite ser más independientes. Una base segura es la plataforma necesaria para explorar el mundo.",
-      "etiquetas": [
-        "teoria",
-        "autonomia"
-      ]
-    },
-    {
-      "id": "APG_F05",
       "titulo": "Apego Evasivo",
-      "contenido": "Prioriza la autonomía sobre la conexión. Incomodidad con la intimidad, dificultad para confiar y tendencia a distanciarse ante el conflicto.",
+      "contenido": "Se caracteriza por la incomodidad con la intimidad y la priorización de la independencia. Su reacción típica ante el conflicto es distanciarse.",
       "etiquetas": [
         "evitativo",
         "concepto"
       ]
     },
     {
+      "id": "APG_F05",
+      "titulo": "Apego Desorganizado",
+      "contenido": "Ocurre cuando el cuidador es fuente de miedo y consuelo a la vez. Genera una estrategia desregulada de 'quiero pero no quiero' acercarme.",
+      "etiquetas": [
+        "desorganizado",
+        "trauma"
+      ]
+    },
+    {
       "id": "APG_F01",
       "titulo": "Soledad vs. Solitud",
-      "contenido": "La soledad se experimenta como dolor y vacío; la solitud se cultiva como una fortaleza y espacio de autonomía [1].",
+      "contenido": "La soledad se experimenta como dolor y vacío; la solitud se cultiva como una fortaleza y un espacio de autonomía individual [1, 2].",
       "etiquetas": [
-        "concepto",
-        "soledad"
+        "concepto"
       ]
     },
     {
       "id": "APG_F02",
       "titulo": "Rescate del Self",
-      "contenido": "Consiste en recuperar la identidad individual a través de actividades valiosas que no dependen de otros [1, 2].",
+      "contenido": "Consiste en recuperar la identidad individual a través de la realización de actividades valiosas que no dependen de otros [1].",
       "etiquetas": [
-        "autonomia",
-        "self"
+        "autonomia"
       ]
     },
     {
       "id": "APG_F03",
       "titulo": "Actividades de Dominio",
-      "contenido": "Acciones que proporcionan una sensación de logro, competencia y control sobre la propia vida [2].",
+      "contenido": "Acciones que proporcionan una sensación de logro, competencia y eficacia, fundamentales para la independencia emocional [2].",
       "etiquetas": [
-        "tecnica",
-        "autonomia"
+        "tecnica"
       ]
     },
     {
       "id": "APG_F04",
       "titulo": "Actividades de Placer",
-      "contenido": "Actividades enfocadas en el disfrute individual y la gratificación, fundamentales para la solitud positiva [2].",
+      "contenido": "Actividades enfocadas en el disfrute y la gratificación individual que ayudan a habitar la solitud de forma positiva [2].",
       "etiquetas": [
-        "tecnica",
-        "bienestar"
+        "tecnica"
       ]
     },
     {
       "id": "APG_F05",
-      "titulo": "Independencia Emocional",
-      "contenido": "Capacidad de gestionar el vacío y la soledad orientándose hacia el desarrollo de la autonomía personal [1, 2].",
+      "titulo": "Autonomía Emocional",
+      "contenido": "Capacidad de gestionar los estados de vacío orientándose hacia el crecimiento personal y el trabajo del propio Self [1, 2].",
       "etiquetas": [
-        "objetivo",
-        "apego"
+        "objetivo"
       ]
     }
   ],
   "recursos_audio": [],
-  "version": "2026-04-04",
+  "version": "2026-05-18",
   "generado_por": "MOT-008",
   "meta": {
     "fuentesUsadas": 3,
-    "totalEjercicios": 10,
-    "totalFichas": 10,
+    "totalEjercicios": 16,
+    "totalFichas": 15,
     "totalAudios": 0,
     "generadoCon": "nlm_query_notebook",
-    "timestamp": "2026-04-04T22:31:34.132738"
+    "timestamp": "2026-05-18T19:12:21.261689"
   }
 }

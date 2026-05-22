@@ -1,183 +1,188 @@
 {
   "modulo": "logoterapia",
-  "titulo": "Manual de Práctica Logoterapéutica: En busca de Sentido",
-  "descripcion": "Conjunto de ejercicios basados en los principios de Viktor Frankl para el descubrimiento de sentido, la gestión de la ansiedad y el fortalecimiento de la responsabilidad personal ante el sufrimiento.",
+  "titulo": "Práctica de la Logoterapia y Análisis Existencial",
+  "descripcion": "Ejercicios basados en los principios de Viktor Frankl para el descubrimiento de sentido, la gestión de la ansiedad y el fortalecimiento de la responsabilidad ante el sufrimiento [1-3].",
   "ejercicios": [
     {
       "id": "LOG_001",
-      "nombre": "Diario de Consciencia de Sentido (Noö-Awareness)",
+      "nombre": "Práctica de Noö-Awareness (Consciencia de Sentido)",
       "tipo": "escritura",
       "duracion_min": 15,
       "nivel": "basico",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Al iniciar el día, plantéate la pregunta: '¿Qué acto significativo puedo realizar hoy?'",
+          "instruccion": "Al iniciar el día, reflexiona y responde a la pregunta: '¿Qué acto significativo puedo realizar hoy?' [4].",
           "duracion_seg": 60
         },
         {
           "orden": 2,
-          "instruccion": "Durante el día, mantente atento a pequeños momentos de significado como actos de bondad, creatividad o belleza natural.",
+          "instruccion": "Durante la jornada, identifica y nota pequeñas experiencias de sentido como actos de bondad, tareas hechas con intención o la belleza natural [4].",
           "duracion_seg": 0
         },
         {
           "orden": 3,
-          "instruccion": "Antes de dormir, registra en tu diario 3 acciones significativas que realizaste y 3 experiencias de sentido que recibiste del mundo.",
+          "instruccion": "Antes de dormir, registra en un diario 3 acciones significativas realizadas, 3 experiencias de sentido recibidas y 1 desafío respondido con intención [5].",
           "duracion_seg": 600
         }
       ],
-      "indicaciones": "Para combatir el vacío existencial, el tedio y fomentar el pensamiento orientado a metas.",
-      "contraindicaciones": "Ninguna reportada; útil para población general y pacientes con depresión."
+      "indicaciones": "Para combatir el vacío existencial, el aburrimiento (neurosis dominical) y fomentar el pensamiento orientado a metas [4, 6].",
+      "contraindicaciones": "Ninguna reportada [4]."
     },
     {
       "id": "LOG_002",
-      "nombre": "Práctica de Intención Paradójica",
+      "nombre": "Intención Paradójica",
       "tipo": "cognitivo",
       "duracion_min": 10,
       "nivel": "intermedio",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Identifica un síntoma de ansiedad anticipatoria, como el miedo al insomnio o a temblar en público.",
+          "instruccion": "Identifica un síntoma de ansiedad anticipatoria (ej. miedo al insomnio, a temblar o a sonrojarse) que intentes evitar activamente [7, 8].",
           "duracion_seg": 60
         },
         {
           "orden": 2,
-          "instruccion": "En lugar de luchar contra el síntoma, intenta desear que ocurra con humor. Por ejemplo: 'Voy a intentar mantenerme despierto lo más posible' o '¡Voy a temblar más fuerte que nunca!'.",
-          "duracion_seg": 120
+          "instruccion": "Utiliza el humor para desear deliberadamente que el síntoma ocurra o incluso exagéralo (ej. '¡Voy a intentar mantenerme despierto lo más posible!') [8, 9].",
+          "duracion_seg": 180
         },
         {
           "orden": 3,
-          "instruccion": "Observa cómo el cambio de actitud hacia el miedo reduce la presión interna y rompe el ciclo de la ansiedad.",
+          "instruccion": "Observa cómo el cambio de actitud hacia el miedo reduce la presión interna y rompe el ciclo de retroalimentación de la ansiedad [8].",
           "duracion_seg": 120
         }
       ],
-      "indicaciones": "Efectivo para fobias, obsesiones y ansiedades específicas.",
-      "contraindicaciones": "No usar en crisis de pánico agudas sin supervisión o en casos de riesgo físico real."
+      "indicaciones": "Eficaz en el tratamiento de fobias, obsesiones y ansiedades de ejecución [9].",
+      "contraindicaciones": "No usar ante sufrimientos evitables que requieran acción directa o en situaciones de peligro real [7, 10]."
     },
     {
       "id": "LOG_003",
-      "nombre": "Ejercicio de Derreflexión",
+      "nombre": "Técnica de Derreflexión",
       "tipo": "cognitivo",
       "duracion_min": 10,
       "nivel": "basico",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Cuando notes un exceso de auto-observación o preocupación por tus propios síntomas, detente.",
+          "instruccion": "Cuando detectes un exceso de auto-observación ('¿Cómo lo estoy haciendo?') o preocupación perfeccionista por tus síntomas, detente [8].",
           "duracion_seg": 30
         },
         {
           "orden": 2,
-          "instruccion": "Dirige tu atención conscientemente hacia afuera: hacia una tarea externa, una actividad creativa o hacia otra persona.",
+          "instruccion": "Dirige tu atención conscientemente hacia afuera, enfocándote plenamente en la tarea externa o en la persona con la que hablas [8, 11].",
           "duracion_seg": 300
         },
         {
           "orden": 3,
-          "instruccion": "Pregúntate: '¿Qué me pide esta situación o esta persona de mí en este momento?' en lugar de '¿Cómo lo estoy haciendo?'.",
+          "instruccion": "Sustituye la preocupación por la pregunta: '¿Qué es lo que este trabajo o esta persona necesita de mí en este momento?' [8].",
           "duracion_seg": 120
         }
       ],
-      "indicaciones": "Útil para el sobrepensamiento, perfeccionismo, ansiedad social y ansiedad de ejecución sexual.",
-      "contraindicaciones": "No aplica cuando se requiere introspección necesaria para la toma de decisiones críticas."
+      "indicaciones": "Indicado para sobrepensamiento, perfeccionismo, ansiedad social y ansiedad de ejecución sexual [8, 11].",
+      "contraindicaciones": "No aplicar si se requiere una introspección necesaria para el diagnóstico médico inmediato [11]."
     },
     {
       "id": "LOG_004",
-      "nombre": "Reflexión sobre el Sufrimiento Inevitable",
+      "nombre": "Resignificación del Sufrimiento Inevitable",
       "tipo": "reflexion",
       "duracion_min": 20,
       "nivel": "avanzado",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Frente a una situación dolorosa que no puede ser cambiada, reflexiona sobre tu capacidad de elegir tu actitud.",
-          "duracion_seg": 180
+          "instruccion": "Frente a un dolor que no puedes cambiar, utiliza el diálogo socrático: '¿Qué valor crees que estás protegiendo al sentir este dolor?' [12, 13].",
+          "duracion_seg": 300
         },
         {
           "orden": 2,
-          "instruccion": "Responde por escrito: '¿Puedo crecer a partir de esto?', '¿Cómo puede este dolor ayudarme a entender a otros?' y '¿Qué fortalezas estoy practicando aquí?'.",
-          "duracion_seg": 600
+          "instruccion": "Reflexiona sobre el crecimiento potencial: '¿Puede este dolor ayudarme a entender mejor a otros?' o '¿Qué fortalezas estoy practicando aquí?' [13].",
+          "duracion_seg": 300
         },
         {
           "orden": 3,
-          "instruccion": "Visualiza cómo puedes transformar este sufrimiento en un logro humano a través de la dignidad y el valor.",
+          "instruccion": "Identifica una pequeña acción concreta que puedas realizar hoy para honrar ese valor a pesar del sufrimiento [12].",
           "duracion_seg": 300
         }
       ],
-      "indicaciones": "Para situaciones de destino ineludible como duelo, enfermedades crónicas o adversidad extrema.",
-      "contraindicaciones": "No usar en sufrimientos evitables; el sufrimiento evitable debe combatirse con remedios oportunos, no aceptarse."
+      "indicaciones": "Para situaciones de destino ineludible (tríada trágica) como duelo o enfermedades crónicas [14, 15].",
+      "contraindicaciones": "El sufrimiento evitable debe combatirse con los remedios oportunos; no usar para resignarse a situaciones cambiables [10]."
     },
     {
       "id": "LOG_005",
-      "nombre": "Autodistanciamiento y el Imperativo Categórico",
+      "nombre": "El Imperativo Categórico (Autodistanciamiento)",
       "tipo": "reflexion",
       "duracion_min": 15,
       "nivel": "intermedio",
       "pasos": [
         {
           "orden": 1,
-          "instruccion": "Identifica una elección difícil que debas tomar actualmente.",
-          "duracion_seg": 60
+          "instruccion": "Visualiza una elección difícil que debas tomar. Aplica la máxima: 'Obra así, como si vivieras por segunda vez y la primera lo hubieras hecho tan desacertadamente como estás a punto de hacerlo ahora' [16].",
+          "duracion_seg": 300
         },
         {
           "orden": 2,
-          "instruccion": "Aplica la máxima de Frankl: 'Obra como si vivieras por segunda vez y la primera lo hubieras hecho tan desacertadamente como estás a punto de hacerlo ahora'.",
+          "instruccion": "Imagina que el presente ya es pasado y que tienes la oportunidad de enmendar esa acción previa [16].",
           "duracion_seg": 300
         },
         {
           "orden": 3,
-          "instruccion": "Imagina que el presente ya es pasado y que tienes la oportunidad de enmendarlo. Elige la acción que refleje mayor responsabilidad.",
+          "instruccion": "Elige la acción que refleje mayor responsabilidad ante tu propia consciencia y valores a largo plazo [16, 17].",
           "duracion_seg": 300
         }
       ],
-      "indicaciones": "Para fomentar la responsabilidad personal y la toma de decisiones ética y con sentido.",
-      "contraindicaciones": "Ninguna; es una técnica de clarificación existencial."
+      "indicaciones": "Para fortalecer la toma de decisiones ética y la responsabilidad personal mediante el distanciamiento de los impulsos [16, 17].",
+      "contraindicaciones": "Ninguna reportada [16]."
     }
   ],
   "fichas_rapidas": [
     {
       "id": "LOG_F01",
       "titulo": "Logos",
-      "contenido": "Raíz griega que equivale a sentido, significado o propósito. La logoterapia es la terapia centrada en el sentido.",
+      "contenido": "Raíz griega que equivale a sentido, significado o propósito. La logoterapia es la terapia centrada en el sentido [18].",
       "etiquetas": [
-        "fundamentos"
+        "concepto",
+        "fundamento"
       ]
     },
     {
       "id": "LOG_F02",
       "titulo": "Voluntad de Sentido",
-      "contenido": "Fuerza primaria del ser humano para descubrir el sentido único y específico de su vida, opuesta a la voluntad de placer (Freud) o de poder (Adler).",
+      "contenido": "Fuerza primaria del ser humano para descubrir el sentido único de su vida. No se inventa, se descubre en el mundo [3, 19].",
       "etiquetas": [
-        "motivacion"
+        "motivacion",
+        "descubrimiento"
       ]
     },
     {
       "id": "LOG_F03",
       "titulo": "Vacío Existencial",
-      "contenido": "Estado de tedio, aburrimiento o falta de dirección que surge cuando se pierde el sentido de la vida; a menudo se enmascara con poder, dinero o placer.",
+      "contenido": "Estado de tedio, aburrimiento o falta de dirección. A menudo se enmascara con la búsqueda de poder, dinero o placer [6, 20].",
       "etiquetas": [
-        "patologia"
+        "patologia",
+        "sintoma"
       ]
     },
     {
       "id": "LOG_F04",
       "titulo": "Tríada Trágica",
-      "contenido": "Componentes inevitables de la existencia humana: sufrimiento, culpa y muerte. La logoterapia enseña a encontrar sentido a pesar de ellos.",
+      "contenido": "Componentes inevitables de la existencia: sufrimiento, culpa y muerte. El sentido es posible a pesar de ellos mediante la actitud [14, 15].",
       "etiquetas": [
-        "existencia"
+        "existencia",
+        "resiliencia"
       ]
     },
     {
       "id": "LOG_F05",
       "titulo": "Autotrascendencia",
-      "contenido": "La esencia del ser humano implica dirigirse hacia algo o alguien distinto de uno mismo, ya sea para realizar un valor o encontrar a otro ser.",
+      "contenido": "Esencia humana de dirigirse hacia algo o alguien distinto de uno mismo, ya sea para realizar un valor o encontrar a otro ser [21, 22].",
       "etiquetas": [
-        "humanismo"
+        "humanismo",
+        "crecimiento"
       ]
     }
   ],
   "recursos_audio": [],
-  "version": "2026-04-04",
+  "version": "2026-05-18",
   "generado_por": "MOT-008",
   "meta": {
     "fuentesUsadas": 1,
@@ -185,6 +190,6 @@
     "totalFichas": 5,
     "totalAudios": 0,
     "generadoCon": "nlm_query_notebook",
-    "timestamp": "2026-04-04T22:28:29.885049"
+    "timestamp": "2026-05-18T19:08:39.226121"
   }
 }

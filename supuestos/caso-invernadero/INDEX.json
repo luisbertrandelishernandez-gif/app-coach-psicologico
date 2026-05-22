@@ -1,0 +1,22 @@
+{
+  "supuesto": "caso-invernadero",
+  "titulo": "Programa integral: ira crónica, injusticia y recuperación",
+  "generado": "2026-05-22",
+  "contenidos": {
+    "flashcards": ["mazo_01_ira.json", "mazo_02_toc_rumiacion.json", "mazo_03_espiritual.json"],
+    "meditaciones": ["med_01_ira_cuerpo.md", "med_02_observar_pensamiento.md", "med_03_compasion_propia.md", "med_04_soltar_control.md", "med_05_crisis_ira.md"],
+    "ejercicios": ["respiracion_coherencia_cardiaca.md", "emdr_bilateral_simple.md", "focusing_injusticia.md", "yoga_ira.md", "protocolo_crisis_ira.md"],
+    "podcasts": ["ep01_ira_cronica.md", "ep02_la_trampa_de_tener_razon.md", "ep03_verguenza_fracaso.md", "ep04_rumiar_no_resuelve.md", "ep05_perdonar_sin_olvidar.md"],
+    "reflexiones": ["ref_M1_ira_y_justicia.md", "ref_M2_TOC_rumiacion.md", "ref_M3_distorsiones.md", "ref_M4_focusing.md", "ref_M5_sentido.md", "ref_M6_somatico.md", "ref_M7_integracion.md"]
+  },
+  "semana_recomendada": {
+    "lunes": ["meditaciones/med_01_ira_cuerpo.md", "flashcards/mazo_01_ira.json", "reflexiones/ref_M1_ira_y_justicia.md"],
+    "martes": ["ejercicios/respiracion_coherencia_cardiaca.md", "flashcards/mazo_02_toc_rumiacion.json", "reflexiones/ref_M2_TOC_rumiacion.md"],
+    "miercoles": ["meditaciones/med_02_observar_pensamiento.md", "flashcards/mazo_03_espiritual.json", "reflexiones/ref_M3_distorsiones.md"],
+    "jueves": ["ejercicios/focusing_injusticia.md", "reflexiones/ref_M4_focusing.md"],
+    "viernes": ["ejercicios/yoga_ira.md", "reflexiones/ref_M5_sentido.md"],
+    "sabado": ["ejercicios/emdr_bilateral_simple.md", "reflexiones/ref_M6_somatico.md"],
+    "domingo": ["meditaciones/med_03_compasion_propia.md", "reflexiones/ref_M7_integracion.md"]
+  },
+  "protocolo_crisis": "ejercicios/protocolo_crisis_ira.md"
+}
